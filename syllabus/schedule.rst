@@ -21,7 +21,7 @@ N: Notes from class (instructors notes)
 |       |                                         |           |
 | 10/5  | Lab: linking experiments and calcs      | ---       |
 +-------+-----------------------------------------+-----------+
-| 10/8  | Entropy can be calculated with stats    | HW1       |
+| 10/8  | Entropy can be calculated with stats    | `HW1 https://github.com/harmsm/physical-biochemistry/tree/master/homework/01-hw`_       |
 |       |                                         |           |
 | 10/10 | Entropy can be measured experimentally  | ---       |
 |       |                                         |           |
