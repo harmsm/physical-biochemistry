@@ -88,22 +88,21 @@ Community
 
 This class is governed by the UO community standards.
 
--Respect the dignity and essential worth of all individuals.
--Promote a culture of respect.
--Respect the privacy, property, and freedom of others.
--Reject bigotry, discrimination, violence, or intimidation of any kind.
--Practice personal and academic integrity and expect it from others.
--Full standards available here: `https://dos.uoregon.edu/social-misconduct`_
+- Respect the dignity and essential worth of all individuals.
+- Promote a culture of respect.
+- Respect the privacy, property, and freedom of others.
+- Reject bigotry, discrimination, violence, or intimidation of any kind.
+- Practice personal and academic integrity and expect it from others.
+- Full standards available `here https://dos.uoregon.edu/social-misconduct`_.
 
 Students with Disabilities: If you have a documented disability and anticipate
 needing accommodations in this course, please make arrangements to meet with
-Mike soon. Please bring a notification letter from the Accessible Education
-Center (`http://aec.uoregon.edu/`_) outlining your approved accommodations.
+Mike soon. Please bring a notification letter from the `Accessible Education Center http://aec.uoregon.edu/`_)
+outlining your approved accommodations.
 
 Cheating: TL;DR: Don’t do it. You are expected to do your own work. Cheating,
 plagiarism and any other form of academic dishonesty will not be tolerated.
-Please refer to the University Of Oregon Student Conduct Code
-(`https://dos.uoregon.edu/academic-misconduct`_) by which all students are
-expected to abide. Should you be found guilty of academic dishonesty, you will
-receive 0 points for the exam or assignment in question. A second infraction
-will result in an F and expulsion from the course.
+Please refer to the `University Of Oregon Student Conduct Code https://dos.uoregon.edu/academic-misconduct`_
+by which all students are expected to abide. Should you be found guilty of
+academic dishonesty, you will receive 0 points for the exam or assignment in
+question. A second infraction will result in an F and expulsion from the course.
