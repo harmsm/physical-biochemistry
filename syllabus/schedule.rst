@@ -3,8 +3,8 @@
 +========+==========================================+============+================================================================================================================================================================================+
 | 9/24   | Organization and introduction            | ---        |                                                                                                                                                                                |
 |        |                                          |            |                                                                                                                                                                                |
-| 9/26   | Protein structure and folds              | ---        | + `R1 https://github.com/harmsm/physical-biochemistry/blob/master/readings/02-lecture_protein-domains/sadreyev_2009_discrete_continuous_duality_of_protein%20structures.pdf`_  |
-|        |                                          |            | + `R2 https://github.com/harmsm/physical-biochemistry/blob/master/readings/02-lecture_protein-domains/woolfson_2015_de_novo_protein_design.pdf`_                               |
+| 9/26   | Protein structure and folds              | ---        | + woolfson_2015_
+|        |                                          |            | + sadreyev_2009_                               |
 | 9/28   | Lab: using VMD                           | ---        | + `L https://github.com/harmsm/physical-biochemistry/tree/master/labs/01-lab`_                                                                                                 |
 +--------+------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 10/1   | kT: Arrhenius and Boltzmann              | ---        |                                                                                                                                                                                |
@@ -64,3 +64,8 @@
 | 12/3   | Final (10:15 am)                         | Final      |                                                                                                                                                                                |
 +--------+------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+.. List of all links (here to make sure formatting works in github)
+
+.. _sadreyev_2009: https://github.com/harmsm/physical-biochemistry/blob/master/readings/02-lecture_protein-domains/sadreyev_2009_discrete_continuous_duality_of_protein%20structures.pdf
+.. _woolfson_2015: https://github.com/harmsm/physical-biochemistry/blob/master/readings/02-lecture_protein-domains/woolfson_2015_de_novo_protein_design.pdf
