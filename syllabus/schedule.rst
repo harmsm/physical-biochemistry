@@ -1,16 +1,13 @@
 Schedule
 ========
 
-R: Reading (should be done before class)
-
-HO: Hand out from in class (worksheets/keys done in class)
-
-S: Slides from class (whatever was shown on the projector)
-
-N: Notes from class (instructors notes)
-
-L: Lab prompts and material
-
++ Reading should be done *before* the class it covers.  The abbreviation "MoL"
+  indicates the "Molecules of Life" text.
++ The lecture notes, slides and class handouts will be posted after the class
+  session.
++ Lab and homework material will be updated throughout the course.
++ This schedule is approximate and subject to revision, with the exception of
+  the dates of the exams.
 
 +------+-------+----------------------------------------+---------+--------------------+
 | Week | Date  | Topic                                  | Due     | Material           |
@@ -20,6 +17,8 @@ L: Lab prompts and material
 | 1    | 9/26  | Protein structure and folds            | ---     | read woolfson2015_ |
 |      |       |                                        |         |                    |
 |      |       |                                        |         | read sadreyev2009_ |
+| | | | | |
+| | | | | read MoL Chapter 4 |
 +------+-------+----------------------------------------+---------+--------------------+
 | 1    | 9/28  | Lab: using VMD                         | ---     | lab1_              |
 +------+-------+----------------------------------------+---------+--------------------+
