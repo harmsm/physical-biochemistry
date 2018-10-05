@@ -1,0 +1,258 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Load 
+\emph on
+ala-ala-ala.gro
+\emph default
+ and 
+\emph on
+ala-ala-ala.xtc
+\emph default
+ from last lab into VMD.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Go to 
+\emph on
+Extensions
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Analysis
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Ramachandran Map
+\end_layout
+
+\begin_layout Enumerate
+Select “0” from the 
+\emph on
+Molecule 
+\emph default
+drop down
+\end_layout
+
+\begin_layout Enumerate
+Type “resid 3” into the 
+\emph on
+Selection
+\emph default
+ box and hit ENTER.
+ (You should now only see one yellow dot on the Ramachandran plot).
+\end_layout
+
+\begin_layout Enumerate
+Click “Create 3-d histogram”
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Where are the peaks in this plot? What does this tell you about the conformation
+al preferences of Ala?
+\end_layout
+
+\begin_layout Enumerate
+Repeat the same steps for the
+\emph on
+ ala-gly-ala
+\emph default
+ and 
+\emph on
+ala-pro-ala 
+\emph default
+simulations.
+ (These can be found in the 
+\emph on
+md-files
+\emph default
+ directory).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Where are the peaks in this plot? What does this tell you about the conformation
+al preferences of glycine and proline? Can you justify these observations
+ in terms of the amino acid side chain?
+\end_layout
+
+\begin_layout Enumerate
+Download 
+\emph on
+phi-psi.zip.
+ 
+\emph default
+This has a list of 
+\begin_inset Formula $\phi/\psi$
+\end_inset
+
+ angles acids calculated for simulations of 
+\emph on
+ala-X-ala 
+\emph default
+peptides like the simulations you looked at above.
+ (If you want to see how this was calculated, check out 
+\emph on
+md-files/phi-psi.tcl
+\emph default
+).
+ 
+\end_layout
+
+\begin_layout Enumerate
+By a very loose definition, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-helices have 
+\begin_inset Formula $\phi\in[-180^{\circ},-30^{\circ}]$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\in[-90^{\circ},+10^{\circ}]$
+\end_inset
+
+.
+ For an amino acid of your choice, what fraction of the time does it spend
+ in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-helical conformation over the simulation? 
+\end_layout
+
+\begin_layout Enumerate
+Estimate the change in conformational entropy if this amino acid was placed
+ at a position in a protein that constrained it to be helical, with the
+ bounds: 
+\begin_inset Formula $\phi\in[-70^{\circ},-30^{\circ}]$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\in[-70^{\circ},+10^{\circ}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Estimate the conformational entropy change for ALA-ALA-ALA-ALA-ALA-ALA to
+ fold into a helix (e.g.
+ 
+\begin_inset Formula $\phi\in[-70^{\circ},-30^{\circ}]$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\in[-70^{\circ},+10^{\circ}]$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Estimate the conformational entropy change for GLN-ALA-ARG-HIS-PRO-ALA to
+ fold into a helix (e.g.
+ 
+\begin_inset Formula $\phi\in[-70^{\circ},-30^{\circ}]$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\in[-70^{\circ},+10^{\circ}]$
+\end_inset
+
+).
+ What is the free energy difference, at 
+\begin_inset Formula $298\ K$
+\end_inset
+
+, for folding this peptide into a helix, as opposed to a chain of six ALA?
+ 
+\end_layout
+
+\begin_layout Enumerate
+What assumption(s) do you have to calculate these differences in energy?
+ How might those assumptions affect your estimate?
+\end_layout
+
+\end_body
+\end_document
