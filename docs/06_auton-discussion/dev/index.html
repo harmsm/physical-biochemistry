@@ -5,7 +5,6 @@
 		<meta charset="utf-8">
 
 		<title>reveal.js – The HTML Presentation Framework</title>
-
         <base href="https://harmsm.github.io/physical-biochemistry/">
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
@@ -65,26 +64,74 @@
 			<div class="slides">
 
      <section>
-       <h4>Statistical mechanics primer</h4>
-       <p>October 1, 2018</p>
+     
      </section>
      
      <section>
-       <p>Goal: Prime thinking about free energy and statistical mechanics.</p>
-       <p>(We are going to develop these ideas more rigorously over the next two weeks).</p>
+       <ul>
+       <li>Adenylate kinases are enzymes that catalyze the 
+       interconversion of ATP, ADP, and AMP.</li>
+       <li>They are critical regulatory molecues that maintain ATP homeostasis.</li>
+       <li>There functional cycle is like a clamshell. When open, a substrate can dock.<br>
+       The clamshell then closes, bringing the active site residues into position. </li>
+       </ul>
      </section>
      
      <section>
-       <h4>Task:</h4>
-       <p>Calculate $\Delta G$, $\Delta H$, and $\Delta S$ for forming a +/- bond</p>
-       <h4>Assumptions</h4>
-       <ol>
-       <li>Isolated system.</li>
-       <li>Entropy and enthalpy changes soley due to chain (e.g. no solvent). </li>
-       <li>Only moves are single bond rotations.</li>
-       <li>On average, it takes 5 times longer for a "+/- together" microstate to flip 
-       to a "+- separated" microstate than to go the other way. </li>
-       </ol>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/KUyB1YTqcp4?rel=0&amp;showinfo=0&amp;start=14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     </section>
+     
+     <section>
+       <p>You want to design a competitive inhibitor of this enzyme.</p>
+       <ul>
+       <li>Brainstorm a list of the factors you must consider when designing
+       such a drug. </li>
+       <li>How would you model/calculate/estimate the contribution of each of these 
+       factors in the design process?  </li>
+       </ul>
+     </section>
+     
+     <section>
+     
+     </section>
+     
+     <section>
+       <p>$$\Delta G^{\circ} = \Delta H^{\circ} - T \Delta S^{\circ}$$</p>
+     </section>
+     
+     <section>
+       <h3>Paper</h3>
+       <p>Auton &amp; Bolen (2005) <em>PNAS</em> 102(42):15065-15068</p>
+     </section>
+     
+     <section>
+       <p>How did you guys approach reading this paper?</p>
+     </section>
+     
+     <section>
+       <p>What is the overarching goal of this paper?</p>
+       <div class="fragment">To calculate protein energetics in terms of solvent accessible surface area</div>
+     </section>
+     
+     <section>
+       <p><img src="slidemachine_media/transfer.png"  /></p>
+     </section>
+     
+     <section>
+       <p><img src="slidemachine_media/fig-1.png"  /></p>
+     </section>
+     
+     <section>
+       <p><img src="slidemachine_media/fig-2a.png"  /></p>
+     </section>
+     
+     <section>
+       <p><img src="slidemachine_media/fig-2c.png"  /></p>
+     </section>
+     
+     <section>
+       <p>Simple models can (sometimes) give you quantitative understanding of 
+       biomolecular function.</p>
      </section>
      
      
@@ -108,8 +155,8 @@
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
                 math: {
-                    //mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                    mathjax: 'MathJax/MathJax.js',
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    //mathjax: 'MathJax/MathJax.js',
                     config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
                 },
     
