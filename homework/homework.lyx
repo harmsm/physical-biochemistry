@@ -1396,7 +1396,7 @@ Which dielectric constant is best (and why do you think so)?
 
 \end_deeper
 \begin_layout Section
-Potentials and entropy; calorimetry
+Potentials, entropy, and calorimetry
 \end_layout
 
 \begin_layout Enumerate
@@ -1528,7 +1528,7 @@ begin{adjustbox}{center}
 
 
 \begin_inset Graphics
-	filename ../../../../ch662/2018/ch662-lectures/homework/hw-1/steric-clash.png
+	filename steric-clash.png
 	lyxscale 30
 
 \end_inset
@@ -1563,8 +1563,12 @@ Given our definition of entropy from class, estimate the change in entropy
 \end_layout
 
 \begin_layout Enumerate
-Do you think the assumptions above lead to an overestimate or understimate
- of the entropy change? Why or why not?
+What assumptions did you have to make to allow this calculation? 
+\end_layout
+
+\begin_layout Enumerate
+Do you think these assumptions lead to an overestimate or understimate of
+ the entropy change? Why or why not?
 \end_layout
 
 \end_deeper
@@ -1697,218 +1701,6 @@ It experiences a slightly smaller energetic penalty in passing through the
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
-Base-catalyzed reactions in an enzyme active site: Many enzymes catalyze
- isomerization reactions through base-catalyzed mechanisms.
- The transition state of these reactions is sometimes a zwitterion.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Using the thermodynamic cycle below, which represents formation of the zwitterio
-n in the active site of the enzyme, derive an equation to calculate the
- energy of formation of the zwitterionic transition state in the active
- site of the enzyme.
- Express your answer in terms of q (the magnitude of the point charges –
- assume the positive and negative charges are equal in magnitude), D2, r,
- and a.
- (Hint: to simplify this equation, use the fact that q1q2=-q2.)
-\end_layout
-
-\begin_layout Enumerate
-Calculate the change in the energy in formation of the zwitterionic transition
- state if the dielectric in the active site is decreased from 3 to 2.
- Assume that q=1, a = 2.4 Å, and r= 5.1 Å.
- 
-\end_layout
-
-\begin_layout Enumerate
-Calculate the change in the energy in formation of the zwitterionic transition
- state if the R groups on the reactants are changed so that the charges
- q1 and q2 become more delocalized so that the radii of the charged spheres
- increase from 2.4 to 2.5 Å.
- Assume that q=1, r= 5.1 Å and D = 3.0.
- 
-\end_layout
-
-\begin_layout Enumerate
-For b and c, indicate whether each change would increase, decrease, or have
- no effect on the rate of the reaction.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Shown to the right is an ITC experiment you ran to measure the affinity
- of protein A to ligand, L.
- You performed 
-\begin_inset Formula $8\ \mu L$
-\end_inset
-
- injections of a 
-\begin_inset Formula $1\ mM$
-\end_inset
-
- solution of L into a 
-\begin_inset Formula $500\ \mu M$
-\end_inset
-
- solution of protein A.
- In a separate experiment, you titrated 
-\begin_inset Formula $8\ \mu L$
-\end_inset
-
- injections of 
-\begin_inset Formula $1\ mM$
-\end_inset
-
- L into buffer and observe that there is no heat change.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Based on your initial results, which of the following statements about the
- reaction between Protein A and L can you make? 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Protein A binds to L very tightly.
- 
-\end_layout
-
-\begin_layout Enumerate
-Protein A does not bind L at all.
- 
-\end_layout
-
-\begin_layout Enumerate
-Binding of L to Protein A is an exothermic reaction.
- 
-\end_layout
-
-\begin_layout Enumerate
-Binding of L to Protein A is an endothermic reaction.
- 
-\end_layout
-
-\begin_layout Enumerate
-Binding of L to Protein A is enthalpically driven.
- 
-\end_layout
-
-\begin_layout Enumerate
-Binding of L to Protein A is entropically driven.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-It is not possible to determine the binding affinity or thermodynamic parameters
- of the binding reaction from the data to the right.
- Which of the following changes to the experimental setup would potentially
- improve the experiment so that these parameters can be determined? (Circle
- all that are correct and explain your answer)
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Increase the concentration of Protein A.
-\end_layout
-
-\begin_layout Enumerate
-Increase the concentration of L.
- 
-\end_layout
-
-\begin_layout Enumerate
-Decrease the concentration of Protein A.
- 
-\end_layout
-
-\begin_layout Enumerate
-Increase the injection volume.
- 
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-ITC experiment #1: You are studying the function of the cytoskeletal protein
- actin and want to set use ITC to measure how tightly it binds to an actin
- regulatory protein called Scar.
- You titrate a 1.3 mL solution of 25 uM actin with a series of 5 uL titrations
- of 450 uM Scar.
- From another experiment (using a method other than ITC), you determined
- that Scar binds to actin with a one-to-one stoichiometry at a KD of 0.9
- uM (T=298K) and that the standard enthalpy change for the binding reaction
- is -10.1 kcal/mol.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-From the information given, use a spreadsheet to generate the expected plot
- of the heat (kcal/mol of injectant) versus the molar ratio of Scar to actin.
- 
-\end_layout
-
-\begin_layout Enumerate
-Are these conditions under which you could reliably determine the value
- of KD by ITC? Explain your answer.
- 
-\end_layout
-
-\begin_layout Enumerate
-How much heat is released when the first injection is made? (Show your work)
-\end_layout
-
-\begin_layout Enumerate
-For the same reaction, plot [Scar]T versus [Scar-actin]/ [actin]T and [Scar]free
- versus [Scar-actin]/ [actin]T.
- Based on your plots, are the reaction conditions here considered “excess
- ligand conditions”? Explain your answer.
- 
-\end_layout
-
-\begin_layout Enumerate
-You use a fitting program to determine the Kd from your ITC data and you
- find that it exactly matches the binding affinity you measured using the
- other technique, 0.9 uM.
- What is the standard free energy change for the binding reaction? 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-ITC experiment #2: You are studying the interaction between a protein kinase
- and its peptide substrate.
- The interaction is 1:1 and the affinity is 2.2 uM.
- You make several mutations in the substrate that influence the interaction
- as described below.
- Based on this information, indicate which trace corresponds to which mutation.
- Explain your answers.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Mutation #1 creates a disulfide bond in the peptide that reduces its configurati
-onal entropy without influencing any of its interactions with the kinase.
- 
-\end_layout
-
-\begin_layout Enumerate
-Mutation #2 reduces the amount of non-polar surface area buried when the
- substrate peptide binds, but does not influence the net energy from van
- Der Waal’s interactions or hydrogen bonds.
- 
-\end_layout
-
-\begin_layout Enumerate
-Mutation #3 replaces the Asp in an Asp-Lys salt bridge with an Arg.
- 
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 You are studying the thermodynamics of folding for the enzyme ferredoxin
@@ -2142,7 +1934,7 @@ Thermotoga
 \emph default
 .
  You then measure the stability of each mutant, plot and fit the data using
- the Gibbs-Hemholtz equation (see graph at right).
+ the Gibbs-Hemholtz equation (see graph below).
 \end_layout
 
 \begin_deeper
@@ -2155,9 +1947,433 @@ Which of three mutants would be the most likely to be able to replace the
 \begin_layout Enumerate
 In which of the three mutants does the hydrophobic effect contribute the
  least to the overall stability of the protein? Please justify your answer.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename thermophile_ps1.jpg
+	lyxscale 30
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Enumerate
+Shown below is an ITC experiment you ran to measure the affinity of protein
+ A to ligand, L.
+ You performed 
+\begin_inset Formula $8\ \mu L$
+\end_inset
+
+ injections of a 
+\begin_inset Formula $1\ mM$
+\end_inset
+
+ solution of L into a 
+\begin_inset Formula $500\ \mu M$
+\end_inset
+
+ solution of protein A.
+ In a separate experiment, you titrated 
+\begin_inset Formula $8\ \mu L$
+\end_inset
+
+ injections of 
+\begin_inset Formula $1\ mM$
+\end_inset
+
+ L into buffer and observe that there is no heat change.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename itc-fig-1_hack.png
+	lyxscale 30
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Based on your initial results, which of the following statements about the
+ reaction between Protein A and L can you make? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Protein A binds to L very tightly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protein A does not bind L at all.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is an exothermic reaction.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is an endothermic reaction.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is enthalpically driven.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is entropically driven.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It is not possible to determine the binding affinity or thermodynamic parameters
+ of the binding reaction from the data to the right.
+ Which of the following changes to the experimental setup would potentially
+ improve the experiment so that these parameters can be determined? (Circle
+ all that are correct and explain your answer)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Increase the concentration of Protein A.
+\end_layout
+
+\begin_layout Enumerate
+Increase the concentration of L.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Decrease the concentration of Protein A.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Increase the injection volume.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+You are studying the function of the cytoskeletal protein actin and want
+ to set use ITC to measure how tightly it binds to an actin regulatory protein
+ called Scar.
+ You titrate a 1.3 mL solution of 25 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ actin with a series of 
+\begin_inset Formula $5\ \mu L$
+\end_inset
+
+ titrations of 450 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ Scar.
+ From another experiment (using a method other than ITC), you determined
+ that Scar binds to actin with a one-to-one stoichiometry at a 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ of 0.9 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ (
+\begin_inset Formula $T=298K$
+\end_inset
+
+) and that the standard enthalpy change for the binding reaction is 
+\begin_inset Formula $-42.3\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From the information given, use a spreadsheet to generate the expected plot
+ of the heat (
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+ of injectant) versus the molar ratio of Scar to actin.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Are these conditions under which you could reliably determine the value
+ of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ by ITC? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How much heat is released when the first injection is made? (Show your work)
+\end_layout
+
+\begin_layout Enumerate
+For the same reaction, plot 
+\begin_inset Formula $[Scar]_{T}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $[Scar]_{free}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+.
+ Based on your plots, are the reaction conditions here considered “excess
+ ligand conditions”? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You use a fitting program to determine the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ from your ITC data and you find that it exactly matches the binding affinity
+ you measured using the other technique, 
+\begin_inset Formula $0.9\ \mu M$
+\end_inset
+
+.
+ What is the standard free energy change for the binding reaction? 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You are studying the interaction between a protein kinase and its peptide
+ substrate.
+ The interaction is 1:1 and the affinity is 
+\begin_inset Formula $2.2\ \mu M$
+\end_inset
+
+.
+ You make several mutations in the substrate that influence the interaction
+ as described below.
+ Based on this information, indicate which trace corresponds to which mutation.
+ Explain your answers.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename itc-fig-2_hack.png
+	lyxscale 30
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mutation #1 creates a disulfide bond in the peptide that reduces its configurati
+onal entropy without influencing any of its interactions with the kinase.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mutation #2 reduces the amount of non-polar surface area buried when the
+ substrate peptide binds, but does not influence the net energy from van
+ Der Waal’s interactions or hydrogen bonds.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mutation #3 replaces the Asp in an Asp-Lys salt bridge with an Arg.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Base-catalyzed reactions in an enzyme active site: Many enzymes catalyze
+ isomerization reactions through base-catalyzed mechanisms.
+ The transition state of these reactions is sometimes a zwitterion.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the thermodynamic cycle below, which represents formation of the zwitterio
+n in the active site of the enzyme, derive an equation to calculate the
+ energy of formation of the zwitterionic transition state in the active
+ site of the enzyme.
+ Express your answer in terms of q (the magnitude of the point charges –
+ assume the positive and negative charges are equal in magnitude), D2, r,
+ and a.
+ (Hint: to simplify this equation, use the fact that q1q2=-q2.)
+\end_layout
+
+\begin_layout Enumerate
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the dielectric in the active site is decreased from 3 to 2.
+ Assume that q=1, a = 2.4 Å, and r= 5.1 Å.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the R groups on the reactants are changed so that the charges
+ q1 and q2 become more delocalized so that the radii of the charged spheres
+ increase from 2.4 to 2.5 Å.
+ Assume that q=1, r= 5.1 Å and D = 3.0.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For b and c, indicate whether each change would increase, decrease, or have
+ no effect on the rate of the reaction.
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 We're going to consider the structural and energetic effects of mutations
