@@ -2250,392 +2250,11 @@ You use a fitting program to determine the
 
 \end_layout
 
-\begin_layout Enumerate
-You are studying the interaction between a protein kinase and its peptide
- substrate.
- The interaction is 1:1 and the affinity is 
-\begin_inset Formula $2.2\ \mu M$
-\end_inset
-
-.
- You make several mutations in the substrate that influence the interaction
- as described below.
- Based on this information, indicate which trace corresponds to which mutation.
- Explain your answers.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename itc-fig-2_hack.png
-	lyxscale 30
-	width 6cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Mutation #1 creates a disulfide bond in the peptide that reduces its configurati
-onal entropy without influencing any of its interactions with the kinase.
- 
-\end_layout
-
-\begin_layout Enumerate
-Mutation #2 reduces the amount of non-polar surface area buried when the
- substrate peptide binds, but does not influence the net energy from van
- Der Waal’s interactions or hydrogen bonds.
- 
-\end_layout
-
-\begin_layout Enumerate
-Mutation #3 replaces the Asp in an Asp-Lys salt bridge with an Arg.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Base-catalyzed reactions in an enzyme active site: Many enzymes catalyze
- isomerization reactions through base-catalyzed mechanisms.
- The transition state of these reactions is sometimes a zwitterion.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Using the thermodynamic cycle below, which represents formation of the zwitterio
-n in the active site of the enzyme, derive an equation to calculate the
- energy of formation of the zwitterionic transition state in the active
- site of the enzyme.
- Express your answer in terms of q (the magnitude of the point charges –
- assume the positive and negative charges are equal in magnitude), D2, r,
- and a.
- (Hint: to simplify this equation, use the fact that q1q2=-q2.)
-\end_layout
-
-\begin_layout Enumerate
-Calculate the change in the energy in formation of the zwitterionic transition
- state if the dielectric in the active site is decreased from 3 to 2.
- Assume that q=1, a = 2.4 Å, and r= 5.1 Å.
- 
-\end_layout
-
-\begin_layout Enumerate
-Calculate the change in the energy in formation of the zwitterionic transition
- state if the R groups on the reactants are changed so that the charges
- q1 and q2 become more delocalized so that the radii of the charged spheres
- increase from 2.4 to 2.5 Å.
- Assume that q=1, r= 5.1 Å and D = 3.0.
- 
-\end_layout
-
-\begin_layout Enumerate
-For b and c, indicate whether each change would increase, decrease, or have
- no effect on the rate of the reaction.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-We're going to consider the structural and energetic effects of mutations
- to the protein lysozyme.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Which residues are within 
-\begin_inset Formula $3\ \mbox{\text{\normalfont}Å}$
-\end_inset
-
- of the residues I23, V74, and V121 in the wildtype structure (2BQA)? 
-\end_layout
-
-\begin_layout Enumerate
-The PDB files 2BQC, 2BQM, and 2BQI contain the structures for lysozyme with
- the mutations I23V, V74A, and V121A, respectively.
- Describe how the lysozyme structure responded to each mutation by comparing
- each mutant structure to the wild-type structure.
- 
-\end_layout
-
-\begin_layout Enumerate
-Based on your analysis, is protein structure sensitive or insensitive to
- sequence? 
-\end_layout
-
-\begin_layout Enumerate
-The PyMol command “get_area selection” calculates the surface area of the
- given selection.
- Use this command to find the surface area of the I23, V74, and V121 sidechains
- in the wildtype structure.
- 
-\end_layout
-
-\begin_layout Enumerate
-The I23V, V74A, and V121A mutations destabilize the protein (i.e.
- increase 
-\begin_inset Formula $\Delta G^{\circ}$
-\end_inset
-
- folding) by 
-\begin_inset Formula $1.72$
-\end_inset
-
-, 
-\begin_inset Formula $1.80$
-\end_inset
-
-, and 
-\begin_inset Formula $7.28\ kJ\cdot mol^{-1}$
-\end_inset
-
-, respectively.
- Give a structural explanation for their different effects on 
-\begin_inset Formula $\Delta G^{\circ}$
-\end_inset
-
- folding.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Dipole charge interactions in stabilizing the native structures of proteins:
- Because the carbonyls within α-helices are all pointed in the same direction
- along the helical axis, α-helices have a strong dipole.
- The protein Barnase has two histidine residues, and x-ray crystal structures
- showed that one of the His residues is at the end of an α-helix.
- A team of biochemists hypothesized that the His at the end of the helix
- (His 18), if protonated, could interact favorably with the negative end
- of the helical dipole.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The biochemists used NMR to monitor the titration of the two histidine residues
- in Barnase.
- As each histidine is titrated (deprotonated), its chemical shift decreases.
- (Note that each histidine can be monitored individually).
- Show below is the plot of the titration.
- If their hypothesis is correct, which titration corresponds to His18? Explain
- your answer.
- b.
- By mutating the other His residue, the biochemists confirmed that His18
- had the expected titration by NMR.
- Based on the information in the titration above, would Barnase be expected
- to be more or less stable at high pH values? Why? 
-\end_layout
-
-\begin_layout Enumerate
-Use the information in part a to calculate the expected difference in stability
- of Barnase when His18 is protonated versus when it is unprotonated at 298K.
- Assume that the pKa of isolated His sidechain is 6.0 and the pKa of His
- 18 in Barnase is 7.6.
-\end_layout
-
-\begin_layout Enumerate
-To test the hypothesis that the protonation state of His18 influences the
- stability of Barnase, the biochemists generated urea denaturation curves
- at multiple pH values.
- Show below is the plot of ΔG°unfolding versus [Urea] at pH 6.3.
- Draw and label two lines on the plot that represent the expected results
- for titration at pH 5.8 and pH 8.2.
- As in c, assume that the pKa of His18 is 7.6.
- 
-\end_layout
-
-\begin_layout Enumerate
-Based on the structure of α-helices, is His18 on the C-terminal or N-terminal
- end of the helix? How do you know? 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Energy of a charge-dipole interaction: Barnase is a protein with an N-terminal
- alpha-helix capped by a histidine residue with an abnormally high pKa (see
- PS1 for details).
- This charge-dipole interaction is important for the stabilization of the
- helix.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Use the treatment of charge-dipole interactions we derived in class to make
- a rough calculation of the energy of interaction between the amide at position
- 15-16 in the helix and the histidine side chain.
- As a first pass, assume a single dipole for the amide with a dipole moment
- of 3.5 D (1D = 3.36 x 10-30 C m).
- Download the pdb file of Barnase from blackboard and measure the distance
- between Gln15 C and His18 NE2.
- Take this as the distance between the positive charge on the His and the
- center of the dipole (r).
- Estimate the angle (θ) of the charge-dipole interaction by measuring the
- angle between atoms His18 NE2, Gln15 C and Gln15 O.
- Estimate that the dielectric of the medium in the microenvironment of this
- interaction is 10.
- For this calculation, assume that the distance between the charge and the
- dipole is much greater than the dipole length.
- Express your answer in units of kcal/mol.
-\end_layout
-
-\begin_layout Enumerate
-Now redo the calculation, but instead of treating the amide as a single
- dipole, treat the partial charges on the carbonyl separately and do not
- make the assumption that you made in b.
- Measure r+ and r- using the crystal structure and assume that q’=0.42 and
- the dielectric is still 10.
- (Assume that Gln15 O harbors the partial negative charge, and that Gln15
- C harbors the partial positive charge).
- Based on these estimates, what is the energy of the charge-dipole interaction
- between the His18 NE2 and the dipole of the carbonyl group at position
- 15-16?
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Ionic interactions, DNA-protein binding: 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Calculate the number of magnesium ions that will bind to a duplex DNA 120
- base pairs long at 298K.
- Assume that the dielectric constant is 80.
-\end_layout
-
-\begin_layout Enumerate
-Using the same equations you used above, we calculated in class that there
- are ~0.76 sodium ions bound for every phosphate in a DNA duplex (assuming
- D=80 and T=298K).
- Note that in these calculations, the concentration of NaCl in solution
- is irrelevant – the amount of ion bound is independent of its concentration,
- as long as [NaCl] < ~1.0M.
- However, we know that addition of NaCl to a solution will stabilize duplex
- DNA.
- The melting temperature can be calculated with the equation:
-\begin_inset Formula 
-\[
-T_{m}=41.4X_{G+C}+16.6log([Na^{+}])+81.5
-\]
-
-\end_inset
-
-Provide an explanation for this apparent discrepancy.
- 
-\end_layout
-
-\begin_layout Enumerate
-Shown below are measured dissociation constants for a protein that binds
- an RNA duplex determined at four different NaCl concentrations.
- Assuming the value for Ψ is the same for NaCl binding to duplex RNA as
- it is for duplex DNA, use the data to determine the number of phosphates
- contacted by the RNA binding protein.
- TABLE: NaCl (M) -> 0.06, 0.10, 0.25, 0.39; KD(M) -> 2.4e-5,1.54e-4,4.07e-3,2.51e-2
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Influence of temperature on a mobile ion cloud:) Shown below is a plot of
- the relative concentration of positively charged ions as a function of
- distance from long axis of duplex DNA at 310K.
- Draw on the plot a second curve that represents what the concentration-distance
- dependence would look like at 298K.
- Explain why the temperature has this influence on the mobile ion cloud.
- 
-\end_layout
-
-\begin_layout Enumerate
-Bjerrum Length: For two oppositely charged ions in solution, there is a
- distance at which the electrostatic interaction energy between the ions
- is equal to the randomizing effect of thermal motions.
- For two ions with unit charges (i.e.
- +1 and -1), this distance is called the Bjerrum length.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Use the formula for coulombic interactions to calculate the Bjerrum length
- in water (D=80) at 298K.
- Express your answer in angstroms.
- (Hint, use kb instead of R and units for ε0 that will allow you to cancel
- out most of the units).
-\end_layout
-
-\begin_layout Enumerate
-At what distance would the electrostatic and thermal energies cancel if
- the ions were doubly charged (i.e., +2 and -2)? Express your answer in angstroms.
- 
-\end_layout
-
-\begin_layout Enumerate
-If you were to calculate the distance at which the attraction between two
- oppositely charged proteins would be equal to the thermal energy, what
- factors, in addition to those you considered for the point charges above,
- would you have to consider? In other words, why would the calculation be
- more complicated for proteins than it is for point charges? 
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Equilibria, linked and otherwise 
 \end_layout
 
-\begin_layout Itemize
-Conceptual goals:
-\end_layout
-
-\begin_layout Itemize
-Skill goals:
-\end_layout
-
 \begin_layout Standard
-
-\series bold
-Bonus question.
- 
-\series default
 The following exercise explores how allostery can arise from linked equilibria.
  We're going to analyze the behavior of an allosterically regulated enzyme
  that has a non-competitive inhibitor (
@@ -2737,7 +2356,7 @@ begin{adjustbox}{center}
 \series bold
 
 \begin_inset Graphics
-	filename ../../../../ch662/2018/ch662-lectures/homework/hw-3/m-mstar.png
+	filename 03-hw/m-mstar.png
 	lyxscale 30
 	width 4cm
 
@@ -2815,7 +2434,7 @@ begin{adjustbox}{center}
 \series bold
 
 \begin_inset Graphics
-	filename ../../../../ch662/2018/ch662-lectures/homework/hw-3/binding.png
+	filename 03-hw/binding.png
 	lyxscale 30
 	width 1cm
 
@@ -2894,7 +2513,7 @@ begin{adjustbox}{center}
 \series bold
 
 \begin_inset Graphics
-	filename ../../../../ch662/2018/ch662-lectures/homework/hw-3/full-scheme.png
+	filename 03-hw/full-scheme.png
 	lyxscale 30
 	width 4cm
 
@@ -3800,81 +3419,69 @@ If you followed activity vs.
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-Specificity of a transcription factor: A transcription factor binds to its
- promotor DNA sequence with a 10 nM KD and non-specific sequences with a
- 27 uM KD.
- Mutation of a critical Phe residue to Ala results in a loss of 4.78 kcal/mol
- in binding free energy for the promoter, but only a loss of 0.956 kcal/mol
- to non-specific binding.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-What is the fold change in specificity caused by the mutation at 10-8 M
- free TF and 300K? Express the fold change as the ratio of αwt/αmut.
- You want to determine the fraction of promoter bound by the wild type transcrip
-tion factor in the presence of competing non-specific sites.
- Instead of solving an equation that explicitly expresses [TF-promo]/[promo]T
- as a function of [TF]T, [P]T, [NS]T, KD,ns and KD,s(which is a bit of a
- mess), you decide to numerically solve the problem.
- Your goal in the end is to plot [TF-promo]/[promo]T versus [TF]T.
- 
-\end_layout
-
-\begin_layout Enumerate
-Write an equation that expresses [TF]T as a function of free and bound forms
- of TF.
- 
-\end_layout
-
-\begin_layout Enumerate
-Now create a spreadsheet from which you can calculate the fraction of wild
- type TF bound to the promoter and bound non-specifically using the value
- of [TF]free as your input.
- Use this spreadsheet to create a plot of [TF-promo]/[promo]T versus [TF]T
- and [TF-non-specific]/[non-specific]T versus [TF]T.
- From this plot, what will the fraction of bound promoter be when the total
- concentration of the wild type transcription factor is 400nM, the total
- concentration of non-specific binding sites is 8.3 mM, and the total concentrati
-on of promoter is 1.7 nM? 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-You would like to monitor a protein’s conformational change using FRET by
- attaching fluorescein and tetramethylrhodamine to cysteines on the protein’s
- surface.
- The protein is thought to undergo motions such that the distance between
- the two cysteines change from 42 to 57 Å.
- Calculate the change in FRET efficiency that you would expect to observe
- by monitoring this change directly.
-\end_layout
-
-\begin_layout Enumerate
-Explain how 
-\begin_inset Quotes eld
+In class, we studied the following scheme for cooperativity:
+\begin_inset Newline newline
 \end_inset
 
-bulk
-\begin_inset Quotes erd
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
 \end_inset
 
- experiments (i.e.
- those averaging over millions of molecules in a cuvette) can be deceptive.
- How can single-molecule experiments overcome this difficulty? 
+
+\begin_inset Graphics
+	filename 03-hw/coop-scheme.png
+	lyxscale 25
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta=\left(\frac{n[X]}{K_{D}}\right)\frac{K^{*}(1+[X]/K_{D})^{n-1}}{1+K^{*}(1+[X]/K_{D})^{n}}
+\]
+
+\end_inset
+
+What range of values for 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ give you cooperativity for 
+\begin_inset Formula $n=4$
+\end_inset
+
+? What does this tell you about the mechanism of cooperativity?
 \end_layout
 
 \begin_layout Section
 Kinetics 
-\end_layout
-
-\begin_layout Itemize
-Conceptual goals:
-\end_layout
-
-\begin_layout Itemize
-Skill goals:
 \end_layout
 
 \begin_layout Enumerate
@@ -3901,7 +3508,7 @@ begin{adjustbox}{center}
 
 
 \begin_inset Graphics
-	filename ../../../../ch662/2018/ch662-lectures/homework/hw-3/complex-reaction-coord.png
+	filename 03-hw/complex-reaction-coord.png
 	lyxscale 25
 	width 7cm
 
@@ -3958,40 +3565,195 @@ Myosin function and nucleotide binding: You wish to determine the rate-limiting
 \begin_deeper
 \begin_layout Enumerate
 You set up a series of reactions in which you measure the initial rate of
- ATP hydrolysis in the presence of 25nM myosin and a range of concentration
- of ATP.
+ ATP hydrolysis in the presence of 
+\begin_inset Formula $25\ nM$
+\end_inset
+
+ myosin and a range of concentration of ATP.
  Shown below is the plot of the initial velocity versus the initial ATP
  concentration.
- What is the kcat for the hydrolysis of ATP by myosin? (Note that the units
- for [ATP] are uM and Vmax = 0.25μMs-1).
+ What is the 
+\begin_inset Formula $k_{cat}$
+\end_inset
+
+ for the hydrolysis of ATP by myosin? (Note that the units for [ATP] are
  
+\begin_inset Formula $\mu M$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{max}=0.25\ μM\cdot s^{-1}$
+\end_inset
+
+).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 03-hw/myosin-scheme-1.png
+	lyxscale 25
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-In a separate experiment, you preincubate 25nM myosin with 4uM ADP, add
- 500uM mant-ADP (a fluorescent analogue of ADP), and then measure the fluorescen
-ce signal versus time.
+In a separate experiment, you preincubate 
+\begin_inset Formula $25\ nM$
+\end_inset
+
+ myosin with 
+\begin_inset Formula $4\ \mu M$
+\end_inset
+
+ ADP, add 
+\begin_inset Formula $500\ \mu M$
+\end_inset
+
+ mant-ADP (a fluorescent analogue of ADP), and then measure the fluorescence
+ signal versus time.
  Shown below is the data.
  Write an equation that expresses the fluorescent signal as a function of
  time, expressing RFU (relative fluorescent units) as a function of time,
- kobs, RFUmax and RFUmin.
  
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+, 
+\begin_inset Formula $RFU_{max}$
+\end_inset
+
+ and 
+\begin_inset Formula $RFU_{min}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 03-hw/myosin-scheme-2.png
+	lyxscale 25
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-The kobs value you calculate for this experiment is 200 s-1.
- If you repeat the experiment with 50nM myosin, will you expect the value
- of kobs to increase, decrease, or stay the same? Explain your answer.
+The 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ value you calculate for this experiment is 
+\begin_inset Formula $200\cdot s^{-1}$
+\end_inset
+
+.
+ If you repeat the experiment with 
+\begin_inset Formula $50\ nM$
+\end_inset
+
+ myosin, will you expect the value of 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ to increase, decrease, or stay the same? Explain your answer.
  
 \end_layout
 
 \begin_layout Enumerate
 To measure the interaction of ADP with myosin, you set up a reaction in
- which you rapidly mix a range of concentrations of ADP with 10 nM myosin
- and measure the increase in fluorescence.
- [ADP] >> [myosin] in these experiments.
- A fit of kobs versus [ADP] for each reaction yields a straight line with
- a slope of 10 μM-1s-1.
+ which you rapidly mix a range of concentrations of ADP with
+\begin_inset Formula $10\ nM$
+\end_inset
+
+ myosin and measure the increase in fluorescence.
+ 
+\begin_inset Formula $[ADP]\gg[myosin]$
+\end_inset
+
+ in these experiments.
+ A fit of 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[ADP]$
+\end_inset
+
+ for each reaction yields a straight line with a slope of 
+\begin_inset Formula $10\ μM^{-1}\cdot s^{-1}$
+\end_inset
+
+.
  Based on this experiment and information presented earlier in this problem,
  calculate the binding affinity of ADP for myosin.
  
@@ -3999,7 +3761,15 @@ To measure the interaction of ADP with myosin, you set up a reaction in
 
 \begin_layout Enumerate
 For the reaction conditions in (d), calculate the concentration of myosin
- ADP when t=4ms and [ADP]0=15μM.
+ ADP when 
+\begin_inset Formula $t=4\ ms$
+\end_inset
+
+ and 
+\begin_inset Formula $[ADP]_{0}=15\ μM$
+\end_inset
+
+.
  
 \end_layout
 
@@ -4017,8 +3787,50 @@ Single molecule assays to measure rate constants for a conformational change:
  Without ATP, the open conformation is favored.
  ATP binding causes the nucleotide cleft to close.
  You attach two fluorophores to the kinase to measure the opening and closing
- of the cleft using FRET (Cleft closure increases the FRET signal).
+ of the cleft using FRET (cleft closure increases the FRET signal).
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 03-hw/fret.png
+	lyxscale 25
+	width 9cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4028,27 +3840,66 @@ You add a very high concentration of ATP to the reaction so that the rate
  rate of cleft closure.
  You measure the FRET signal as a function of time in a bulk assay.
  Write an equation that expresses the FRET signal as a function of time
- and kobs:
+ and 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
-Write an equation that expresses kobs as a function of the relevant microscopic
- rate constants shown in the reaction scheme above.
+Write an equation that expresses 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ as a function of the relevant microscopic rate constants shown in the reaction
+ scheme above.
  
 \end_layout
 
 \begin_layout Enumerate
-Under these conditions, you measure kobs to be 58s-1.
+Under these conditions, you measure 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ to be 
+\begin_inset Formula $58\ s^{-1}$
+\end_inset
+
+.
  If the equilibrium ratio of closed to open kinase with ATP bound is 28:1,
- what are the values of the microscopic rate constants k2 and k-2?
+ what are the values of the microscopic rate constants 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{-2}$
+\end_inset
+
+?
 \end_layout
 
 \begin_layout Enumerate
 You repeat the bulk binding experiment at multiple concentrations of ATP.
  In each case, the concentration of ATP is much greater than the kinase,
- so [ATP]0≈[ATP]final.
- However, you observe that kobs changes as a function of [ATP]0.
- Draw on the plot below the expected relationship between kobs and [ATP]0
+ so 
+\begin_inset Formula $[ATP]_{0}\approx[ATP]_{final}$
+\end_inset
+
+.
+ However, you observe that kobs changes as a function of 
+\begin_inset Formula $[ATP]_{0}$
+\end_inset
+
+.
+ Draw on the plot showing the expected relationship between 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ and 
+\begin_inset Formula $[ATP]_{0}$
+\end_inset
+
  and explain the shape of your plot.
  
 \end_layout
@@ -4061,8 +3912,8 @@ You wish to monitor opening and closing of single molecules of the kinase.
  Assume that the conformation of the kinase is two state.
  That is, it is either in the open or the closed conformation; intermediate
  states are not populated.
- Draw on the graph below the relationship between the FRET efficiency versus
- time you expect to observe as you monitor a single molecule of the kinase.
+ Draw a graph showing the FRET efficiency versus time you expect to observe
+ as you monitor a single molecule of the kinase.
  Assume that you can measure the fret efficiency fast enough that you can
  clearly observe the two states experimentally.
  Label the “open” and “closed” states.
@@ -4078,48 +3929,259 @@ You observe many single molecule open and closing events and measure the
 
 \begin_layout Enumerate
 What would the plot of FRET efficiency versus time look like for a bulk
- assay in which you monitor the FRET of a 250uL solution of a 10nM kinase
- equilibrated with a saturating concentration of ATP? Draw your expected
- results below.
+ assay in which you monitor the FRET of a 
+\begin_inset Formula $250\ \mu L$
+\end_inset
+
+ solution of a 
+\begin_inset Formula $10\ nM$
+\end_inset
+
+ kinase equilibrated with a saturating concentration of ATP? Draw your expected
+ results.
  
 \end_layout
 
 \begin_layout Enumerate
 What would the plot of FRET efficiency versus time look like for a bulk
- assay in which you monitor the FRET of a 250uL solution of a 10nM kinase
- equilibrated without ATP? Draw your expected results below.
+ assay in which you monitor the FRET of a 
+\begin_inset Formula $250\ uL$
+\end_inset
+
+ solution of a 
+\begin_inset Formula $10\ nM$
+\end_inset
+
+ kinase equilibrated without ATP? Draw your expected results.
  
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Diffusion and phase transitions 
+Diffusion
 \end_layout
 
-\begin_layout Itemize
-Conceptual goals:
+\begin_layout Standard
+There are a few key equations for thinking about diffusion.
+ The first describes the root-mean-squared displacement, which measures
+ how far, on average, a molecule will diffuse away from its starting point
+ over time 
+\begin_inset Formula $t$
+\end_inset
+
+ if it can diffuse in 
+\begin_inset Formula $x$
+\end_inset
+
+ dimensions.
+ This is given by:
 \end_layout
 
-\begin_layout Itemize
-Skill goals:
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RMS_{displacement,x}=\sqrt{2xDt}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $RMS_{displacement}$
+\end_inset
+
+ is the root-mean-squared displacement, 
+\begin_inset Formula $x$
+\end_inset
+
+is the dimensionality of the diffusion process (1, 2, 3, etc.), 
+\begin_inset Formula $D$
+\end_inset
+
+ is the diffusion coefficient, and 
+\begin_inset Formula $t$
+\end_inset
+
+ is time.
+ The diffusion coefficient can be related to geometry by: 
+\begin_inset Formula 
+\[
+D_{sphere}=\frac{k_{B}T}{6\pi\eta r}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the solvent viscoity and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the radius of the spherical molecule.
+ Finally, this can be related to the collison rate between two molecules
+\series bold
+ 
+\begin_inset Formula $A$
+\end_inset
+
+
+\series default
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ by:
+\begin_inset Formula 
+\[
+k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})(6.022\times10^{20})
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{B}$
+\end_inset
+
+ are the radii and 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{B}$
+\end_inset
+
+ are the diffusion constants for the two species.
+ For a diffusion-limited reaction: 
+\begin_inset Formula 
+\[
+\frac{d[AB]}{dt}=k_{coll}[A][B].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Questions:
 \end_layout
 
 \begin_layout Enumerate
-Diffusion in a cell: How long on average would it take a 60kD protein to
- diffuse from the center of a cell to a point on the edge, assuming that
- this distance is 12 microns, the protein is an unhydrated sphere with a
- density of 1.41 g/cm3, the temperature is 298K, the viscosity of the cytoplasm
- is 0.5 g cm-1s-1, and the cell is relatively flat so diffusion can be assumed
- to be 2 dimensional.
+How long, on average, would it take a 
+\begin_inset Formula $60\ kDa$
+\end_inset
+
+ protein to diffuse from the center of a cell to a point on the edge, assuming
+ that this distance is 12 
+\begin_inset Formula $\mu m$
+\end_inset
+
+, the protein is an sphere with a density of 
+\begin_inset Formula $1.41\ g\cdot cm^{-3}$
+\end_inset
+
+, the temperature is 
+\begin_inset Formula $298\ K$
+\end_inset
+
+, the viscosity of the cytoplasm is 
+\begin_inset Formula $0.5\ g\cdot cm^{-1}\cdot s^{-1}$
+\end_inset
+
+, and the cell is relatively flat so diffusion can be assumed to be 2 dimensiona
+l.
  Express your answer in seconds.
+ 
 \end_layout
 
 \begin_layout Enumerate
-FRAP to measure diffusion rates: Shown below are traces from a FRAP experiment
- in which fluorescently labeled DNA of two different lengths (A and B) are
- injected into the cytoplasm of a living cell.
- A small area within the cytoplasm is then bleached and the fluorescence
- recovery within that area monitored.
+You are studying the polymerization of actin filaments from ATP-actin monomers.
+ Using total internal reflection microscopy, you measured that the elongation
+ rate of the fast-growing end of a single actin filament is 
+\begin_inset Formula $9.2\ subunits\cdot s^{-1}$
+\end_inset
+
+ when the concentration of actin monomers is 
+\begin_inset Formula $1\ \mu M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assuming that dissociation rate constant for ATP actin subunits from the
+ filament end is 
+\begin_inset Formula $1.4\ s^{-1}$
+\end_inset
+
+, what is the association rate constant of ATP-actin for the filament end
+ based on this data? (Hint: assume the reaction is first-order in actin
+ monomers and write out a differential equation for the rate.)
+\end_layout
+
+\begin_layout Enumerate
+Assume that the diffusion constant for filaments is so much lower than for
+ free monomers that its diffusion can be ignored in the calculation of the
+ association rate.
+ Treat actin monomers as spheres with a molecular weight of 
+\begin_inset Formula $42\ kDa$
+\end_inset
+
+ and a density of 
+\begin_inset Formula $1.41\ g\cdot cm^{-3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T=298\ K$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta=0.01\ g\cdot cm^{-1}s^{-1}$
+\end_inset
+
+.
+ Calculate the rate constant expected for association of ATP actin monomers
+ with the barbed end if the association were diffusion limited.
+ For simplicity, you may treat 
+\begin_inset Formula $r_{coll}$
+\end_inset
+
+ as occuring between two actin monomers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Is the association of ATP-actin monomers with the barbed ends of actin filaments
+ diffusion limited or not? Explain your answer.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Shown below are traces from a Fluorescence Recovery After Photobleaching
+ (FRAP) experiment.
+ The researchers injected fluorescently labeled DNA of two different lengths
+ (A and B) into the cytoplasm of a living cell.
+ They then subjected a small area within the cytoplasm to a laser burst
+ that bleached (e.g.
+ destroyed) any fluorophores.
+ They then followed the recovery of fluorescence within the monitored area,
+ thus measuring the diffusion of new fluorophores into the area.
  Note: For all of the FRAP plots below, only the fluorescence trace is shown,
  and not the axes.
  Assume that for each plot the y-axis is the fluorescence and the x-axis
@@ -4133,89 +4195,213 @@ Based on the data below, which of the two experiments, A or B, uses the
  longer DNA? Explain you reasoning.
  (Note that the scale of the x-axis (time) is different in each plot – also
  note that the y-axis shows fluorescence).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 04-hw/frap-1.png
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-The experiment in a is repeated, except the DNA is injected into the nucleus
- (left panels).
+The experiment in a is repeated, except the DNA is injected into the nucleus.
  What conclusions can be drawn from this experiment?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 04-hw/frap-2.png
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Fluorescent dextran with a MW of 580kD is injected into the cytoplasm and
- the nucleus and the recovery times measured.
+Fluorescent dextran with a MW of 
+\begin_inset Formula $580\ kDa$
+\end_inset
+
+ is injected into the cytoplasm and the nucleus and the recovery times measured.
  Based on the results shown below, provide a molecular explanation for the
- results shown in 4b (above).
+ results shown above.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 04-hw/frap-3.png
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 04-hw/frap-4.png
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Diffusion limited association rates: You are studying the polymerization
- of actin filaments from ATP-actin monomers.
- Using total internal reflection microscopy, you measured that the elongation
- rate of the fast growing end of a single actin filament (the barbed end)
- is 9.2 subunits/s when the concentration of actin monomers is 1 uM.
+The diffusion constant 
+\begin_inset Formula $D$
+\end_inset
+
+ of bovine pancreatic ribonuclease, and enzyme that digests RNA, in dilute
+ buffer at 
+\begin_inset Formula $25\ °C$
+\end_inset
+
+ is 
+\begin_inset Formula $1.31\times10^{-6}\ cm^{2}\cdot s^{-1}$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
-Assuming that dissociation rate constant for ATP actin subunits from the
- filament end is 1.4 s-1, what is the association rate constant of ATP-actin
- for the filament end based on this data? (Hint – write a differential rate
- equation, and know that for this “single molecule” reaction, the rate is
- expressed in subunits/s, which is the same as s-1.)
-\end_layout
-
-\begin_layout Enumerate
-Assume that the diffusion constant for filaments is so much lower than for
- free monomers that its diffusion can be ignored in the calculation of the
- association rate.
- Also assume that actin has a molecular weight of 42kD, a density of 1.41g/cm3,
- and is a perfect sphere without a layer of hydration and T=298K, viscocity
- equals 0.01gcm-1s-1.
- Finally, assume that the contribution of a subunit at the filament barbed
- end to the collision radius is the same as the contribution of the radius
- of the free monomer.
- Calculate the rate constant expected for association of ATP actin monomers
- with the barbed end if the association were diffusion limited.
- 
-\end_layout
-
-\begin_layout Enumerate
-Is the association of ATP-actin monomers with the barbed ends of actin filaments
- diffusion limited or not? Explain your answer.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-The diffusion constant D of bovine pancreatic ribonuclease, and enzyme that
- digests RNA, in dilute buffer at 25 °C is 1.31x10-6 cm2/s.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Calculate the frictional coefficient at 25 °C.
- Express your answer in g/s.
- 
-\end_layout
-
 \begin_layout Enumerate
 Assuming that the protein is spherical and that the viscosity of the solution
- is 0.01 g cm-1 s-1, calculate its hydrodynamic radius in angstroms.
+ is 
+\begin_inset Formula $0.01\ g\cdot cm^{-1}\cdot s^{-1}$
+\end_inset
+
+, calculate its hydrodynamic radius in angstroms.
  
 \end_layout
 
 \begin_layout Enumerate
-Assuming the protein is a sphere with a density of 1.45g/cm3 (and ignoring
- the contribution of the hydration layer to the hydrodynamic radius) what
- is its molecular weight?
+Assuming the protein is a sphere with a density of 
+\begin_inset Formula $1.45\ g\cdot cm^{-3}$
+\end_inset
+
+ (and ignoring the contribution of the hydration layer to the hydrodynamic
+ radius) what is its molecular weight?
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Sedimentation of macromolecules: Sedimentation of macromolecules using a
  centrifuge is a common way to measure their hydrodynamic properties.
@@ -4412,67 +4598,479 @@ Advances in Protein Chemistry
  29:64-65
 \end_layout
 
-\begin_layout Section*
-Crazy ideas
+\begin_layout Enumerate
+You are studying the interaction between a protein kinase and its peptide
+ substrate.
+ The interaction is 1:1 and the affinity is 
+\begin_inset Formula $2.2\ \mu M$
+\end_inset
+
+.
+ You make several mutations in the substrate that influence the interaction
+ as described below.
+ Based on this information, indicate which trace corresponds to which mutation.
+ Explain your answers.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename itc-fig-2_hack.png
+	lyxscale 30
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mutation #1 creates a disulfide bond in the peptide that reduces its configurati
+onal entropy without influencing any of its interactions with the kinase.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Consider a 
-\begin_inset Formula $100\times100$
-\end_inset
+Mutation #2 reduces the amount of non-polar surface area buried when the
+ substrate peptide binds, but does not influence the net energy from van
+ Der Waal’s interactions or hydrogen bonds.
+ 
+\end_layout
 
- 2D-Ising model.
+\begin_layout Enumerate
+Mutation #3 replaces the Asp in an Asp-Lys salt bridge with an Arg.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Base-catalyzed reactions in an enzyme active site: Many enzymes catalyze
+ isomerization reactions through base-catalyzed mechanisms.
+ The transition state of these reactions is sometimes a zwitterion.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If each magnet can face either up or down, how many microstates are possible?
+Using the thermodynamic cycle below, which represents formation of the zwitterio
+n in the active site of the enzyme, derive an equation to calculate the
+ energy of formation of the zwitterionic transition state in the active
+ site of the enzyme.
+ Express your answer in terms of q (the magnitude of the point charges –
+ assume the positive and negative charges are equal in magnitude), D2, r,
+ and a.
+ (Hint: to simplify this equation, use the fact that q1q2=-q2.)
 \end_layout
 
 \begin_layout Enumerate
-As you cool the system down, it populates a collection of states.
- Entropy change?
-\end_layout
-
-\begin_layout Enumerate
-Fluctuation about edges
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-You observe huge change in heat capacity.
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the dielectric in the active site is decreased from 3 to 2.
+ Assume that q=1, a = 2.4 Å, and r= 5.1 Å.
  
 \end_layout
 
 \begin_layout Enumerate
-Reactions always proceed in the direction that increases energy.
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the R groups on the reactants are changed so that the charges
+ q1 and q2 become more delocalized so that the radii of the charged spheres
+ increase from 2.4 to 2.5 Å.
+ Assume that q=1, r= 5.1 Å and D = 3.0.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Make jupyter notebook relating binomial distribution to gaussian to lnW
+For b and c, indicate whether each change would increase, decrease, or have
+ no effect on the rate of the reaction.
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
-Debye-Huckle theory.
- Why worse than just 
-\begin_inset Formula $\varepsilon$
+We're going to consider the structural and energetic effects of mutations
+ to the protein lysozyme.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Which residues are within 
+\begin_inset Formula $3\ \mbox{\text{\normalfont}Å}$
 \end_inset
 
-?
+ of the residues I23, V74, and V121 in the wildtype structure (2BQA)? 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+The PDB files 2BQC, 2BQM, and 2BQI contain the structures for lysozyme with
+ the mutations I23V, V74A, and V121A, respectively.
+ Describe how the lysozyme structure responded to each mutation by comparing
+ each mutant structure to the wild-type structure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on your analysis, is protein structure sensitive or insensitive to
+ sequence? 
+\end_layout
+
+\begin_layout Enumerate
+The PyMol command “get_area selection” calculates the surface area of the
+ given selection.
+ Use this command to find the surface area of the I23, V74, and V121 sidechains
+ in the wildtype structure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The I23V, V74A, and V121A mutations destabilize the protein (i.e.
+ increase 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+ folding) by 
+\begin_inset Formula $1.72$
+\end_inset
+
+, 
+\begin_inset Formula $1.80$
+\end_inset
+
+, and 
+\begin_inset Formula $7.28\ kJ\cdot mol^{-1}$
+\end_inset
+
+, respectively.
+ Give a structural explanation for their different effects on 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+ folding.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dipole charge interactions in stabilizing the native structures of proteins:
+ Because the carbonyls within α-helices are all pointed in the same direction
+ along the helical axis, α-helices have a strong dipole.
+ The protein Barnase has two histidine residues, and x-ray crystal structures
+ showed that one of the His residues is at the end of an α-helix.
+ A team of biochemists hypothesized that the His at the end of the helix
+ (His 18), if protonated, could interact favorably with the negative end
+ of the helical dipole.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The biochemists used NMR to monitor the titration of the two histidine residues
+ in Barnase.
+ As each histidine is titrated (deprotonated), its chemical shift decreases.
+ (Note that each histidine can be monitored individually).
+ Show below is the plot of the titration.
+ If their hypothesis is correct, which titration corresponds to His18? Explain
+ your answer.
+ b.
+ By mutating the other His residue, the biochemists confirmed that His18
+ had the expected titration by NMR.
+ Based on the information in the titration above, would Barnase be expected
+ to be more or less stable at high pH values? Why? 
+\end_layout
+
+\begin_layout Enumerate
+Use the information in part a to calculate the expected difference in stability
+ of Barnase when His18 is protonated versus when it is unprotonated at 298K.
+ Assume that the pKa of isolated His sidechain is 6.0 and the pKa of His
+ 18 in Barnase is 7.6.
+\end_layout
+
+\begin_layout Enumerate
+To test the hypothesis that the protonation state of His18 influences the
+ stability of Barnase, the biochemists generated urea denaturation curves
+ at multiple pH values.
+ Show below is the plot of ΔG°unfolding versus [Urea] at pH 6.3.
+ Draw and label two lines on the plot that represent the expected results
+ for titration at pH 5.8 and pH 8.2.
+ As in c, assume that the pKa of His18 is 7.6.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on the structure of α-helices, is His18 on the C-terminal or N-terminal
+ end of the helix? How do you know? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Energy of a charge-dipole interaction: Barnase is a protein with an N-terminal
+ alpha-helix capped by a histidine residue with an abnormally high pKa (see
+ PS1 for details).
+ This charge-dipole interaction is important for the stabilization of the
+ helix.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the treatment of charge-dipole interactions we derived in class to make
+ a rough calculation of the energy of interaction between the amide at position
+ 15-16 in the helix and the histidine side chain.
+ As a first pass, assume a single dipole for the amide with a dipole moment
+ of 3.5 D (1D = 3.36 x 10-30 C m).
+ Download the pdb file of Barnase from blackboard and measure the distance
+ between Gln15 C and His18 NE2.
+ Take this as the distance between the positive charge on the His and the
+ center of the dipole (r).
+ Estimate the angle (θ) of the charge-dipole interaction by measuring the
+ angle between atoms His18 NE2, Gln15 C and Gln15 O.
+ Estimate that the dielectric of the medium in the microenvironment of this
+ interaction is 10.
+ For this calculation, assume that the distance between the charge and the
+ dipole is much greater than the dipole length.
+ Express your answer in units of kcal/mol.
+\end_layout
+
+\begin_layout Enumerate
+Now redo the calculation, but instead of treating the amide as a single
+ dipole, treat the partial charges on the carbonyl separately and do not
+ make the assumption that you made in b.
+ Measure r+ and r- using the crystal structure and assume that q’=0.42 and
+ the dielectric is still 10.
+ (Assume that Gln15 O harbors the partial negative charge, and that Gln15
+ C harbors the partial positive charge).
+ Based on these estimates, what is the energy of the charge-dipole interaction
+ between the His18 NE2 and the dipole of the carbonyl group at position
+ 15-16?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ionic interactions, DNA-protein binding: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the number of magnesium ions that will bind to a duplex DNA 120
+ base pairs long at 298K.
+ Assume that the dielectric constant is 80.
+\end_layout
+
+\begin_layout Enumerate
+Using the same equations you used above, we calculated in class that there
+ are ~0.76 sodium ions bound for every phosphate in a DNA duplex (assuming
+ D=80 and T=298K).
+ Note that in these calculations, the concentration of NaCl in solution
+ is irrelevant – the amount of ion bound is independent of its concentration,
+ as long as [NaCl] < ~1.0M.
+ However, we know that addition of NaCl to a solution will stabilize duplex
+ DNA.
+ The melting temperature can be calculated with the equation:
+\begin_inset Formula 
+\[
+T_{m}=41.4X_{G+C}+16.6log([Na^{+}])+81.5
+\]
+
+\end_inset
+
+Provide an explanation for this apparent discrepancy.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Shown below are measured dissociation constants for a protein that binds
+ an RNA duplex determined at four different NaCl concentrations.
+ Assuming the value for Ψ is the same for NaCl binding to duplex RNA as
+ it is for duplex DNA, use the data to determine the number of phosphates
+ contacted by the RNA binding protein.
+ TABLE: NaCl (M) -> 0.06, 0.10, 0.25, 0.39; KD(M) -> 2.4e-5,1.54e-4,4.07e-3,2.51e-2
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Influence of temperature on a mobile ion cloud:) Shown below is a plot of
+ the relative concentration of positively charged ions as a function of
+ distance from long axis of duplex DNA at 310K.
+ Draw on the plot a second curve that represents what the concentration-distance
+ dependence would look like at 298K.
+ Explain why the temperature has this influence on the mobile ion cloud.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Bjerrum Length: For two oppositely charged ions in solution, there is a
+ distance at which the electrostatic interaction energy between the ions
+ is equal to the randomizing effect of thermal motions.
+ For two ions with unit charges (i.e.
+ +1 and -1), this distance is called the Bjerrum length.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the formula for coulombic interactions to calculate the Bjerrum length
+ in water (D=80) at 298K.
+ Express your answer in angstroms.
+ (Hint, use kb instead of R and units for ε0 that will allow you to cancel
+ out most of the units).
+\end_layout
+
+\begin_layout Enumerate
+At what distance would the electrostatic and thermal energies cancel if
+ the ions were doubly charged (i.e., +2 and -2)? Express your answer in angstroms.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If you were to calculate the distance at which the attraction between two
+ oppositely charged proteins would be equal to the thermal energy, what
+ factors, in addition to those you considered for the point charges above,
+ would you have to consider? In other words, why would the calculation be
+ more complicated for proteins than it is for point charges? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Specificity of a transcription factor: A transcription factor binds to its
+ promotor DNA sequence with a 10 nM KD and non-specific sequences with a
+ 27 uM KD.
+ Mutation of a critical Phe residue to Ala results in a loss of 4.78 kcal/mol
+ in binding free energy for the promoter, but only a loss of 0.956 kcal/mol
+ to non-specific binding.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the fold change in specificity caused by the mutation at 10-8 M
+ free TF and 300K? Express the fold change as the ratio of αwt/αmut.
+ You want to determine the fraction of promoter bound by the wild type transcrip
+tion factor in the presence of competing non-specific sites.
+ Instead of solving an equation that explicitly expresses [TF-promo]/[promo]T
+ as a function of [TF]T, [P]T, [NS]T, KD,ns and KD,s(which is a bit of a
+ mess), you decide to numerically solve the problem.
+ Your goal in the end is to plot [TF-promo]/[promo]T versus [TF]T.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Write an equation that expresses [TF]T as a function of free and bound forms
+ of TF.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Now create a spreadsheet from which you can calculate the fraction of wild
+ type TF bound to the promoter and bound non-specifically using the value
+ of [TF]free as your input.
+ Use this spreadsheet to create a plot of [TF-promo]/[promo]T versus [TF]T
+ and [TF-non-specific]/[non-specific]T versus [TF]T.
+ From this plot, what will the fraction of bound promoter be when the total
+ concentration of the wild type transcription factor is 400nM, the total
+ concentration of non-specific binding sites is 8.3 mM, and the total concentrati
+on of promoter is 1.7 nM? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You would like to monitor a protein’s conformational change using FRET by
+ attaching fluorescein and tetramethylrhodamine to cysteines on the protein’s
+ surface.
+ The protein is thought to undergo motions such that the distance between
+ the two cysteines change from 42 to 57 Å.
+ Calculate the change in FRET efficiency that you would expect to observe
+ by monitoring this change directly.
+\end_layout
+
+\begin_layout Enumerate
+Explain how 
 \begin_inset Quotes eld
 \end_inset
 
-If an apple is magnified to the size of the earth, then the atoms in the
- apple are approximately the size of the original apple.
+bulk
 \begin_inset Quotes erd
 \end_inset
 
- -Feynman Vol I, 1-3
+ experiments (i.e.
+ those averaging over millions of molecules in a cuvette) can be deceptive.
+ How can single-molecule experiments overcome this difficulty? 
 \end_layout
 
+\begin_layout Enumerate
+Diffusion limited association rates: You are studying the polymerization
+ of actin filaments from ATP-actin monomers.
+ Using total internal reflection microscopy, you measured that the elongation
+ rate of the fast growing end of a single actin filament (the barbed end)
+ is 9.2 subunits/s when the concentration of actin monomers is 1 uM.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assuming that dissociation rate constant for ATP actin subunits from the
+ filament end is 1.4 s-1, what is the association rate constant of ATP-actin
+ for the filament end based on this data? (Hint – write a differential rate
+ equation, and know that for this “single molecule” reaction, the rate is
+ expressed in subunits/s, which is the same as s-1.)
+\end_layout
+
+\begin_layout Enumerate
+Assume that the diffusion constant for filaments is so much lower than for
+ free monomers that its diffusion can be ignored in the calculation of the
+ association rate.
+ Also assume that actin has a molecular weight of 42kD, a density of 1.41g/cm3,
+ and is a perfect sphere without a layer of hydration and T=298K, viscocity
+ equals 0.01gcm-1s-1.
+ Finally, assume that the contribution of a subunit at the filament barbed
+ end to the collision radius is the same as the contribution of the radius
+ of the free monomer.
+ Calculate the rate constant expected for association of ATP actin monomers
+ with the barbed end if the association were diffusion limited.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Is the association of ATP-actin monomers with the barbed ends of actin filaments
+ diffusion limited or not? Explain your answer.
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
