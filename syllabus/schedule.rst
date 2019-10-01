@@ -3,8 +3,9 @@ Schedule
 ========
 
 + Reading should be done *before* the class it covers.  The abbreviation "MoL"
-  indicates the "Molecules of Life" text.  
-+ The lecture notes, slides and class handouts will be posted after the class
+  indicates the "Molecules of Life" text.  The abbreviation "SSTB" indicates the
+  "Simple Statistical Thermodynamics for the Biochemist" packet. 
++ The class materials (notes, handouts, etc.) will be posted after the class
   session in the "Material" column.
 + Lab and homework material will be updated throughout the course.
 + This schedule is approximate and subject to revision, with the exception of
@@ -17,13 +18,13 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    1  | 10/2   | The statistics of biomolecules                                | ---                  | ---                                 |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
-|    1  | 10/4   | Why do reactions have a direction?                            | ---                  | MoL pp. 294-305, `SSTB 1-4`_        |
+|    1  | 10/4   | Why do reactions have a direction?                            | ---                  | `SSTB 1-4`_, MoL pp. 294-305        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    2  | 10/7   | Free energy, enthalpy, and entropy                            | ---                  | `SSTB 5-6`_, MoL pp. 383-409        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    2  | 10/9   | The molecular interpretation of heat                          | ---                  | `Nelson pp. 82-89`_, `SSTB 7`_      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
-|    2  | 10/11  | `Lab: protein folding by Differential Scanning Calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_        |
+|    2  | 10/11  | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    3  | 10/14  | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
@@ -35,7 +36,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    4  | 10/23  | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                    |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
-|    4  | 10/25  | `Lab: Solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                |
+|    4  | 10/25  | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
 |    5  | 10/28  | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+
@@ -83,7 +84,7 @@ Schedule
 .. _`SSTB 7`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Anfinsen`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/anfinsen_1973_folding.pdf
 .. _`Dill`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/dill.pdf
-.. _`Kauzmann`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
+.. _`Kauzmann`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/kauzmann.pdf
 .. _`Sailer`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sailer.pdf
 .. _`Rothlisberger`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/rothlisberger.pdf
 .. _`Baldwin`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/baldwin.pdf
@@ -93,14 +94,14 @@ Schedule
 .. _`Thattai`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/thattai_2002_noise-cascade.pdf
 
 .. lab links
-.. _`Lab: protein folding by Differential Scanning Calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
+.. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
 .. _`Lab: PyMOL`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/02_pymol/
-.. _`Lab: Solvent transfer and empirical SBC`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
-.. _`Lab: drug design`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
-.. _`Lab: measuring binding`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
-.. _`Lab: markov matrices`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
-.. _`Lab: actin polymerization kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
-.. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
+.. _`Lab: solvent transfer and empirical SBC`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/03_solvent-transfer
+.. _`Lab: drug design`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/04_drug-design
+.. _`Lab: measuring binding`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/05_measure-binding
+.. _`Lab: markov matrices`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/06_markov-matrices
+.. _`Lab: actin polymerization kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/07_actin-polymerization
+.. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/08_single-molec-vs-avg
 
 .. homework links
 .. _HW1: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw1.pdf
