@@ -1,0 +1,2362 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Random source material
+\end_layout
+
+\begin_layout Enumerate
+Base-catalyzed reactions in an enzyme active site: Many enzymes catalyze
+ isomerization reactions through base-catalyzed mechanisms.
+ The transition state of these reactions is sometimes a zwitterion.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the thermodynamic cycle below, which represents formation of the zwitterio
+n in the active site of the enzyme, derive an equation to calculate the
+ energy of formation of the zwitterionic transition state in the active
+ site of the enzyme.
+ Express your answer in terms of q (the magnitude of the point charges –
+ assume the positive and negative charges are equal in magnitude), D2, r,
+ and a.
+ (Hint: to simplify this equation, use the fact that q1q2=-q2.)
+\end_layout
+
+\begin_layout Enumerate
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the dielectric in the active site is decreased from 3 to 2.
+ Assume that q=1, a = 2.4 Å, and r= 5.1 Å.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calculate the change in the energy in formation of the zwitterionic transition
+ state if the R groups on the reactants are changed so that the charges
+ q1 and q2 become more delocalized so that the radii of the charged spheres
+ increase from 2.4 to 2.5 Å.
+ Assume that q=1, r= 5.1 Å and D = 3.0.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For b and c, indicate whether each change would increase, decrease, or have
+ no effect on the rate of the reaction.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We're going to consider the structural and energetic effects of mutations
+ to the protein lysozyme.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Which residues are within 
+\begin_inset Formula $3\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+ of the residues I23, V74, and V121 in the wildtype structure (2BQA)? 
+\end_layout
+
+\begin_layout Enumerate
+The PDB files 2BQC, 2BQM, and 2BQI contain the structures for lysozyme with
+ the mutations I23V, V74A, and V121A, respectively.
+ Describe how the lysozyme structure responded to each mutation by comparing
+ each mutant structure to the wild-type structure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on your analysis, is protein structure sensitive or insensitive to
+ sequence? 
+\end_layout
+
+\begin_layout Enumerate
+The PyMol command “get_area selection” calculates the surface area of the
+ given selection.
+ Use this command to find the surface area of the I23, V74, and V121 sidechains
+ in the wildtype structure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The I23V, V74A, and V121A mutations destabilize the protein (i.e.
+ increase 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+ folding) by 
+\begin_inset Formula $1.72$
+\end_inset
+
+, 
+\begin_inset Formula $1.80$
+\end_inset
+
+, and 
+\begin_inset Formula $7.28\ kJ\cdot mol^{-1}$
+\end_inset
+
+, respectively.
+ Give a structural explanation for their different effects on 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+ folding.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dipole charge interactions in stabilizing the native structures of proteins:
+ Because the carbonyls within α-helices are all pointed in the same direction
+ along the helical axis, α-helices have a strong dipole.
+ The protein Barnase has two histidine residues, and x-ray crystal structures
+ showed that one of the His residues is at the end of an α-helix.
+ A team of biochemists hypothesized that the His at the end of the helix
+ (His 18), if protonated, could interact favorably with the negative end
+ of the helical dipole.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The biochemists used NMR to monitor the titration of the two histidine residues
+ in Barnase.
+ As each histidine is titrated (deprotonated), its chemical shift decreases.
+ (Note that each histidine can be monitored individually).
+ Show below is the plot of the titration.
+ If their hypothesis is correct, which titration corresponds to His18? Explain
+ your answer.
+ b.
+ By mutating the other His residue, the biochemists confirmed that His18
+ had the expected titration by NMR.
+ Based on the information in the titration above, would Barnase be expected
+ to be more or less stable at high pH values? Why? 
+\end_layout
+
+\begin_layout Enumerate
+Use the information in part a to calculate the expected difference in stability
+ of Barnase when His18 is protonated versus when it is unprotonated at 298K.
+ Assume that the pKa of isolated His sidechain is 6.0 and the pKa of His
+ 18 in Barnase is 7.6.
+\end_layout
+
+\begin_layout Enumerate
+To test the hypothesis that the protonation state of His18 influences the
+ stability of Barnase, the biochemists generated urea denaturation curves
+ at multiple pH values.
+ Show below is the plot of ΔG°unfolding versus [Urea] at pH 6.3.
+ Draw and label two lines on the plot that represent the expected results
+ for titration at pH 5.8 and pH 8.2.
+ As in c, assume that the pKa of His18 is 7.6.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on the structure of α-helices, is His18 on the C-terminal or N-terminal
+ end of the helix? How do you know? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Energy of a charge-dipole interaction: Barnase is a protein with an N-terminal
+ alpha-helix capped by a histidine residue with an abnormally high pKa (see
+ PS1 for details).
+ This charge-dipole interaction is important for the stabilization of the
+ helix.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the treatment of charge-dipole interactions we derived in class to make
+ a rough calculation of the energy of interaction between the amide at position
+ 15-16 in the helix and the histidine side chain.
+ As a first pass, assume a single dipole for the amide with a dipole moment
+ of 3.5 D (1D = 3.36 x 10-30 C m).
+ Download the pdb file of Barnase from blackboard and measure the distance
+ between Gln15 C and His18 NE2.
+ Take this as the distance between the positive charge on the His and the
+ center of the dipole (r).
+ Estimate the angle (θ) of the charge-dipole interaction by measuring the
+ angle between atoms His18 NE2, Gln15 C and Gln15 O.
+ Estimate that the dielectric of the medium in the microenvironment of this
+ interaction is 10.
+ For this calculation, assume that the distance between the charge and the
+ dipole is much greater than the dipole length.
+ Express your answer in units of kcal/mol.
+\end_layout
+
+\begin_layout Enumerate
+Now redo the calculation, but instead of treating the amide as a single
+ dipole, treat the partial charges on the carbonyl separately and do not
+ make the assumption that you made in b.
+ Measure r+ and r- using the crystal structure and assume that q’=0.42 and
+ the dielectric is still 10.
+ (Assume that Gln15 O harbors the partial negative charge, and that Gln15
+ C harbors the partial positive charge).
+ Based on these estimates, what is the energy of the charge-dipole interaction
+ between the His18 NE2 and the dipole of the carbonyl group at position
+ 15-16?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ionic interactions, DNA-protein binding: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the number of magnesium ions that will bind to a duplex DNA 120
+ base pairs long at 298K.
+ Assume that the dielectric constant is 80.
+\end_layout
+
+\begin_layout Enumerate
+Using the same equations you used above, we calculated in class that there
+ are ~0.76 sodium ions bound for every phosphate in a DNA duplex (assuming
+ D=80 and T=298K).
+ Note that in these calculations, the concentration of NaCl in solution
+ is irrelevant – the amount of ion bound is independent of its concentration,
+ as long as [NaCl] < ~1.0M.
+ However, we know that addition of NaCl to a solution will stabilize duplex
+ DNA.
+ The melting temperature can be calculated with the equation:
+\begin_inset Formula 
+\[
+T_{m}=41.4X_{G+C}+16.6log([Na^{+}])+81.5
+\]
+
+\end_inset
+
+Provide an explanation for this apparent discrepancy.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Shown below are measured dissociation constants for a protein that binds
+ an RNA duplex determined at four different NaCl concentrations.
+ Assuming the value for Ψ is the same for NaCl binding to duplex RNA as
+ it is for duplex DNA, use the data to determine the number of phosphates
+ contacted by the RNA binding protein.
+ TABLE: NaCl (M) -> 0.06, 0.10, 0.25, 0.39; KD(M) -> 2.4e-5,1.54e-4,4.07e-3,2.51e-2
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Influence of temperature on a mobile ion cloud:) Shown below is a plot of
+ the relative concentration of positively charged ions as a function of
+ distance from long axis of duplex DNA at 310K.
+ Draw on the plot a second curve that represents what the concentration-distance
+ dependence would look like at 298K.
+ Explain why the temperature has this influence on the mobile ion cloud.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Bjerrum Length: For two oppositely charged ions in solution, there is a
+ distance at which the electrostatic interaction energy between the ions
+ is equal to the randomizing effect of thermal motions.
+ For two ions with unit charges (i.e.
+ +1 and -1), this distance is called the Bjerrum length.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the formula for coulombic interactions to calculate the Bjerrum length
+ in water (D=80) at 298K.
+ Express your answer in angstroms.
+ (Hint, use kb instead of R and units for ε0 that will allow you to cancel
+ out most of the units).
+\end_layout
+
+\begin_layout Enumerate
+At what distance would the electrostatic and thermal energies cancel if
+ the ions were doubly charged (i.e., +2 and -2)? Express your answer in angstroms.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If you were to calculate the distance at which the attraction between two
+ oppositely charged proteins would be equal to the thermal energy, what
+ factors, in addition to those you considered for the point charges above,
+ would you have to consider? In other words, why would the calculation be
+ more complicated for proteins than it is for point charges? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Specificity of a transcription factor: A transcription factor binds to its
+ promotor DNA sequence with a 10 nM KD and non-specific sequences with a
+ 27 uM KD.
+ Mutation of a critical Phe residue to Ala results in a loss of 4.78 kcal/mol
+ in binding free energy for the promoter, but only a loss of 0.956 kcal/mol
+ to non-specific binding.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the fold change in specificity caused by the mutation at 10-8 M
+ free TF and 300K? Express the fold change as the ratio of αwt/αmut.
+ You want to determine the fraction of promoter bound by the wild type transcrip
+tion factor in the presence of competing non-specific sites.
+ Instead of solving an equation that explicitly expresses [TF-promo]/[promo]T
+ as a function of [TF]T, [P]T, [NS]T, KD,ns and KD,s(which is a bit of a
+ mess), you decide to numerically solve the problem.
+ Your goal in the end is to plot [TF-promo]/[promo]T versus [TF]T.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Write an equation that expresses [TF]T as a function of free and bound forms
+ of TF.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Now create a spreadsheet from which you can calculate the fraction of wild
+ type TF bound to the promoter and bound non-specifically using the value
+ of [TF]free as your input.
+ Use this spreadsheet to create a plot of [TF-promo]/[promo]T versus [TF]T
+ and [TF-non-specific]/[non-specific]T versus [TF]T.
+ From this plot, what will the fraction of bound promoter be when the total
+ concentration of the wild type transcription factor is 400nM, the total
+ concentration of non-specific binding sites is 8.3 mM, and the total concentrati
+on of promoter is 1.7 nM? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Single molecule assays to measure rate constants for a conformational change:
+ During the catalytic cycle of a protein kinase, the nucleotide binding
+ cleft undergoes a round of opening, closing, and then reopening.
+ Without ATP, the open conformation is favored.
+ ATP binding causes the nucleotide cleft to close.
+ You attach two fluorophores to the kinase to measure the opening and closing
+ of the cleft using FRET (cleft closure increases the FRET signal).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 03-hw/fret.png
+	lyxscale 25
+	width 9cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You add a very high concentration of ATP to the reaction so that the rate
+ of ATP association is much greater (many orders of magnitude) than the
+ rate of cleft closure.
+ You measure the FRET signal as a function of time in a bulk assay.
+ Write an equation that expresses the FRET signal as a function of time
+ and 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Write an equation that expresses 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ as a function of the relevant microscopic rate constants shown in the reaction
+ scheme above.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Under these conditions, you measure 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ to be 
+\begin_inset Formula $58\ s^{-1}$
+\end_inset
+
+.
+ If the equilibrium ratio of closed to open kinase with ATP bound is 28:1,
+ what are the values of the microscopic rate constants 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{-2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+You repeat the bulk binding experiment at multiple concentrations of ATP.
+ In each case, the concentration of ATP is much greater than the kinase,
+ so 
+\begin_inset Formula $[ATP]_{0}\approx[ATP]_{final}$
+\end_inset
+
+.
+ However, you observe that kobs changes as a function of 
+\begin_inset Formula $[ATP]_{0}$
+\end_inset
+
+.
+ Draw on the plot showing the expected relationship between 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ and 
+\begin_inset Formula $[ATP]_{0}$
+\end_inset
+
+ and explain the shape of your plot.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You wish to monitor opening and closing of single molecules of the kinase.
+ You attach the labeled protein to a cover slip and measure FRET of individual
+ molecules of the kinase using TIRF microscopy under saturating concentrations
+ of ATP.
+ Assume that the conformation of the kinase is two state.
+ That is, it is either in the open or the closed conformation; intermediate
+ states are not populated.
+ Draw a graph showing the FRET efficiency versus time you expect to observe
+ as you monitor a single molecule of the kinase.
+ Assume that you can measure the fret efficiency fast enough that you can
+ clearly observe the two states experimentally.
+ Label the “open” and “closed” states.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You observe many single molecule open and closing events and measure the
+ lifetimes of the closed or open state for each event.
+ Based on your answer to c, what is the average lifetime of the closed state?
+ 
+\end_layout
+
+\begin_layout Enumerate
+What would the plot of FRET efficiency versus time look like for a bulk
+ assay in which you monitor the FRET of a 
+\begin_inset Formula $250\ \mu L$
+\end_inset
+
+ solution of a 
+\begin_inset Formula $10\ nM$
+\end_inset
+
+ kinase equilibrated with a saturating concentration of ATP? Draw your expected
+ results.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What would the plot of FRET efficiency versus time look like for a bulk
+ assay in which you monitor the FRET of a 
+\begin_inset Formula $250\ uL$
+\end_inset
+
+ solution of a 
+\begin_inset Formula $10\ nM$
+\end_inset
+
+ kinase equilibrated without ATP? Draw your expected results.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Shown below is an ITC experiment you ran to measure the affinity of protein
+ A to ligand, L.
+ You performed 
+\begin_inset Formula $8\ \mu L$
+\end_inset
+
+ injections of a 
+\begin_inset Formula $1\ mM$
+\end_inset
+
+ solution of L into a 
+\begin_inset Formula $500\ \mu M$
+\end_inset
+
+ solution of protein A.
+ In a separate experiment, you titrated 
+\begin_inset Formula $8\ \mu L$
+\end_inset
+
+ injections of 
+\begin_inset Formula $1\ mM$
+\end_inset
+
+ L into buffer and observe that there is no heat change.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename itc-fig-1_hack.png
+	lyxscale 30
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Based on your initial results, which of the following statements about the
+ reaction between Protein A and L can you make? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Protein A binds to L very tightly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protein A does not bind L at all.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is an exothermic reaction.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is an endothermic reaction.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is enthalpically driven.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Binding of L to Protein A is entropically driven.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It is not possible to determine the binding affinity or thermodynamic parameters
+ of the binding reaction from the data to the right.
+ Which of the following changes to the experimental setup would potentially
+ improve the experiment so that these parameters can be determined? (Circle
+ all that are correct and explain your answer)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Increase the concentration of Protein A.
+\end_layout
+
+\begin_layout Enumerate
+Increase the concentration of L.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Decrease the concentration of Protein A.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Increase the injection volume.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+You are studying the function of the cytoskeletal protein actin and want
+ to set use ITC to measure how tightly it binds to an actin regulatory protein
+ called Scar.
+ You titrate a 1.3 mL solution of 25 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ actin with a series of 
+\begin_inset Formula $5\ \mu L$
+\end_inset
+
+ titrations of 450 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ Scar.
+ From another experiment (using a method other than ITC), you determined
+ that Scar binds to actin with a one-to-one stoichiometry at a 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ of 0.9 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ (
+\begin_inset Formula $T=298K$
+\end_inset
+
+) and that the standard enthalpy change for the binding reaction is 
+\begin_inset Formula $-42.3\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From the information given, use a spreadsheet to generate the expected plot
+ of the heat (
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+ of injectant) versus the molar ratio of Scar to actin.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Are these conditions under which you could reliably determine the value
+ of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ by ITC? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How much heat is released when the first injection is made? (Show your work)
+\end_layout
+
+\begin_layout Enumerate
+For the same reaction, plot 
+\begin_inset Formula $[Scar]_{T}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $[Scar]_{free}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+.
+ Based on your plots, are the reaction conditions here considered “excess
+ ligand conditions”? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You use a fitting program to determine the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ from your ITC data and you find that it exactly matches the binding affinity
+ you measured using the other technique, 
+\begin_inset Formula $0.9\ \mu M$
+\end_inset
+
+.
+ What is the standard free energy change for the binding reaction? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The lipid bilayers that form cellular membranes are composed of two leaflets
+ with different lipid compositions.
+ In blood cells, for example, phosphotidylcholine is present in the outer
+ but not the inner leaflet.
+ This lipid is initially inserted into the inner membrane, and is then flipped
+ into the outer membrane by enzymes called flippases.
+ Phosphotidylcholines are zwitterionic (one 
+\begin_inset Formula $+1$
+\end_inset
+
+ and one 
+\begin_inset Formula $-1$
+\end_inset
+
+ charge), and you would like to understand how passing a zwitterion through
+ a membrane would be different than passing a singly charged species though
+ the membrane.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Download the pdb file 4BES from the protein data bank and measure the distance
+ between the nitrogen and phosphorus atoms in phosphocholine.
+ Take this distance to be the diameter of a charged sphere that must be
+ passed through hydrophobic layer of a lipid bilayer membrane (
+\begin_inset Formula $\varepsilon=2$
+\end_inset
+
+) when phosphotidyl choline lipids flip into the outer membrane.
+ The energy of activation (i.e., the energy of passing the charged head group)
+ through the aliphatic portion of the membrane has been experimentally measured
+ to be 
+\begin_inset Formula $105\ kJ\cdot mol^{-1}$
+\end_inset
+
+ for the uncatalyzed reaction.
+ Assume that the energy of transfer of the uncharged “sphere” into the membrane
+ is zero (
+\begin_inset Formula $\Delta G_{trans,uncharged}^{\circ}=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Given this information, calculate the apparent “self-charge” (q) on the
+ phosphotidylcholine head group.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What does the result of your calculation tell you about how passing the
+ zwitterion through the membrane together influences the desolvation energy?
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It experiences the exact same energetic penalty as passing a single charged
+ species with the same radius through the membrane.
+ 
+\end_layout
+
+\begin_layout Enumerate
+It experiences almost no energetic penalty in passing through the membrane.
+\end_layout
+
+\begin_layout Enumerate
+It experiences a greater energetic penalty in passing through the membrane
+ compared to a singly charged species with the same radius.
+ 
+\end_layout
+
+\begin_layout Enumerate
+It experiences a slightly smaller energetic penalty in passing through the
+ membrane compared to a singly charged species with the same radius.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Equilibria, linked and otherwise 
+\end_layout
+
+\begin_layout Standard
+The following exercise explores how allostery can arise from linked equilibria.
+ We're going to analyze the behavior of an allosterically regulated enzyme
+ that has a non-competitive inhibitor (
+\begin_inset Formula $L$
+\end_inset
+
+), which binds at a different site on the protein than the active site.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:derivation-1"
+
+\end_inset
+
+What fraction of the enzyme is in its active form, and how is this influenced
+ by 
+\begin_inset Formula $[L]$
+\end_inset
+
+? To answer this question, we need something like 
+\begin_inset Formula $\theta$
+\end_inset
+
+ for binding, but for active versus inactive enzyme.
+ Let's call this 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+.
+ We're going to derive an expression describing it that will allow us to
+ see how linked equilibria can lead to allostery.
+ We're going to assume that the total concentration of macromolecule, 
+\begin_inset Formula $[M]_{tot}$
+\end_inset
+
+, is much less than the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Mstar-1-1"
+
+\end_inset
+
+First, we start by thinking about an enzyme in equilibrium between an inactive
+ form (
+\begin_inset Formula $M$
+\end_inset
+
+) and an active form (
+\begin_inset Formula $M^{*}$
+\end_inset
+
+).
+ 
+\series bold
+Given the following scheme, write out the definition of 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+, and then solve for 
+\begin_inset Formula $[M^{*}]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Graphics
+	filename 03-hw/m-mstar.png
+	lyxscale 30
+	width 4cm
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:ML-1-1"
+
+\end_inset
+
+Next, we can think about binding of ligand 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ It can 
+\emph on
+only 
+\emph default
+bind to the inactive form of the protein 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\series bold
+Given the following scheme, write out the definition of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ and then solve for 
+\begin_inset Formula $[ML]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Graphics
+	filename 03-hw/binding.png
+	lyxscale 30
+	width 1cm
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:theta-1-1"
+
+\end_inset
+
+Now we're going to put the schema together.
+ The different forms of the protein in this scheme are: 
+\begin_inset Formula $[M]$
+\end_inset
+
+, 
+\begin_inset Formula $[M^{*}]$
+\end_inset
+
+, and 
+\begin_inset Formula $[ML]$
+\end_inset
+
+.
+ 
+\series bold
+Write an expression for 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+, the fraction of the molecules that are in the active, 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ form.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Graphics
+	filename 03-hw/full-scheme.png
+	lyxscale 30
+	width 4cm
+
+\end_inset
+
+
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute your definitions from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Mstar-1-1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:ML-1-1"
+
+\end_inset
+
+ into your equation from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:theta-1-1"
+
+\end_inset
+
+ and then simplify.
+ There you go.
+ You've now derived an expression modeling allostery.
+ Now we can play with it to understand interesting behavior.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Next, we'll explore what kinds of 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ values make a good allosteric switch.
+ Using your expression from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:derivation-1"
+
+\end_inset
+
+:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What happens to 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+ as 
+\begin_inset Formula $K^{*}\rightarrow\infty$
+\end_inset
+
+? 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Would such an enzyme be active or inactive? 
+\end_layout
+
+\begin_layout Enumerate
+Could it be allosterically regulated by 
+\begin_inset Formula $L$
+\end_inset
+
+?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What happens to 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+ as 
+\begin_inset Formula $K^{*}\rightarrow0$
+\end_inset
+
+?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Would such an enzyme be active or inactive?
+\end_layout
+
+\begin_layout Enumerate
+Would it be allosterically regulated by 
+\begin_inset Formula $L$
+\end_inset
+
+?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What happens to 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+ when 
+\begin_inset Formula $K^{*}=1$
+\end_inset
+
+?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Would such an enzyme be active or inactive?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:kstar1-1"
+
+\end_inset
+
+For 
+\begin_inset Formula $K^{*}=1$
+\end_inset
+
+ and a 
+\begin_inset Formula $K_{D}=1\ nM$
+\end_inset
+
+ calculate the following and sketch a graph of 
+\begin_inset Formula $[L]$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\backslash
+renewcommand*
+\backslash
+arraystretch{2.0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[L]\ (nM)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{D}/[L]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+As you increase 
+\begin_inset Formula $[L]$
+\end_inset
+
+, what happens to 
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+For this 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+, can enzyme activity be regulated by 
+\begin_inset Formula $[L]$
+\end_inset
+
+?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now, follow up your analysis of 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ by looking at two more possible values: 
+\begin_inset Formula $0.01$
+\end_inset
+
+ and 
+\begin_inset Formula $100$
+\end_inset
+
+.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the same approach as in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:kstar1-1"
+
+\end_inset
+
+, populate the following table for 
+\begin_inset Formula $K^{*}=0.01$
+\end_inset
+
+ and 
+\begin_inset Formula $K^{*}=100$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\backslash
+renewcommand*
+\backslash
+arraystretch{2.0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[L]\ (nM)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $K^{*}=0.01$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $K^{*}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $K^{*}=100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Which value of 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ makes a good allosteric switch? Why or why not?
+\end_layout
+
+\begin_layout Enumerate
+If you followed activity vs.
+ 
+\begin_inset Formula $[L]$
+\end_inset
+
+ and extracted a 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $K_{D}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ from the curve, how would it differ from the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ for binding to 
+\begin_inset Formula $M$
+\end_inset
+
+? Why does it differ?
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+In class, we studied the following scheme for cooperativity:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 03-hw/coop-scheme.png
+	lyxscale 25
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta=\left(\frac{n[X]}{K_{D}}\right)\frac{K^{*}(1+[X]/K_{D})^{n-1}}{1+K^{*}(1+[X]/K_{D})^{n}}
+\]
+
+\end_inset
+
+What range of values for 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ give you cooperativity for 
+\begin_inset Formula $n=4$
+\end_inset
+
+? What does this tell you about the mechanism of cooperativity?
+\end_layout
+
+\begin_layout Enumerate
+I bought a used copy of Dill and Bromberg's 
+\begin_inset Quotes eld
+\end_inset
+
+Molecular Driving Forces.
+\begin_inset Quotes erd
+\end_inset
+
+ On the very first page, they write:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Entropy is one of the most fundamental concepts in statistical thermodynamics.
+ It describes the tendency of matter toward disorder.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Whoever owned the book before me scratched out the word 
+\begin_inset Quotes eld
+\end_inset
+
+disorder
+\begin_inset Quotes erd
+\end_inset
+
+ and wrote 
+\begin_inset Quotes eld
+\end_inset
+
+NO!
+\begin_inset Quotes erd
+\end_inset
+
+—with no other explanation.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Make a case defending either Dill and Bromberg or my anonymous book vandal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You are studying a protein that binds three ligands cooperatively.
+ It's binding scheme is given below:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M\rightleftarrows M^{*}+3L\rightleftarrows M^{*}\cdot L+2L\rightleftarrows M^{*}\cdot L_{2}+L\rightleftarrows M^{*}\cdot L_{3}
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+K^{*}=\frac{[M^{*}]}{[M]}
+\]
+
+\end_inset
+
+in the absence of any 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Further:
+\begin_inset Formula 
+\[
+K_{D}=\frac{[M^{*}][L]}{[M^{*}\cdot L]}=\frac{[M^{*}\cdot L][L]}{[M^{*}\cdot L_{2}]}=\frac{[M^{*}\cdot L_{2}][L]}{[M^{*}\cdot L_{3}]}
+\]
+
+\end_inset
+
+Given this information:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Which species are populated at the concentration of 
+\begin_inset Formula $[L]$
+\end_inset
+
+ that gives 
+\begin_inset Formula $1/2$
+\end_inset
+
+ of the maximum saturation of 
+\begin_inset Formula $M$
+\end_inset
+
+? Please justify your answer.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Would you predict that 
+\begin_inset Formula $K^{*}$
+\end_inset
+
+ is greater than or less than 1? Please justify your answer.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You find an evolutionary relative of this protein that forms a hexamer (a
+ dimer of trimers).
+ Do you expect the shape of its binding curve will be shallower, steeper,
+ or about the same as the protein above? Please justify your answer.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We are going to estimate the entropy loss to fold the protein backbone.
+ A protein with 200 amino acids has rotatable bonds in its backbone.
+ To a first approximation, each bond can populate one of three configurations:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename steric-clash.png
+	lyxscale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The folded state is one unique combination of bond configurations; the unfolded
+ state consists of all other combinations.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Given our definition of entropy from class, estimate the change in entropy
+ for the folding of the protein backbone.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What assumptions did you have to make to allow this calculation? 
+\end_layout
+
+\begin_layout Enumerate
+Do you think these assumptions lead to an overestimate or understimate of
+ the entropy change? Why or why not?
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

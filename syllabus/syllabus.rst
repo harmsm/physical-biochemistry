@@ -1,5 +1,5 @@
 ------------------------------------------------
-Syllabus: CH465/565 Physical Biochemistry (2018)
+Syllabus: CH465/565 Physical Biochemistry (2019)
 ------------------------------------------------
 
 Course Description
@@ -15,12 +15,10 @@ Instructors:
 Mike Harms (instructor)
 harms@uoregon.edu
 Willamette 340A
+Office Hour: 9-10 am, Thursdays
 
-Joseph Harman (GTF)
-jharman@uoregon.edu
-Willamette 342
-
-Office Hours: By request
+Dillon Willis (TA)
+Office Hour: TBA
 
 Class structure:
 ================
@@ -46,8 +44,6 @@ please let me know. Other textbooks that may be useful include:
 
 - *Biological Physics.* Philip Nelson.
 - *Molecular and Cellular Biophysics.* Meyer P. Jackson.
-- *Physical Chemistry: Principles and Applications in the Life Sciences.*
-  Tinoco, Sauer, Wang, Puglisi, Harbison, and Rovnyak.
 - *Principles of Physical Biochemisty.* Kensal van Holde, Curtis Johnson and
   Shing Ho.
 
