@@ -1,0 +1,4586 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{cancel}
+\usepackage{epsdice}
+\usepackage{adjustbox}
+\date{\vspace{-5ex}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Simple Statistical Thermodynamics for the Biochemist
+\end_layout
+
+\begin_layout Author
+Mike Harms
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The time-average structure [of a protein] observed by X-ray diffraction
+ is something of an abstraction, since it is not itself widely—or even sparsely—
+represented at any given time in the population of molecules.
+ I mean by this that if we were to take an instantaneous picture of the
+ molecular population showing us all the coordinates of the atoms for each
+ individual molecule we would have difficulty in finding one that will match
+ the average in 
+\emph on
+all 
+\emph default
+respects, although 
+\emph on
+most
+\emph default
+ of the molecules will have 
+\emph on
+most 
+\emph default
+of the features in common with it.
+ Indeed, the protein molecule model resulting from the X-ray crystallographic
+ observations is a 
+\begin_inset Quotes eld
+\end_inset
+
+platonic
+\begin_inset Quotes erd
+\end_inset
+
+ protein, well removed in its perfection from the kicking and screaming
+ 
+\begin_inset Quotes eld
+\end_inset
+
+stochastic
+\begin_inset Quotes erd
+\end_inset
+
+ molecule that we infer must exist in solution.
+ The great importance of the former lies in that it has permitted us to
+ see the origin of the 
+\begin_inset Quotes eld
+\end_inset
+
+bulk properties
+\begin_inset Quotes erd
+\end_inset
+
+ of the protein, which result from averaging over the whole population.
+ However, when it comes to the conversion of one structure into another,
+ and to render account of any dynamic function of the protein, consideration
+ of the 
+\begin_inset Quotes eld
+\end_inset
+
+stochastic
+\begin_inset Quotes erd
+\end_inset
+
+ species is indispensable.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gregorio Weber.
+ (1975).
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Energetics of ligand binding to proteins.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph on
+Advances in Protein Chemistry
+\emph default
+ 29:64-65
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Introduction
+\end_layout
+
+\begin_layout Standard
+Biomolecules are tiny.
+ This has two important implications for trying to understand how they work:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+The dominant force they experience is buffeting by water molecules.
+
+\series default
+ When thinking about molecular motion, we should picture a mosh pit rather
+ than a ballet.
+ A molecule moves first this way, then that, then the other way in random
+ fashion.
+ Whatever amazing function they accomplish has to overcome (or utilize!)
+ this inescapable randomness.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+We cannot see individual molecules, only statistical distributions of many
+ molecules.
+ 
+\series default
+If we do an experiment using a 
+\begin_inset Formula $1\ \mu L$
+\end_inset
+
+ drop of 
+\begin_inset Formula $10\ \mu M$
+\end_inset
+
+ protein, we average over a million million protein molecules.
+ Even single molecule techniques like cryo-EM microscopy or single-molecule
+ FRET only become meaningful after thousands upon thousands of observations.
+ 
+\end_layout
+
+\begin_layout Standard
+This leads to a fundamental fact: 
+\series bold
+Biochemistry is 
+\emph on
+stochastic
+\emph default
+.
+ It deals in probabilities, not individual molecules.
+ 
+\series default
+Whatever biochemical mechanisms we come up with must take this into account.
+ A mechanism is a non-starter if it requires molecules moving smoothly through
+ the cell, or ignores the incessant and overwhelming influence of water,
+ or assumes that two molecules 
+\begin_inset Quotes eld
+\end_inset
+
+know
+\begin_inset Quotes erd
+\end_inset
+
+ that they need to 
+\begin_inset Quotes eld
+\end_inset
+
+find
+\begin_inset Quotes erd
+\end_inset
+
+ one another.
+ 
+\end_layout
+
+\begin_layout Standard
+Fortunately, we have powerful theoretical, computational, and experimental
+ tools for understanding biomolecules from a statistical perspective.
+ Unfortunately, even foundational concepts in this discipline are difficult
+ to grasp.
+ Although students memorize words like 
+\emph on
+entropy
+\emph default
+ and 
+\emph on
+enthalpy
+\emph default
+ and 
+\emph on
+heat
+\emph default
+ in first-year general chemistry, the deep meaning of these words is often
+ elusive.
+ This is, in part, because understanding these terms requires mastering
+ ideas from statistical physics—a nontrival task for a physics student,
+ much less a molecular biologist.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One excellent introduction to statistical thermodynamics begins: 
+\begin_inset Quotes eld
+\end_inset
+
+We introduce the principles of statistical mechanics...in quantum-mechanical
+ language because the argument is not only more general but is actually
+ much simpler this way.
+\begin_inset Quotes erd
+\end_inset
+
+ Powerful? Yes.
+ Generally accessible? No.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But physicists aren't the only scientists who deal in the mechanisms of
+ biomolecules.
+ Biochemists, cell biologists, molecular biologists, and geneticists must
+ often evoke a molecular explanation to answer questions in their field.
+ How can such scientists develop statistical and molecular intuition for
+ these problems? 
+\end_layout
+
+\begin_layout Standard
+This is one attempt to answer this question.
+ We will use simple models to introduce key ideas in statistical thermodynamic,
+ attempting primarily to develop intuition.
+ Notably, we will remain imprecise and will generally not set out to prove
+ our statements mathematically.
+ What math we do use will decribe specific cases for things like dice, or
+ simple protein models—followed by a bald assertion of generality.
+ While rigor is important, it can also interfere with intelligibility, particula
+rly for the non-specialist.
+ Hopefully this will provide a framework for non-physicists to think about
+ biomolecules in statistical thermodynamic terms.
+ 
+\end_layout
+
+\begin_layout Standard
+We strongly encourage the interested reader to delve deeper into the underlying
+ math.
+ These ideas and equations are more than just reasonable, but are often
+ exact[xx].
+\end_layout
+
+\begin_layout Standard
+Further reading...
+\end_layout
+
+\begin_layout Itemize
+Nash
+\end_layout
+
+\begin_layout Itemize
+MoL
+\end_layout
+
+\begin_layout Itemize
+Widom
+\end_layout
+
+\begin_layout Itemize
+Dill
+\end_layout
+
+\begin_layout Section
+Physical Biochemical Relationships
+\end_layout
+
+\begin_layout Standard
+Before delving into our simple models, we'll summarize the thermodynamic
+ relationships that we will cover.
+ We are starting here for two reasons.
+ First, it looks imprressive: by the end of this document you will hopefully
+ have a handle on the ideas that these (potentially intimidating) equations
+ capture.
+ Second, this list provides a way to cross-reference the simple models we
+ will present against the actual equations and language used by practicing
+ physical biochemists.
+ So, we begin:
+\end_layout
+
+\begin_layout Enumerate
+The 
+\emph on
+probabilistic definition of entropy 
+\emph default
+(also known as the 
+\emph on
+Shannon Entropy
+\emph default
+):
+\begin_inset Formula 
+\[
+S=-R\sum_{i=1}^{W}p_{i}ln\left(p_{i}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $S$
+\end_inset
+
+ is entropy, 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is the probability of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ state, 
+\begin_inset Formula $W$
+\end_inset
+
+ is the number of states, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is the gas constant.
+ If all states have the same probability, this simplifies to: 
+\begin_inset Formula 
+\[
+S=Rln\left(W\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Counting statistics
+\emph default
+.
+ The probability of seeing 
+\begin_inset Formula $k$
+\end_inset
+
+ out of 
+\begin_inset Formula $n$
+\end_inset
+
+ molecules in a state with probability 
+\begin_inset Formula $p$
+\end_inset
+
+ is: 
+\begin_inset Formula 
+\[
+P=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
+\]
+
+\end_inset
+
+The 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ notation is pronounced 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ choose 
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ and means, 
+\begin_inset Quotes eld
+\end_inset
+
+How many combinations of 
+\begin_inset Formula $k$
+\end_inset
+
+ molecules are possible when drawing from 
+\begin_inset Formula $n$
+\end_inset
+
+ total?
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The 
+\emph on
+thermodynamic definition of entropy
+\emph default
+:
+\begin_inset Formula 
+\[
+S=\frac{q_{rev}}{T}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q_{rev}$
+\end_inset
+
+ is the reversible heat of a reaction and 
+\begin_inset Formula $T$
+\end_inset
+
+ is the absolute temperature.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The microscopic meaning of heat (
+\begin_inset Formula $q$
+\end_inset
+
+), enthalpy (
+\begin_inset Formula $H$
+\end_inset
+
+) and free energy (
+\begin_inset Formula $G$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+The spontaneity of a reaction is determined by the change in enthalpy (
+\begin_inset Formula $\Delta H$
+\end_inset
+
+) and entropy (
+\begin_inset Formula $\Delta S$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\Delta G=\Delta H-T\Delta S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inter-relationships between 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+, 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+, and reaction rates:
+\begin_inset Formula 
+\[
+\Delta G=-RTln\left(K_{eq}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+ is the equilibrium constant for the reaction.
+ This can also be written in terms of reaction rates (
+\begin_inset Formula $k_{forward}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{reverse}$
+\end_inset
+
+) and equilibrium concentrations (
+\begin_inset Formula $[products]$
+\end_inset
+
+, 
+\begin_inset Formula $[reactants]$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+K_{eq}=\frac{k_{forward}}{k_{reverse}}=\frac{[products]}{[reactants]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First-order rate laws of the form:
+\begin_inset Formula 
+\[
+\frac{d[product]}{dt}=k_{forward}[rectant]-k_{reverse}[product]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The relative probabilities of states using 
+\emph on
+Boltzmann weights
+\emph default
+.
+ 
+\begin_inset Formula 
+\[
+p_{A}=\left(\frac{e^{-E_{A}/RT}}{\sum_{i}e^{-E_{i}/RT}}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{A}$
+\end_inset
+
+ is the probability of state 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ is the energy of state 
+\begin_inset Formula $i.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+How thermodynamic measurements provide insight into molecular mechanism,
+ with a focus on heat capacity:
+\begin_inset Formula 
+\[
+C_{p}=\left(\frac{\partial H}{\partial T}\right)_{P}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H(T)=\Delta H(T_{ref})+\Delta C_{p}(T-T_{ref})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S(T)=\Delta S(T_{ref})+\Delta C_{p}ln\left(\frac{T}{T_{ref}}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $C_{p}$
+\end_inset
+
+ is the heat capacity and 
+\begin_inset Formula $T_{ref}$
+\end_inset
+
+ is a chosen reference temperature.
+ 
+\end_layout
+
+\begin_layout Standard
+With these preliminaries out of the way, let's begin.
+ 
+\end_layout
+
+\begin_layout Section
+The Dice Folding Reaction:
+\end_layout
+
+\begin_layout Standard
+We will start with something we'll call the Dice Folding Reaction (DFR).
+ Imagine a large number of six-sided dice.
+ These are all 
+\begin_inset Quotes eld
+\end_inset
+
+molecules
+\begin_inset Quotes erd
+\end_inset
+
+ that can each be in one of six different 
+\begin_inset Quotes eld
+\end_inset
+
+conformations
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{4}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{5}$
+\end_inset
+
+, or 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+).
+ We will consider the 
+\begin_inset Quotes eld
+\end_inset
+
+reaction
+\begin_inset Quotes erd
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\left\{ \epsdice{1},\epsdice{2},\epsdice{3},\epsdice{4},\epsdice{5}\right\} \rightleftarrows\epsdice{6}.\label{eq:reaction scheme}
+\end{equation}
+
+\end_inset
+
+This is analagous to a protein folding reaction in which there is an unfolded
+ state made up of many conformations and a folded state made up of one conformat
+ion.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+unfolded
+\begin_inset Quotes erd
+\end_inset
+
+ dice are those showing 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{4}$
+\end_inset
+
+, or 
+\begin_inset Formula $\epsdice{5}$
+\end_inset
+
+.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+folded
+\begin_inset Quotes erd
+\end_inset
+
+ dice are those showing 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definitions and assumptions:
+\end_layout
+
+\begin_layout Enumerate
+We have 
+\begin_inset Formula $N$
+\end_inset
+
+ dice, with 
+\begin_inset Formula $N_{\epsdice{6}}$
+\end_inset
+
+ of them showing 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The probability of rolling 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Time advances in discrete, uniform steps 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+, randomly select a fraction of the dice (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) and then roll them.
+ We will always select 
+\begin_inset Formula $\alpha\ll1.0$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In case the notation is unfamiliar, 
+\begin_inset Formula $\ll$
+\end_inset
+
+ means 
+\begin_inset Quotes eld
+\end_inset
+
+much less than.
+\begin_inset Quotes erd
+\end_inset
+
+ We use 
+\begin_inset Formula $\alpha\ll1$
+\end_inset
+
+ to avoid the complexity of rolling the same dice twice in one turn.
+ Imagine for a second that we selected 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ This would mean that at least one dice gets rolled more than once in a
+ turn.
+ This can be dealt with, but makes the dynamics more complicated.
+ If 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is small, the odds of hitting the same dice over 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ are small and can be neglected.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The dice are far enough apart from one another that they do not interact.
+ (In chemical terms, we have 
+\begin_inset Quotes eld
+\end_inset
+
+dilute
+\begin_inset Quotes erd
+\end_inset
+
+ dice.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename dice-folding-reaction.png
+	lyxscale 25
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dice dynamics
+\end_layout
+
+\begin_layout Standard
+For chemical reactions, we're often interested in questions like: 
+\emph on
+What direction is favored? 
+\emph default
+and 
+\emph on
+How fast will the reaction occur? 
+\emph default
+To begin exploring these questions for the DFR, we'll start by thinking
+ about the process by which dice showing 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ are gained and lost.
+ We can model how many 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ are gained by: 
+\begin_inset Formula 
+\begin{equation}
+\frac{N_{other\rightarrow\epsdice{6}}}{\Delta t}=\alpha\cdot\left(N-N_{\epsdice{6}}\right)\cdot p_{\epsdice{6}}.\label{eq:rsix}
+\end{equation}
+
+\end_inset
+
+Before you read further, pause for a moment.
+ Can you figure out what this equation does given the definitions of the
+ terms above? 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't worry, we'll wait.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Hopefully you came to something like this: The average number of new 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ after a step is determined by 1) how many dice we rolled that could become
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and 2) the probability each becomes 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ The number of dice that can become 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is determined by what fraction of all dice we rolled (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) and how many dice were 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{4}$
+\end_inset
+
+, or 
+\begin_inset Formula $\epsdice{5}$
+\end_inset
+
+ (
+\begin_inset Formula $N-N_{\epsdice{6}}$
+\end_inset
+
+).
+ The probability a each yields 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is simply 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+What about the number of dice that start as 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ but are lost after a step? We can model this by:
+\begin_inset Formula 
+\begin{equation}
+\text{\ensuremath{\frac{\ensuremath{N_{\epsdice{6}\rightarrow other}}}{\Delta t}}}=\alpha\cdot N_{\epsdice{6}}\cdot\left(1-p_{\epsdice{6}}\right)\label{eq:runsix}
+\end{equation}
+
+\end_inset
+
+This is directly analgous to the 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ gain case.
+ The number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ lost per step is determined by the fraction of the dice we rolled (
+\begin_inset Formula $\alpha$
+\end_inset
+
+), how many dice were 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (
+\begin_inset Formula $N_{\epsdice{6}}$
+\end_inset
+
+), and the probability that each roll ends up as different than 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (
+\begin_inset Formula $1-p_{\epsdice{6}}$
+\end_inset
+
+).
+ An example of the model in action is shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dice-in-action"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename rolling-scheme.png
+	lyxscale 25
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dice-in-action"
+
+\end_inset
+
+
+\series bold
+The DFR in action.
+ 
+\series default
+We start with 
+\begin_inset Formula $30$
+\end_inset
+
+ dice, 
+\begin_inset Formula $5$
+\end_inset
+
+ of which are 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ Our dice are fair (
+\begin_inset Formula $p_{\epsdice{6}}=1/6$
+\end_inset
+
+) and we flip 
+\begin_inset Formula $1/3$
+\end_inset
+
+ of the dice.
+ Because 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ are at a frequency of 
+\begin_inset Formula $5/30=1/6$
+\end_inset
+
+ already, the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ we expect to be gain matches the number we expect to lose.
+ We then take a time step, selecting 10 dice and rolling them.
+ In this example, one dice started 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+ and remained 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+ (gray); six dice started as something besides 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and became something besides 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (blue); one dice started 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and became 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ (orange), and two dice started as something besides 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and became 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (purple).
+ So, for this move, we gained two 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and lost one 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+A quick aside on how to cheat at dice
+\end_layout
+
+\begin_layout Standard
+Before moving on, let's pause to make sure we understand what 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+ means.
+ (This will come in handy later).
+ When we roll a dice, it can come up in one of six ways.
+ With this in mind, a very general way to write 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+ is:
+\begin_inset Formula 
+\begin{equation}
+p_{\epsdice{6}}=\frac{w_{6}}{\sum_{i=1}^{i\le6}w_{i}}\label{eq:psix}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ is the 
+\emph on
+weight 
+\emph default
+given to a face on the dice.
+ The sum on the bottom (
+\begin_inset Formula $\sum_{i=1}^{i\le6}w_{i}$
+\end_inset
+
+) is the 
+\emph on
+normalization factor
+\emph default
+.
+ It describes the total the likelihood of a roll giving
+\emph on
+ 
+\emph default
+all faces, allowing us to determine the relative probability of each specific
+ face.
+ 
+\end_layout
+
+\begin_layout Standard
+If a dice is fair, all faces have the same weight:
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}=\frac{1}{1+1+1+1+1+1}=\frac{1}{6}\approx0.167
+\]
+
+\end_inset
+
+Note we could assign any weight we wanted, as long as it was the same for
+ all faces:
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}=\frac{0.001}{0.001+0.001+0.001+0.001+0.001+0.001}=\frac{0.001}{0.006}\approx0.167
+\]
+
+\end_inset
+
+If we want to bias our results to get more 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+, we could put more weight on that face.
+ What if put a weight of 10 on the 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ face, while setting the weight on every other face to 1? 
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}=\frac{10}{1+1+1+1+1+10}=\frac{10}{15}\approx0.667
+\]
+
+\end_inset
+
+We could even imagine an exotic dice where every face had a different weight.
+ For example, imagine a dice weighted such that every face had the same
+ weight as its numerical value.
+ In that case: 
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}=\frac{6}{1+2+3+4+5+6}=\frac{6}{21}\approx0.286
+\]
+
+\end_inset
+
+Finally, if we want to know the probability of a 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ 
+\emph on
+or 
+\emph default
+a 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+, we could write:
+\begin_inset Formula 
+\[
+p_{\epsdice{1}}+p_{\epsdice{6}}=\frac{w_{1}}{\sum_{i=1}^{i\le6}w_{i}}+\frac{w_{6}}{\sum_{i=1}^{i\le6}w_{i}}=\frac{w_{1}+w_{6}}{\sum_{i=1}^{i\le6}w_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Key ideas: 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Weights 
+\emph default
+can be any (positive) number for each face.
+ 
+\end_layout
+
+\begin_layout Enumerate
+To convert weight to probaility, we divide by sum of weights on all sides.
+\end_layout
+
+\begin_layout Enumerate
+To get the probability of face 
+\begin_inset Formula $a$
+\end_inset
+
+ or face 
+\series bold
+
+\begin_inset Formula $b$
+\end_inset
+
+
+\series default
+, calculate 
+\begin_inset Formula $w_{a}+w_{b}$
+\end_inset
+
+ over the sum of the weights on all sides.
+ 
+\end_layout
+
+\begin_layout Subsection
+Simulated reactions
+\end_layout
+
+\begin_layout Standard
+Okay, now we have enough information about the DFR to do some simulations.
+ We can then use these to develop a few ideas that apply to any chemical
+ reaction.
+ To do the simulations, we will create collections of computational dice
+ and then randomly roll them according to the equations for 
+\begin_inset Formula $N_{other\rightarrow\epsdice{6}}/\Delta t$
+\end_inset
+
+, 
+\begin_inset Formula $\ensuremath{\ensuremath{N_{\epsdice{6}\rightarrow other}}/\Delta t}$
+\end_inset
+
+, and 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+ (Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rsix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:runsix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:psix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DFR-simulations-converge"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ show the outcomes of several such simulations.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename num-six-v-steps.png
+	lyxscale 25
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DFR-simulations-converge"
+
+\end_inset
+
+DFR simulations converge to equilibrium.
+ 
+\series default
+Plots show the number of time steps on the x-axis, the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ in the population on the y-axis.
+ Points correspond to simulations starting at all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (orange), no 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (green), or a random assortment of 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{4}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsdice{5}$
+\end_inset
+
+, and 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (blue).
+ The first panel shows simulations with 
+\begin_inset Formula $20$
+\end_inset
+
+ dice, the second with 
+\begin_inset Formula $200$
+\end_inset
+
+ dice, the third with 
+\begin_inset Formula $2,000$
+\end_inset
+
+ dice, and the fourth with 
+\begin_inset Formula $2,000$
+\end_inset
+
+ dice that are weighted such that 
+\begin_inset Formula $p_{\epsdice{6}}=1/2$
+\end_inset
+
+.
+ The solid lines show the rate law we'll derive later.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can make a couple of observations from these simulations:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reactions become more predictable as the number of molecules increases.
+
+\series default
+ As the number of dice increase, the curves become smoother.
+ Hopefully, this is intuitive.
+ Because dice rolling is a random process, it takes a large number of dice
+ to average out all of the fluctuations.
+ When we have only 
+\begin_inset Formula $20$
+\end_inset
+
+ dice, the fraction of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ fluctuates up and down because even one low-probability roll has a huge
+ effect on the outcome.
+ When we have 
+\begin_inset Formula $2,000$
+\end_inset
+
+ dice, the fraction of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is robust to a few low probability events, simply because there are so
+ many dice that we average over.
+ In chemical reactions, we usually have millions and millions of molecules,
+ making the reaction dynamics quite predictably.
+ (Intriguingly, this is 
+\emph on
+not 
+\emph default
+always true in a cell, were the number of reactants can sometimes involve
+ only tens of molecules.
+ A cell might have only ten copies of a transcription factor.
+ This leads to 
+\emph on
+cellular noise
+\emph default
+—a fascinating topic we will not cover, but that is worth reading about).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reactions converge to equilibrium whatever their starting conditions.
+
+\series default
+ No matter how many 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ we with start with, the simulations converge on 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+.
+ If we pause for a moment, this is fairly remarkable.
+ We have a 
+\begin_inset Quotes eld
+\end_inset
+
+reaction
+\begin_inset Quotes erd
+\end_inset
+
+ that has a direction, without a single interaction or bond.
+ It even obeys Le Chatelier's principle: if we add more reactants the reaction
+ favors the product (green curve).
+ If we make the reaction all product, some fraction of the molecules are
+ eventually converted back to reactants (orange curve).
+ Why does the reaction converge? 
+\end_layout
+
+\begin_layout Standard
+Observation #2 is particularly important.
+ We will present two (complementary) views that describe why the reaction
+ converges: kinetics and thermodynamics.
+ 
+\end_layout
+
+\begin_layout Section
+A kinetic explanation for convergence to equilibrium:
+\end_layout
+
+\begin_layout Standard
+One way to think about why this reaction converges is to consider the rates
+ of the forward and reverse reactions (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:roll-convergence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Imagine we start with a collection of dice that are all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ At each step, we pick up a single dice and roll it.
+ For the first step, we can only pick up 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+; when we roll it, there is a 
+\begin_inset Formula $5/6\approx0.83$
+\end_inset
+
+ chance we end up with something besides 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ This means that the most probable outcome of that first roll is to lower
+ the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ For the first few rolls, we will still have more 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ than other numbers, so we will continue to favor rolls that lower the number
+ of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ As we continue to roll dice, however, the number of non-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ dice will increase, eventually allowing transitions from non-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ back to 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ Finally, after enough time, the rate of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ loss and 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ gain offset offset, leading to the equilibrium value of 
+\begin_inset Formula $N_{\epsdice{6}}$
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename roll-outcomes-entropy.png
+	lyxscale 25
+	scale 70
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:roll-convergence"
+
+\end_inset
+
+
+\series bold
+When there are excess sixes, rolls favor loss of sixes.
+ 
+\series default
+Plot shows three time steps of the DFR.
+ The sets of dice on the left show the current state of the dice collection.
+ The tree diagrams to the right show the relative probability for all outcomes
+ of a roll of one dice given the configuration of the dice to the left.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Put another way, at the beginning of the reaction, the high 
+\begin_inset Quotes eld
+\end_inset
+
+concentration
+\begin_inset Quotes erd
+\end_inset
+
+ of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ means we will favor reactions where 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is the reactant and where other states of the dice are the product.
+ This bias away from 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ decays as the concentration of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ goes down and the the concentrations of other states of the dice go up.
+\end_layout
+
+\begin_layout Subsection
+Derive a rate law
+\end_layout
+
+\begin_layout Standard
+We can make this analysis more rigorous by deriving a rate law describing
+ this reaction.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Calculus (particularly differential equations) is intimidating for some
+ students.
+ Even if you can't do the steps below yourself, hopefully you can understand
+ the steps we take in this derivation.
+ 
+\end_layout
+
+\end_inset
+
+ In particular, we will want to ask what happens as the system approaches
+ equilibrium.
+ This will help us answer the question posed above: why does the reaction
+ converge to 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Standard
+The change in the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is given by how many appear at each time step, less the number that are
+ lost.
+ 
+\begin_inset Formula 
+\[
+\frac{dN_{six}}{dt}=\frac{N_{other\rightarrow\epsdice{6}}}{dt}-\text{\ensuremath{\frac{\ensuremath{N_{\epsdice{6}\rightarrow other}}}{dt}}}
+\]
+
+\end_inset
+
+Substitute equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rsix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:runsix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ above and simplify:
+\begin_inset Formula 
+\[
+\frac{dN_{\epsdice{6}}}{dt}=\alpha\cdot\left(N-N_{\epsdice{6}}\right)\cdot p_{\epsdice{6}}-\alpha\cdot N_{\epsdice{6}}\cdot\left(1-p_{\epsdice{6}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dN_{\epsdice{6}}}{dt}=\alpha\left(p_{\epsdice{6}}N-p_{\epsdice{6}}N_{\epsdice{6}}-N_{\epsdice{6}}+p_{\epsdice{6}}N_{\epsdice{6}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dN_{\epsdice{6}}}{dt}=\alpha\left(p_{\epsdice{6}}N-N_{\epsdice{6}}\right)
+\]
+
+\end_inset
+
+Now solve the differential equation:
+\begin_inset Formula 
+\[
+dN_{\epsdice{6}}=\alpha\left(p_{\epsdice{6}}N-N_{\epsdice{6}}\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{p_{\epsdice{6}}N-N_{\epsdice{6}}}dN_{\epsdice{6}}=\alpha dt
+\]
+
+\end_inset
+
+Integrate both sides:
+\begin_inset Formula 
+\[
+\int\frac{1}{p_{\epsdice{6}}N-N_{\epsdice{6}}}dN_{\epsdice{6}}=\int\alpha dt
+\]
+
+\end_inset
+
+Yielding:
+\begin_inset Formula 
+\[
+-ln\left(p_{\epsdice{6}}N-N_{\epsdice{6}}\right)=\alpha t+C
+\]
+
+\end_inset
+
+To figure out 
+\begin_inset Formula $C$
+\end_inset
+
+, plug in values we know.
+ In this case, we know that at 
+\begin_inset Formula $t=0$
+\end_inset
+
+, we have some initial number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (
+\begin_inset Formula $N_{\epsdice{6},0}$
+\end_inset
+
+).
+ This is known as a boundary condition.
+ 
+\begin_inset Formula 
+\[
+-ln\left(p_{\epsdice{6}}N-N_{\epsdice{6},0}\right)=\text{\ensuremath{\alpha\cdot0+}}C
+\]
+
+\end_inset
+
+Once we know 
+\begin_inset Formula $C$
+\end_inset
+
+, do some algebra to solve for 
+\begin_inset Formula $N_{\epsdice{6}}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+-ln\left(p_{\epsdice{6}}N-N_{\epsdice{6}}\right)=\alpha t-ln\left(p_{\epsdice{6}}N-N_{\epsdice{6},0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(p_{\epsdice{6}}N-N_{\epsdice{6}}\right)+ln\left(p_{\epsdice{6}}N-N_{\epsdice{6},0}\right)=\alpha t
+\]
+
+\end_inset
+
+Use the rule 
+\begin_inset Formula $log(a)-log(b)=log(a/b)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+-ln\left(\frac{p_{\epsdice{6}}N-N_{\epsdice{6}}}{p_{\epsdice{6}}N-N_{\epsdice{6},0}}\right)=\alpha t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{p_{\epsdice{6}ix}N-N_{\epsdice{6}}}{p_{\epsdice{6}}N-N_{\epsdice{6},0}}=e^{-\alpha t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}N-N_{\epsdice{6}}=\left(p_{\epsdice{6}}N-N_{\epsdice{6},0}\right)e^{-\alpha t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N-\left(p_{\epsdice{6}}N-N_{\epsdice{6},0}\right)e^{-\alpha t}
+\]
+
+\end_inset
+
+Simplify:
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N-p_{\epsdice{6}}Ne^{-\alpha t}+N_{\epsdice{6},0}e^{-\alpha t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N_{\epsdice{6}}=p_{\epsdice{6}}N\left(1-e^{-\alpha t}\right)+N_{\epsdice{6},0}e^{-\alpha t}\label{eq:rate law}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This rate law is shown as the solid lines in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DFR-simulations-converge"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Happily, the simulated results and the analytical result overlay completely.
+ This suggests that we did not make a mistake in either our computer simulation
+ or derivation above.
+ (Or at least that we made the same mistake in both!).
+ 
+\end_layout
+
+\begin_layout Standard
+Now that we have a rate law, what can we do with it? For one, it is often
+ helpful to consider the extremes of a function when trying to understand
+ what it means.
+ Let's think about 
+\begin_inset Formula $t=0$
+\end_inset
+
+.
+ Plugging in, this yields:
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N\left(1-e^{-0}\right)+N_{\epsdice{6},0}e^{-0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N\left(1-1\right)+N_{\epsdice{6},0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=N_{\epsdice{6},0}
+\]
+
+\end_inset
+
+This makes sense.
+ It says that 
+\begin_inset Formula $N_{\epsdice{6}}$
+\end_inset
+
+ will be 
+\begin_inset Formula $N_{\epsdice{6},0}$
+\end_inset
+
+ at the beginning.
+ What about the other extreme, 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+? 
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N\left(1-e^{-\infty}\right)+N_{\epsdice{6},0}e^{-\infty}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{\epsdice{6}}=p_{\epsdice{6}}N
+\]
+
+\end_inset
+
+After infinite time, we've the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is given by the probability of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ times the total number of dice.
+ 
+\end_layout
+
+\begin_layout Subsection
+Link to biochemistry
+\end_layout
+
+\begin_layout Standard
+In a chemistry text book, you'll find that a first-order rate constant looks
+ something like this:
+\begin_inset Formula 
+\[
+\frac{d[product]}{dt}=k\cdot[reactant]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is a 
+\emph on
+rate constant
+\emph default
+, 
+\begin_inset Formula $[product]$
+\end_inset
+
+ is the concentration of product and 
+\begin_inset Formula $[reactant]$
+\end_inset
+
+ is the concentration of reactant.
+ Can we understand where these come from using our dice? It turns out, we
+ already wrote discrete versions of this:
+\begin_inset Formula 
+\[
+\frac{N_{other\rightarrow\epsdice{6}}}{\Delta t}=\alpha\cdot\left(N-N_{\epsdice{6}}\right)\cdot p_{\epsdice{6}}.
+\]
+
+\end_inset
+
+In our discrete system with unimolecular reactions, 
+\begin_inset Formula $N-N_{\epsdice{6}}$
+\end_inset
+
+ is operating like a concentration (
+\begin_inset Quotes eld
+\end_inset
+
+how many non-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ are available to react?
+\begin_inset Quotes erd
+\end_inset
+
+).
+ This means that the rate constant for the reaction is:
+\begin_inset Formula 
+\[
+k_{other\rightarrow\epsdice{6}}=\alpha\cdot p_{\epsdice{6}}.
+\]
+
+\end_inset
+
+Our rate constant has two basic chunks: how many tries you make per turn
+ (remember, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the fraction of the dice we pick up and roll on a turn) and the probability
+ a reaction occurs per try (
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+).
+ We will revisit it when we discuss the 
+\emph on
+Arrhenius equation
+\emph default
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+To whet your appetite, you may have seen:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+k=A\cdot e^{-E^{\ddagger}/RT}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ is a prefactor that controls how often a reaction samples (
+\begin_inset Quotes eld
+\end_inset
+
+tries to cross
+\begin_inset Quotes erd
+\end_inset
+
+) an energy barrier.
+ This is analogous to 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ The other term, 
+\begin_inset Formula $exp(-E^{\ddagger}/RT)$
+\end_inset
+
+, is the probability the reaction crosses a barrier of height 
+\begin_inset Formula $E^{\ddagger}$
+\end_inset
+
+ at temperature 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ This is analogous to 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+.
+ This is a rough, as we are not discussing an energy barrier for our dice.
+ But the basic formulation of 
+\begin_inset Quotes eld
+\end_inset
+
+how often do you try?
+\begin_inset Quotes erd
+\end_inset
+
+ times 
+\begin_inset Quotes eld
+\end_inset
+
+how probable you are at succeeding?
+\begin_inset Quotes erd
+\end_inset
+
+ occurs all over in chemical kinetics.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+How about equilibrium constants? Can we understand what they mean in terms
+ of the dice reaction? You have probably seen that, for a two-state reaction,
+ you can write:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{eq}=\frac{k_{forward}}{k_{reverse}}
+\]
+
+\end_inset
+
+We already have 
+\begin_inset Formula $k_{forward}$
+\end_inset
+
+ from above (
+\begin_inset Formula $k_{other\rightarrow\epsdice{6}}$
+\end_inset
+
+).
+ By analogy:
+\begin_inset Formula 
+\[
+k_{reverse}=k_{\epsdice{6}\rightarrow other}=\alpha\cdot\left(1-p_{\epsdice{6}}\right).
+\]
+
+\end_inset
+
+If we substitute this into the expression for 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+ above, we find that 
+\begin_inset Formula 
+\[
+\frac{k_{forward}}{k_{reverse}}=\frac{\cancel{\alpha}p_{\epsdice{6}}}{\cancel{\alpha}(1-p_{\epsdice{6}})}=\frac{p_{\epsdice{6}}}{1-p_{\epsdice{6}}}.
+\]
+
+\end_inset
+
+This gets us all the way back to the observation above.
+ Once we reach equilibrium, the probability of getting a ...
+ 
+\end_layout
+
+\begin_layout Standard
+We can also write: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{eq}=\frac{[product]}{[reactants]}
+\]
+
+\end_inset
+
+Where do these relationships come from? What do they mean?
+\end_layout
+
+\begin_layout Standard
+First, let's convince ourselves that
+\begin_inset Formula 
+\[
+K_{eq}=\frac{k_{forward}}{k_{reverse}}=\frac{[products]}{[reactants]}
+\]
+
+\end_inset
+
+for our dice reaction.
+ 
+\begin_inset Formula 
+\[
+\frac{k_{forward}}{k_{reverse}}=\frac{k_{six}}{k_{unsix}}=\frac{\cancel{\alpha}p_{six}}{\cancel{\alpha}(1-p_{six})}=\frac{p_{six}}{1-p_{six}}
+\]
+
+\end_inset
+
+Using our rate law, we can determine 
+\begin_inset Formula $N_{six}$
+\end_inset
+
+ at equilibrium.
+ It is just 
+\begin_inset Formula $p_{six}N$
+\end_inset
+
+.
+ likewise, the reactants at equilibrium are given by 
+\begin_inset Formula $N-N_{six}=N-p_{six}N=N(1-p_{six})$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+K_{eq}=\frac{p_{six}\cancel{N}}{\cancel{N}-p_{six}\cancel{N}}=\frac{p_{six}}{1-p_{six}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+K_{eq}=\frac{p_{six}}{1-p_{six}}\label{eq:keq_psix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Okay, now that we have a more sophisticated description of 
+\begin_inset Formula $p_{six}$
+\end_inset
+
+, let's stick it into our equation for 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:keq_psix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{eq}=\frac{p_{six}}{1-p_{six}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}/Q}{1-w_{6}/Q}.
+\]
+
+\end_inset
+
+To make this a little bit less unweildy, we can recognize that 
+\begin_inset Formula $Q/Q=1$
+\end_inset
+
+, so:
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}/\cancel{Q}}{Q/\cancel{Q}-w_{6}/\cancel{Q}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}}{Q-w_{6}}
+\]
+
+\end_inset
+
+For clarity, let's expand 
+\begin_inset Formula $Q$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}}{\left(\sum_{i\in6}w_{i}\right)-w_{6}}=\frac{w_{6}}{w_{1}+w_{2}+w_{3}+w_{4}+w_{5}+\cancel{w_{6}}-\cancel{w_{6}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}}{w_{1}+w_{2}+w_{3}+w_{4}+w_{5}}
+\]
+
+\end_inset
+
+Hopefully you can see from above that this is actually just another way
+ to write:
+\begin_inset Formula 
+\[
+K_{eq}=\frac{[products]}{[reactants]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DFR Thermodynamics
+\end_layout
+
+\begin_layout Standard
+A second way to understand the directionality of these reactions is by thinking
+ about the relative probability of different arrangements of dice.
+ 
+\end_layout
+
+\begin_layout Standard
+We'll start with a simple, preliminary argument.
+ Imagine we start with a collection of random dice and start rolling.
+ What's the probability we end up with all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ at some point? Hopefully it is intuitive that there are many more ways
+ to be something besides all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ than to be all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ If we have two dice, there are 
+\begin_inset Formula $6$
+\end_inset
+
+ possibilities for the first dice, and 
+\begin_inset Formula $6$
+\end_inset
+
+ possibilities for the second dice.
+ This means we have 
+\begin_inset Formula $6\times6=36$
+\end_inset
+
+ different ways to arrange the dice.
+ Since there is only one way to get 
+\begin_inset Formula $\epsdice{6}\epsdice{6}$
+\end_inset
+
+, the probability of seeing 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is 
+\begin_inset Formula $1/36\approx0.03$
+\end_inset
+
+.
+ The scaling relationship for the number of possible arrangements of the
+ dice goes by 
+\begin_inset Formula $6^{N_{dice}}$
+\end_inset
+
+.
+ This means that even for four dice, there is only a 
+\begin_inset Formula $1/1,296$
+\end_inset
+
+ chance of getting four 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ by chance.
+ By the time we hit 
+\begin_inset Formula $100$
+\end_inset
+
+ dice, the odds of getting 
+\begin_inset Formula $100\ \epsdice{6}$
+\end_inset
+
+ are absurdly low: 
+\begin_inset Formula $1.5\times10^{-78}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{dice}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+possible states
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+number possible states
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{all\ \epsdice{6}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{3}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{4}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{5}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{1}=6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/6\approx0.1667$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsdice{1}\epsdice{1}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{1}\epsdice{2}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{1}\epsdice{3}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{1}\epsdice{4}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{1}\epsdice{5}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{1}\epsdice{6}$
+\end_inset
+
+,
+\begin_inset Formula $\epsdice{2}\epsdice{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $\epsdice{6}\epsdice{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{2}=36$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/36\approx0.0278$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsdice{1}\epsdice{1}\epsdice{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $\epsdice{6}\epsdice{6}\epsdice{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{3}=216$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/216\approx0.0046$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsdice{1}\epsdice{1}\epsdice{1}\epsdice{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $\epsdice{6}\epsdice{6}\epsdice{6}\epsdice{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{4}=1296$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/1296\approx0.0008$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+etc.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{10}\approx6.0\times10^{7}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx1.7\times10^{-8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+etc.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{100}\approx6.5\times10^{77}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx1.5\times10^{-78}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This, at its core, is the meaning of 
+\emph on
+entropy
+\emph default
+.
+ Systems end up in populating states with the most configurations associated
+ with it.
+ Since there are vastly more ways to end up as something besides all-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ than all-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+—just as there are vastly more ways to have a losing lottery number than
+ a winning lottery number—it is essentially impossible end up with an all-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ by randomly rolling the dice.
+ 
+\end_layout
+
+\begin_layout Subsection*
+SStuff
+\end_layout
+
+\begin_layout Standard
+The above argument lets us understand why we do not see something extreme
+ like all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+, but not why we end up at the equilibrium value of 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+.
+ To do this, we need a general expression for calculating the probability
+ of combinations of rolls.
+ To get that, we're going to need to recall two basic rules from probability:
+\end_layout
+
+\begin_layout Itemize
+ANDs MULTIPLY.
+ If you have two independent events—like rolling 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ on one dice AND rolling 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ on a second dice—the probability of both events occuring is the 
+\emph on
+product
+\emph default
+ of the probabilities of each independent event (
+\begin_inset Formula $p_{\epsdice{6}}\times p_{\epsdice{1}}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+ORs ADD.
+ If you have two mutually exclusive events—like rolling a 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ OR rolling a 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ on the same dice—the probability of seeing one or the other is the 
+\emph on
+sum 
+\emph default
+of the two probabilities (
+\begin_inset Formula $p_{\epsdice{6}}+p_{\epsdice{1}}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Let's develop our formula by asking what the probability of seeing exactly
+ one 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ when rolling three dice is.
+ We could roll 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ first and then roll something besides 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ twice.
+ Since the dice are independent, the probability of this series of events
+ is:
+\begin_inset Formula 
+\[
+p_{\epsdice{6}}\times(1-p_{\epsdice{6}})\times(1-p_{\epsdice{6}}).
+\]
+
+\end_inset
+
+We could also roll something beside 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ first, roll 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ second, and then roll something beside 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ third:
+\begin_inset Formula 
+\[
+(1-p_{\epsdice{6}})\times p_{\epsdice{6}}\times(1-p_{\epsdice{6}}).
+\]
+
+\end_inset
+
+Or, finally, we could roll something beside 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ twice and then roll 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ third:
+\begin_inset Formula 
+\[
+(1-p_{\epsdice{6}})\times(1-p_{\epsdice{6}})\times p_{\epsdice{6}}.
+\]
+
+\end_inset
+
+These series of events are mutually exclusive: if we only saw one 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ in three rolls, we either saw the 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ first, second, or third.
+ The total probability of seeing one 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is thus the sum of the probabilities of these exclusive series of events:
+\begin_inset Formula 
+\[
+P_{one\times\epsdice{6}}=p_{\epsdice{6}}\times(1-p_{\epsdice{6}})\times(1-p_{\epsdice{6}})+(1-p_{\epsdice{6}})\times p_{\epsdice{6}}\times(1-p_{\epsdice{6}})+(1-p_{\epsdice{6}})\times(1-p_{\epsdice{6}})\times p_{\epsdice{6}}.
+\]
+
+\end_inset
+
+We can factor and rearrange to yield:
+\begin_inset Formula 
+\[
+P_{one\times\epsdice{6}}=3\times p_{\epsdice{6}}^{1}\left(1-p_{\epsdice{6}}\right)^{2}
+\]
+
+\end_inset
+
+The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $3$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ in this equation is called the 
+\emph on
+multiplicity
+\emph default
+.
+ It describes how many different ways we could achieve one 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+—in this case, three.
+ We raise 
+\begin_inset Formula $p_{\epsdice{6}}$
+\end_inset
+
+ to the 
+\begin_inset Formula $1^{st}$
+\end_inset
+
+ power because we see it once, and 
+\begin_inset Formula $(1-p_{\epsdice{6}})$
+\end_inset
+
+ to the 
+\begin_inset Formula $2^{nd}$
+\end_inset
+
+ power because we see it twice.
+ 
+\end_layout
+
+\begin_layout Standard
+This calculation generalizes to: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P(n,k)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}\label{eq:binomial}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ we observe out of 
+\begin_inset Formula $n$
+\end_inset
+
+ total dice that each have a probability 
+\begin_inset Formula $p$
+\end_inset
+
+ of coming up 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ is the 
+\emph on
+multiplicity 
+\emph default
+for a given roll (see box).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "10pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+The notation 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ (said 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+-choose-
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+) gives us the number possible ways that we can get 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ from 
+\begin_inset Formula $n$
+\end_inset
+
+ total dice.
+ This is illustrated below for increasing 
+\begin_inset Formula $n$
+\end_inset
+
+, where open squares are not 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and filled squares are 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename n-choose-k.png
+	lyxscale 25
+	scale 70
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+FIX GRAPHIC
+\begin_inset Newline newline
+\end_inset
+
+The formula for 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ is:
+\begin_inset Formula 
+\[
+\binom{n}{k}=\frac{n!}{k!(n-k)!}.
+\]
+
+\end_inset
+
+As you might imagine, these numbers get very large as 
+\begin_inset Formula $n$
+\end_inset
+
+ increases, so it is often easier to estimate numerically rather than using
+ this formula.
+ The 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ function is '
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+scipy.special.comb
+\end_layout
+
+\end_inset
+
+' in python, '
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+choose
+\end_layout
+
+\end_inset
+
+' in R, and '
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+COMBIN
+\end_layout
+
+\end_inset
+
+' in Excel.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Believe it or not, Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:binomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is powerful and extremely important.
+ 
+\series bold
+If you can understand Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:multiplicity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, you are on your way to understanding a ton of physical biochemistry
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename adding-more-N.png
+	lyxscale 25
+	width 20cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:multiplicity"
+
+\end_inset
+
+asdfaa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These panels show increasing total numbers of dice: 
+\begin_inset Formula $10$
+\end_inset
+
+, 
+\begin_inset Formula $30$
+\end_inset
+
+, 
+\begin_inset Formula $100$
+\end_inset
+
+, and 
+\begin_inset Formula $300$
+\end_inset
+
+.
+ The rows show 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ (top), 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ (middle), and 
+\begin_inset Formula $P(n,k)$
+\end_inset
+
+ (bottom).
+ Informally, the top row is 
+\begin_inset Formula $S$
+\end_inset
+
+, the middle row is 
+\begin_inset Formula $H$
+\end_inset
+
+, and the bottom row is 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Let's unpack this.
+ 
+\end_layout
+
+\begin_layout Subsection
+Entropy
+\end_layout
+
+\begin_layout Standard
+We will now develop an explicit understanding of the microscopic interpretation
+ of entropy (
+\begin_inset Formula $S$
+\end_inset
+
+).
+ In 1948, Claude Shannon introduced a general, probabilistic description
+ of entropy.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
+\end_layout
+
+\end_inset
+
+ It can be interpreted in several ways, but the sense in which we will use
+ it will be as a 
+\begin_inset Quotes eld
+\end_inset
+
+measure of the disorder in a system.
+\begin_inset Quotes erd
+\end_inset
+
+ His equation was:
+\begin_inset Formula 
+\[
+S_{shannon}=-\sum_{i}^{W}p_{i}log_{2}\left(p_{i}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is the probability of state 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $W$
+\end_inset
+
+ is the number of states, and 
+\begin_inset Formula $K$
+\end_inset
+
+ is a constant.
+ 
+\end_layout
+
+\begin_layout Standard
+In this form, 
+\begin_inset Formula $S$
+\end_inset
+
+ has units of 
+\emph on
+bits
+\emph default
+.
+ These are the same bits that are used in computer science to measure informatio
+n content.
+ For example, when you see an Internet connection advertised at 1 gigabit/per
+ second, it indicates how quickly information can get from the Internet
+ to your computer.
+ One way to think about 
+\begin_inset Quotes eld
+\end_inset
+
+disorder
+\begin_inset Quotes erd
+\end_inset
+
+ is therefore 
+\begin_inset Quotes eld
+\end_inset
+
+how many bits of information are required to describe the state?
+\begin_inset Quotes erd
+\end_inset
+
+ The more disordered a state, the more bits are required.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's explore this with some examples.
+ Imagine I tell you that I have a fair dice that I am going to roll once.
+ There are 
+\begin_inset Formula $6$
+\end_inset
+
+ways it could come up, each with 
+\begin_inset Formula $p=1/6$
+\end_inset
+
+.
+ According to Shannon, it would take 
+\begin_inset Formula $2.58\ bits$
+\end_inset
+
+ to communicate the possible outcomes of the roll:
+\begin_inset Formula 
+\[
+S_{fair}=-6\times\frac{1}{6}\times log_{2}\left(\frac{1}{6}\right)=2.58\ bits
+\]
+
+\end_inset
+
+I know something (the roll has can have six possible outcomes, with equal
+ probability for each) but the specific face that will show is uncertain.
+ I have incomplete information about the state and, thus, non-zero entropy.
+ 
+\end_layout
+
+\begin_layout Standard
+Now imagine that I tell you I have loaded the dice such that it will always
+ come up 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $p=1.0$
+\end_inset
+
+ for 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and 
+\begin_inset Formula $p=0.0$
+\end_inset
+
+ for other all other faces.
+ According to Shannon, I now need 
+\begin_inset Formula $0\ bits$
+\end_inset
+
+ to communicate the possible outcomes of the roll: 
+\begin_inset Formula 
+\[
+S_{cheating}=-1.0\times log_{2}\left(1.0\right)=0.00\ bits
+\]
+
+\end_inset
+
+Because 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is the only possible outcome, there is no disorder: I do not need any more
+ information to say 
+\begin_inset Quotes eld
+\end_inset
+
+it's going to come up 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ We can also go the other way: imagine I have a ten-sided, fair dice.
+ In this case: 
+\begin_inset Formula 
+\[
+S_{10}=-10\times\frac{1}{10}\times log_{2}\left(\frac{1}{10}\right)=3.32\ bits
+\]
+
+\end_inset
+
+Because there are more possibilities for a ten-sided dice than a six-sided
+ dice, we now need 
+\emph on
+more 
+\emph default
+information to describe the system (
+\begin_inset Formula $3.32\ bits$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $2.58\ bits$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, to link Shannon's 
+\emph on
+probabilistic entropy
+\emph default
+ to the 
+\emph on
+thermodynamic entropy
+\emph default
+, physical biochemists use the equation:
+\begin_inset Formula 
+\[
+S=-R\sum_{i}^{W}p_{i}ln\left(p_{i}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $R$
+\end_inset
+
+ is the gas constant.
+ All this does is change the units of entropy from 
+\begin_inset Formula $bits$
+\end_inset
+
+ to 
+\begin_inset Formula $kJ\cdot mol^{-1}\cdot K^{-1}$
+\end_inset
+
+.
+ We can even convert between them: 
+\begin_inset Formula $kJ\cdot mol^{-1}\cdot K^{-1}=0.012\ bits$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "5pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ measures the amount of disorder in a system (or, put another way, how much
+ information we need to describe the system).
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ ranges from 
+\begin_inset Formula $0$
+\end_inset
+
+(no disorder) to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ (infinite disorder).
+ The larger 
+\begin_inset Formula $S$
+\end_inset
+
+ is, the higher the disorder.
+\end_layout
+
+\begin_layout Enumerate
+For physical biochemists, entropy is expressed in 
+\begin_inset Formula $kJ\cdot mol^{-1}\cdot K^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Free energy
+\end_layout
+
+\begin_layout Standard
+The DFR has helped us think about entropy and has shown a reaction doesn't
+ need to have things like bonds to have a defined direction and obey Le
+ Chatlier's principle.
+\end_layout
+
+\begin_layout Standard
+But what if we allow something like a bond to form? How does this alter
+ the situation? To do this, we are going to use a toy macromolecule that
+ is only slightly more complicated than a dice.
+ 
+\end_layout
+
+\begin_layout Standard
+This is known as a 
+\emph on
+lattice model.
+ 
+\emph default
+It was invented by Ken Dill and colleagues to think about complicated processes
+ like protein folding.
+ We're going to think about the simplest possible lattice model: a 2D molecule
+ that is four monomers long.
+ It follows a few simple rules:
+\end_layout
+
+\begin_layout Enumerate
+Monomers have single bonds between them, forming a linear chain.
+ These bonds cannot be broken.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Monomers can only be placed on the vertices of a grid.
+ The chain cannot cross itself.
+\end_layout
+
+\begin_layout Enumerate
+Monomers on adjacent grid squares that do not have a bond between them interact
+ with energy 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+blash
+\end_layout
+
+\begin_layout Standard
+For the next step, we are going to make our dice super high tech.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Each face of a dice has a charge (
+\begin_inset Formula $g_{i}$
+\end_inset
+
+).
+ 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ can be any number between negative, neutral, or positive.
+ Each face has its own charge, but all dice are identical.
+ This means that all 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ faces on different dice have the same charge.
+ All 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+ faces also have the same charge.
+ But the charge on 
+\begin_inset Formula $\epsdice{1}$
+\end_inset
+
+ need not equal the charge on 
+\begin_inset Formula $\epsdice{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The surface on which we roll our dice can also be charged.
+ We have a knob we can turn labeled 
+\begin_inset Formula $\beta$
+\end_inset
+
+ that goes from zero (no charge) to 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ (highly positively charged).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The knob gets harder and harder to turn the closer you get to 
+\begin_inset Formula $\infty$
+\end_inset
+
+...
+\end_layout
+
+\end_inset
+
+ A negatively charged dice face is attracted to the surface, while a positively
+ charged dice face is repelled from it.
+ 
+\end_layout
+
+\begin_layout Standard
+We will model the weight on each face as a function of its charge (
+\begin_inset Formula $g_{i}$
+\end_inset
+
+) and the charge on the surface (
+\begin_inset Formula $\beta$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{i}=e^{-\beta\times g_{i}}.
+\]
+
+\end_inset
+
+Again, looking at the extremes of the function is very helpful.
+ 
+\end_layout
+
+\begin_layout Standard
+First imagine turning the knob on the surface all the way down to 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+, thus turning off the surface charge.
+ In this case, 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ will equal 
+\begin_inset Formula $1$
+\end_inset
+
+ regardless of the value of 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+w_{i}=e^{-0\times g_{i}}=1.
+\]
+
+\end_inset
+
+As a result:
+\begin_inset Formula 
+\[
+p_{six}=\frac{1}{1+1+1+1+1+1}=\frac{1}{6}.
+\]
+
+\end_inset
+
+Hopefully this makes sense.
+ We turned off the surface charge, so all faces have equal weight.
+ 
+\end_layout
+
+\begin_layout Standard
+Now imagine we crank the knob up to 11.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://www.youtube.com/watch?v=KOO5S4vxi0o
+\end_layout
+
+\end_inset
+
+ What happens to our dice now? Well, it depends on the charge on the face.
+ A negative face will have a very strong attraction to the surface, while
+ a positive face will have a very strong repulsion.
+ Let's do the calculation for some arbitrary charge values: 
+\begin_inset Formula 
+\[
+g_{1}=0,g_{2}=0,g_{3}=0,g_{4}=0,g_{5}=0,g_{6}=-2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{six}=\frac{e^{--2\times11}}{e^{-0\times11}+e^{-0\times11}+e^{-0\times11}+e^{0\times11}+e^{-0\times11}+e^{--2\times11}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{six}=\frac{358,491,284}{1+1+1+1+1+358,491,284}\approx1.0
+\]
+
+\end_inset
+
+Under this scenario, we now very strongly favor showing 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+, as it has a stronger attraction to the surface than the other face.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{eq}=\frac{w_{6}}{w_{1}+w_{2}+w_{3}+w_{4}+w_{5}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Okay
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $g_{1}=g_{2}=g_{3}=g_{4}=g_{5}$
+\end_inset
+
+, but that 
+\begin_inset Formula $g_{6}\ne g_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{eq}=\frac{e^{-g_{6}\beta}}{5\times e^{-g_{1}\beta}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(K_{eq}\right)=-ln\left(\frac{e^{-g_{6}\beta}}{5\times e^{-g_{1}\beta}}\right)
+\]
+
+\end_inset
+
+Using 
+\begin_inset Formula $log(a\cdot b)=log(a)+log(b)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(K_{eq}\right)=-ln\left(\frac{e^{-g_{6}\beta}}{e^{-g_{1}\beta}}\right)-ln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(K_{eq}\right)=-ln\left(e^{-g_{6}\beta}\right)+ln\left(e^{-g_{1}\beta}\right)-ln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(K_{eq}\right)=g_{6}\beta-g_{1}\beta-ln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-ln\left(K_{eq}\right)=\beta(g_{6}-g_{1})-ln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{1}{\beta}ln\left(K_{eq}\right)=(g_{6}-g_{1})-\frac{1}{\beta}ln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta=1/RT
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S=Rln(1/5)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H=(g_{6}-g_{1})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G=-RTln(K_{eq})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G=\Delta H-T\Delta S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-RTln\left(K_{eq}\right)=(g_{6}-g_{1})-RTln\left(\frac{1}{5}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-Rln(1/5)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first law of thermodynamics says that we can't make a perfectly efficient
+ machine, no matter how hard we try.
+ If we do any interersting work, we 
+\begin_inset Formula 
+\[
+G=H-TS
+\]
+
+\end_inset
+
+We will start with an arbitrary word: 
+\emph on
+enthalpy.
+ 
+\emph default
+We will declare it, by fiat, to be the sum of the 
+\emph on
+internal energy
+\emph default
+ of the system (
+\begin_inset Formula $U$
+\end_inset
+
+) and the pressure times the volume (
+\begin_inset Formula $PV$
+\end_inset
+
+).
+ The internal energy is (basically) just the sum of all of the energies
+ of the bonds formed.
+ The pressure times the volume is, well, the pressure times the volume.
+ Here's our definition of enthalpy.
+ 
+\begin_inset Formula 
+\[
+H=U+PV
+\]
+
+\end_inset
+
+We rarely care about the absolute enthalpy of a system, but rather the change
+ in the enthalpy when a reaction occurs.
+ So, for the reaction:
+\begin_inset Formula 
+\[
+reactants\rightarrow products
+\]
+
+\end_inset
+
+ we would write:
+\begin_inset Formula 
+\[
+\Delta H=H_{products}-H_{reactants}.
+\]
+
+\end_inset
+
+With some intriguing exceptions, most of biology occurs at constant pressure
+ and volume.
+ This means that we can assume the pressure and volume are tthe same after
+ a reaction, meaning:
+\begin_inset Formula 
+\[
+\Delta H\approx U_{products}+\cancel{PV_{products}}-U_{reactants}-\cancel{PV_{reactants}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H=U_{products}-U_{reactants}=\Delta U.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The change in the internal energy of a system (
+\begin_inset Formula $dU$
+\end_inset
+
+) is given by the change in the 
+\emph on
+heat 
+\emph default
+(
+\begin_inset Formula $dq$
+\end_inset
+
+) and the the work done (
+\begin_inset Formula $dw$
+\end_inset
+
+).
+ 
+\begin_inset Formula 
+\[
+dU=dq+dw
+\]
+
+\end_inset
+
+For a unimolecular interaction—like a protein unfolding—the only work that
+ could be done would be piston-like work (e.g.
+ expanding the volume of the solution, or changing the pressure of a sealed
+ vessel).
+ For the vast majority of biochemical reactions, however, the pressure and
+ volume are essentially constant.
+ This means that 
+\begin_inset Formula $dw\approx0$
+\end_inset
+
+.
+ (This is not 
+\emph on
+always
+\emph default
+ true, but it will be for the systems we study in this class).
+ So:
+\begin_inset Formula 
+\[
+dU=dq+\cancel{dw}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q=C\Delta T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{V}=\left(\frac{\partial U}{\partial T}\right)_{V}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=U+pV
+\]
+
+\end_inset
+
+In biological systems, we will assume 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are essentially constant.
+ 
+\end_layout
+
+\begin_layout Standard
+In physics-y terms, they have a 
+\emph on
+low Reynold's number.
+ 
+\emph default
+For a great, accessible description of what this means—with amazing hand-drawn
+ figures—see
+\emph on
+ 
+\emph default
+Purcell EM (1977) 
+\begin_inset Quotes eld
+\end_inset
+
+Life at low Reynold's number
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\emph on
+American Journal of Physics
+\emph default
+.
+ https://science.curie.fr/wp-content/uploads/2016/04/Purcell_life_at_low_reynolds_
+number_1977.pdf
+\end_layout
+
+\begin_layout Standard
+–
+\end_layout
+
+\end_body
+\end_document

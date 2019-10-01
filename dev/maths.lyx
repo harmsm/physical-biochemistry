@@ -1,0 +1,828 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Coulomb energy
+\end_layout
+
+\begin_layout Standard
+According to Coulomb's law, the energy change that accompanies moving two
+ ions from an infinite distance to distance 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{coulomb}=\alpha\frac{q_{i}q_{j}}{\varepsilon r_{ij}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a constant: 
+\begin_inset Formula $\alpha\equiv1389\ kJ\cdot mol^{-1}\cdot\mbox{\text{\normalfont}Å}$
+\end_inset
+
+.
+ This takes care of things like the Coulomb constant, unit conversion to
+ 
+\begin_inset Formula $\mbox{\text{\normalfont}Å}$
+\end_inset
+
+ and 
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+, etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ are the partial charges on each ion (things like +1.0, +0.5, -0.2, +11, etc.)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the dielectric constant, a unitless real number 
+\begin_inset Formula $\in[1,\infty)$
+\end_inset
+
+ that scales how much the medium separating the charges attenuates the interacti
+on.
+ In biological systems, the relevant range is from 1 (vacuum) to water (78.5).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is the distance between the ion centers in 
+\begin_inset Formula $\text{\normalfont}\text{Å}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Salt screening
+\end_layout
+
+\begin_layout Standard
+In most biological contexts, there is salt in the solution that forms a
+ mobile cloud which screens Coulomb interactions.
+ This effect depends on distance (with greater attenuation over longer distances
+) and concentration (with greater attenuation with higher salt concentrations).
+ One common way to model this is using the Debye-Hückel approximation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U([ions])=U_{coulomb}e^{-r_{ij}/\kappa}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the 
+\emph on
+Debye Length.
+ 
+\emph default
+This has units of 
+\begin_inset Formula $\mbox{\text{\normalfont}Å}$
+\end_inset
+
+ and measures how quickly interaction strength decays.
+ A shorter 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ means that the Coulomb interaction is felt at longer distances.
+
+\emph on
+ 
+\emph default
+At 
+\begin_inset Formula $r_{ij}=\kappa$
+\end_inset
+
+, the Coulomb interaction is 
+\begin_inset Formula $\approx37\%$
+\end_inset
+
+ of what it would be without salt present.
+ 
+\begin_inset Formula $\kappa$
+\end_inset
+
+is given by:
+\begin_inset Formula 
+\[
+\kappa\equiv\gamma\sqrt{\frac{\varepsilon T}{I}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a constant: 
+\begin_inset Formula $\gamma\equiv0.01988\ M^{1/2}\cdot K^{-1/2}\cdot\mbox{\text{\normalfont}Å}$
+\end_inset
+
+.
+ Like 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ above, this constant takes care of vacuum permitivity, unit conversion,
+ and the like.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the dielectric constant.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ is the temperature in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I$
+\end_inset
+
+ is the ionic strength in 
+\begin_inset Formula $M$
+\end_inset
+
+ (https://en.wikipedia.org/wiki/Ionic_strength).
+\end_layout
+
+\begin_layout Subsection*
+Hydrogen bonding
+\end_layout
+
+\begin_layout Standard
+Hydrogen bonds are challenging to (efficiently) describe.
+ There are three basic approaches.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calculate the energy using a quantum mechanics.
+ This is the most accurate approach, but is computationally intensive.
+ For biomolecules, quantum mechanical calculations are generally only used
+ specific questions about enzyme active states and the like, often coupled
+ to a classical simulation.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use an empirical potential that accounts for both distance an angular informatio
+n.
+ One such function is:
+\begin_inset Formula 
+\[
+U_{hbond}=a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are adjustable parameters for the eight different hydrogen bond combinations
+ typically observed in proteins (
+\begin_inset Formula $NH\rightarrow O=C$
+\end_inset
+
+, 
+\begin_inset Formula $NH\rightarrow OH$
+\end_inset
+
+, etc.).
+ 
+\begin_inset Formula $q_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ are partial charges on the acceptor and donor.
+ Usually, one calculates the angular and distance dependence for different
+ classes of hydrogen bonds using quanum mechanics, and then fits terms like
+ 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $c$
+\end_inset
+
+ to reproduce those values.
+ The sorts of functions used have been reveiwed nicely by Martin Korth (2011)
+ 
+\emph on
+ChemPhysChem
+\emph default
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1002/cphc.201100540"
+target "https://doi.org/10.1002/cphc.201100540"
+literal "false"
+
+\end_inset
+
+.
+ These potentiallys are hacked together: the general idea is to make them
+ work rather than to capture deep theory.
+ The sorts of approximations made can be seen, for example, in O'Meara et
+ al.
+ (2015) 
+\emph on
+JCTC 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1021/ct500864r"
+target "https://doi.org/10.1021/ct500864r"
+literal "false"
+
+\end_inset
+
+, who describe how they came up with a new potential function.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The simplest approach is to treat them Coulomb interactions between partial
+ charges.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This approach is straightforward, but does not properly account for the
+ angular dependence in the strength of a hydrogen bond.
+ Because of its speed, however, many standard molecular dynamics forcefields
+ use this approach.
+ 
+\end_layout
+
+\begin_layout Subsection*
+van der Waal's
+\end_layout
+
+\begin_layout Standard
+Van der Waal's interactions tend to 
+\begin_inset Formula 
+\[
+U_{vdw}=\alpha_{ij}\left[\left(\frac{R_{min,ij}}{r_{ij}}\right)^{12}-2\left(\frac{R_{min,ij}}{r_{ij}}\right)^{6}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+ describes the overall strength of the interaction and depends on the atoms
+ involved; 
+\begin_inset Formula $R_{min,ij}$
+\end_inset
+
+ is the optimal distance between the atoms.
+ Typical values of 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{min,ij}$
+\end_inset
+
+ might be 
+\begin_inset Formula $1\ kJ\cdot mol^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $3.8\ \text{\normalfont}\text{Å}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Solvation energy
+\end_layout
+
+\begin_layout Standard
+Finally, ions possess a 
+\begin_inset Quotes eld
+\end_inset
+
+self energy
+\begin_inset Quotes erd
+\end_inset
+
+: the energy required to carve out a charged sphere in a given environment.
+ If an ion maintains its charge and environment throughout a reaction, we
+ can generally ignore this term.
+ If, however, the magnitude of the charge and/or its environment changes,
+ we must take this term into account.
+ For example, if an aspartic acid deprotonates in the course of the reaction,
+ we must account for the cost to create the charge in any energetic calculation.
+ The Born solvation model describes this as the energy to bring the charge
+ from being evenly distributed across the the surface of an a sphere with
+ infinite radius to being distributed across a sphere with radius 
+\begin_inset Formula $r_{ion}$
+\end_inset
+
+.
+ It is given by:
+\begin_inset Formula 
+\[
+G_{born}=\alpha\frac{q_{ion}^{2}}{\varepsilon r_{ion}}.
+\]
+
+\end_inset
+
+This can be derived from Coulomb's law by breaking 
+\begin_inset Formula $q_{ion}$
+\end_inset
+
+ into infinitesimal pieces and integrating over the process of bringing
+ these charge pieces together onto the surface of a sphere.
+\end_layout
+
+\begin_layout Section
+Diffusion
+\end_layout
+
+\begin_layout Standard
+There are a few key equations for thinking about diffusion.
+ The first describes the root-mean-squared displacement, which measures
+ how far, on average, a molecule will diffuse away from its starting point
+ over time 
+\begin_inset Formula $t$
+\end_inset
+
+ if it can diffuse in 
+\begin_inset Formula $x$
+\end_inset
+
+ dimensions.
+ This is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RMS_{displacement,x}=\sqrt{2xDt}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $RMS_{displacement}$
+\end_inset
+
+ is the root-mean-squared displacement, 
+\begin_inset Formula $x$
+\end_inset
+
+is the dimensionality of the diffusion process (1, 2, 3, etc.), 
+\begin_inset Formula $D$
+\end_inset
+
+ is the diffusion coefficient, and 
+\begin_inset Formula $t$
+\end_inset
+
+ is time.
+ The diffusion coefficient can be related to geometry by: 
+\begin_inset Formula 
+\[
+D_{sphere}=\frac{k_{B}T}{6\pi\eta r}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the solvent viscoity and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the radius of the spherical molecule.
+ Finally, this can be related to the collison rate between two molecules
+\series bold
+ 
+\begin_inset Formula $A$
+\end_inset
+
+
+\series default
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ by:
+\begin_inset Formula 
+\[
+k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})N_{A}\times1,000
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{B}$
+\end_inset
+
+ are the radii and 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{B}$
+\end_inset
+
+ are the diffusion constants for the two species.
+ Yields 
+\begin_inset Formula $k_{coll}$
+\end_inset
+
+ in 
+\begin_inset Formula $M^{-1}\cdot s^{-1}$
+\end_inset
+
+ for 
+\begin_inset Formula $r_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{B}$
+\end_inset
+
+ in 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{B}$
+\end_inset
+
+ in 
+\begin_inset Formula $m^{2}\cdot s^{-1}$
+\end_inset
+
+.
+ For a diffusion-limited reaction: 
+\begin_inset Formula 
+\[
+\frac{d[AB]}{dt}=k_{coll}[A][B].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+FORMULAE
+\end_layout
+
+\begin_layout Subsubsection*
+Constants
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=0.008314\ kJ\cdot mol^{-1}\cdot K^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k_{B}=1.381\times10^{-23}m^{2}\cdot kg\cdot s^{-2}\cdot K^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{A}=6.022\times10^{23}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Free energy relationships:
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=\Delta H^{\circ}-T\Delta S^{\circ}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta H(T)=\Delta H(T_{ref})+\Delta C_{p}(T-T_{ref})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S(T)=\Delta S(T_{ref})+\Delta C_{p}ln\left(\frac{T}{T_{ref}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=Rln(W)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=-RTln(K_{eq})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Isothermal titration calorimetry:
+\end_layout
+
+\begin_layout Standard
+The heat evolved at injection 
+\begin_inset Formula $i$
+\end_inset
+
+ is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q_{i}=\Delta H\left(\frac{[MX]_{i}}{[M]_{T,i}}-\frac{[MX]_{i-1}}{[M]_{T,i-1}}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ is the enthalpy change of the reaction, 
+\begin_inset Formula $[MX]_{i}$
+\end_inset
+
+ is the concentration of the 
+\begin_inset Formula $MX$
+\end_inset
+
+ complex at injection 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $[M]_{T,i}$
+\end_inset
+
+ is the total concentratoin of 
+\begin_inset Formula $M$
+\end_inset
+
+ at injection 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $[MX]_{i}$
+\end_inset
+
+ is determined by the dissociation constant 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+, 
+\begin_inset Formula $[M]_{T}$
+\end_inset
+
+ and the total concentration of 
+\begin_inset Formula $X$
+\end_inset
+
+ (
+\begin_inset Formula $[X]_{T}$
+\end_inset
+
+) according to: 
+\begin_inset Formula 
+\[
+[MX]_{i}=\frac{-b-\sqrt{b^{2}-4c}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b\equiv(K_{D}+[M]_{T}+[X]_{T})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c\equiv[M]_{T}[X]_{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+MWC model of cooperativity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta=\left(\frac{n[X]}{K_{D}}\right)\frac{K^{*}(1+[X]/K_{D})^{n-1}}{1+K^{*}(1+[X]/K_{D})^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
