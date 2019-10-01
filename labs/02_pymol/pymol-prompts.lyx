@@ -1,0 +1,941 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+PyMOL Practicum
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Visualizing very tiny things.
+\end_layout
+
+\begin_layout Subsection
+Where can I get structures? 
+\end_layout
+
+\begin_layout Itemize
+Download directly from 
+\emph on
+pdb.org
+\emph default
+, then go to 
+\begin_inset Formula $File\rightarrow Open$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Directly in PyMOL: 
+\begin_inset Formula $Plugin\rightarrow PDB\ loader\ service$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TASK: 
+\end_layout
+
+\begin_layout Enumerate
+Load the structure of HhaI DNA cytosine-5-methyltransferase, S-adenosyl-L-homocy
+steine, 13-mer with 5-fluorocysteine at target site (PDB ID 1MHT) into PyMOL.
+\end_layout
+
+\begin_layout Subsection
+What is PDB file format? 
+\end_layout
+
+\begin_layout Itemize
+HEADER lines store 
+\begin_inset Quotes eld
+\end_inset
+
+metadata
+\begin_inset Quotes erd
+\end_inset
+
+ about the structure (method used to solve it, organism, etc.)
+\end_layout
+
+\begin_layout Itemize
+ATOM and HETATM lines store Cartesian coordinates of atoms
+\end_layout
+
+\begin_layout Itemize
+TER lines indicate breaks between chains
+\end_layout
+
+\begin_layout Itemize
+CONNECT lines indicate bonds (these are only necessary for nonstandard atoms/res
+idues)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TASK: 
+\end_layout
+
+\begin_layout Enumerate
+Open 
+\begin_inset Quotes eld
+\end_inset
+
+1mht.pdb
+\begin_inset Quotes erd
+\end_inset
+
+ in a text editor.
+ NOTE: MS Word is 
+\emph on
+NOT
+\emph default
+ a text editor.
+ A text editor will be something like 
+\begin_inset Quotes eld
+\end_inset
+
+Notepad
+\begin_inset Quotes erd
+\end_inset
+
+ on Windows.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Go to the first 
+\emph on
+ATOM 
+\emph default
+line.
+ Can you figure out what each column stores?
+\end_layout
+
+\begin_layout Enumerate
+Delete every line but the 
+\emph on
+ATOM, HETATM
+\emph default
+, and 
+\emph on
+TER
+\emph default
+ lines, save this as a new file, and re-open in PyMOL.
+ Does the structure look the same?
+\end_layout
+
+\begin_layout Subsection
+How do I navigate in 3D?
+\end_layout
+
+\begin_layout Itemize
+Left-click/drag: free rotate
+\end_layout
+
+\begin_layout Itemize
+Right-click/drag: zoom in and out
+\end_layout
+
+\begin_layout Itemize
+Middle-click/drag: move center of view
+\end_layout
+
+\begin_layout Itemize
+Scroll-wheel: expand and contract 
+\begin_inset Quotes eld
+\end_inset
+
+clipping plane
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Left-click on the object to select.
+ The name of the selected atom will appear in the 
+\begin_inset Quotes eld
+\end_inset
+
+console
+\begin_inset Quotes erd
+\end_inset
+
+ at the top.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Right-click to open object menu.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Center
+\begin_inset Quotes erd
+\end_inset
+
+ will center the view on the selection.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Zoom
+\begin_inset Quotes erd
+\end_inset
+
+ will zoom in on the selection.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+TASK: 
+\end_layout
+
+\begin_layout Enumerate
+Load 1MHT.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Select Thymine 421 from chain C.
+\end_layout
+
+\begin_layout Enumerate
+Zoom in on that residue.
+\end_layout
+
+\begin_layout Enumerate
+Reorient the view to see its context.
+ What base is T421 
+\begin_inset Quotes eld
+\end_inset
+
+base-stacking
+\begin_inset Quotes erd
+\end_inset
+
+ with?
+\end_layout
+
+\begin_layout Subsection
+How do I select stuff? 
+\end_layout
+
+\begin_layout Itemize
+Left-click on the object.
+ The green 
+\begin_inset Quotes eld
+\end_inset
+
+Selecting
+\begin_inset Quotes erd
+\end_inset
+
+ entry (bottom right of viewing panel) indicates what the click will select
+ (atom, residue, chain, etc.)
+\end_layout
+
+\begin_layout Itemize
+Type a command:
+\begin_inset Formula 
+\[
+sele\ resid\ 421
+\]
+
+\end_inset
+
+These selections can be compounded:
+\begin_inset Formula 
+\[
+sele\ resid\ 421\ and\ chain\ C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Use the sequence tool.
+ Go to:
+\begin_inset Formula 
+\[
+Display\rightarrow Sequence
+\]
+
+\end_inset
+
+and then click on the residue of interest, which will appear at the top.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TASK:
+\end_layout
+
+\begin_layout Enumerate
+Select the entire protein chain.
+\end_layout
+
+\begin_layout Enumerate
+Select one atom on base T421 from task 1.3.
+ 
+\end_layout
+
+\begin_layout Subsection
+How do I change the molecular representation?
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $S$
+\end_inset
+
+ column on the right lets you change what you 
+\bar under
+S
+\bar default
+how.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $S\rightarrow As$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ will make the object have 
+\emph on
+only
+\emph default
+ that representation.
+ 
+\begin_inset Formula $S\rightarrow sticks$
+\end_inset
+
+ will add the 
+\begin_inset Quotes eld
+\end_inset
+
+sticks
+\begin_inset Quotes erd
+\end_inset
+
+ representation on top of existing representations.
+\end_layout
+
+\begin_layout Itemize
+Type a command:
+\begin_inset Formula 
+\[
+show\ cartoon,\ all
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+You can change the color with the 
+\begin_inset Formula $C$
+\end_inset
+
+ column on the right.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TASK
+\end_layout
+
+\begin_layout Enumerate
+Simultaneously display the 1MHT structure from task 1.3 as cartoon and lines.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Make the protein chains in the structure your favorite color.
+ 
+\end_layout
+
+\begin_layout Subsection
+How do I save?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $File\rightarrow Save\ session...$
+\end_inset
+
+ allows you to save whole PyMOL session (selections, colors, representations,
+ etc.) as a 
+\begin_inset Formula $.pse$
+\end_inset
+
+ file.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $File\rightarrow Save\ molecule...$
+\end_inset
+
+ allows you to save out the coordinates as a 
+\begin_inset Formula $.pdb$
+\end_inset
+
+ file.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $File\rightarrow Save\ Image\ As$
+\end_inset
+
+ allows you to save out a snapshot as a 
+\begin_inset Formula $.png$
+\end_inset
+
+ file.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NOTE: To make the image look good, you should first hit the the 
+\begin_inset Formula $Ray$
+\end_inset
+
+ button (top right), which will 
+\begin_inset Quotes eld
+\end_inset
+
+Ray Trace
+\begin_inset Quotes erd
+\end_inset
+
+ the 3D model.
+ Then save the image out.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+TASK
+\end_layout
+
+\begin_layout Enumerate
+Save your current session out as a .pse file.
+\end_layout
+
+\begin_layout Enumerate
+Find a cool orientation for your molecule, ray trace it, and save out a
+ .png file.
+ You've just made your new Desktop background.
+\end_layout
+
+\begin_layout Subsection
+How do I measure structural stuff?
+\end_layout
+
+\begin_layout Itemize
+Use the wizard:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Zoom in/center the residues you want to characterize.
+\end_layout
+
+\begin_layout Itemize
+Go to: 
+\begin_inset Formula $Wizard\rightarrow Measurement$
+\end_inset
+
+.
+ The right panel will now have a 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Measurement$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ box
+\end_layout
+
+\begin_layout Itemize
+Click on 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Distances$
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ which will allow you to select different things to measure.
+ (If you're interested in distance, you can skip this step as distances
+ are already selected.)
+\end_layout
+
+\begin_layout Itemize
+Left click on the atoms that define what you measure.
+ (For example, for a distance, click on two atoms; for a Euclidean angle,
+ click on three atoms; for a dihedral angle, click on four atoms).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+TASK
+\end_layout
+
+\begin_layout Enumerate
+Measure the distance between T421 and the nearby base you identified in
+ task 1.3.
+ 
+\end_layout
+
+\begin_layout Subsection
+How can we estimate the structural effect of a mutation?
+\end_layout
+
+\begin_layout Itemize
+Use the wizard: 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Zoom in on the residue you want to mutate.
+ 
+\end_layout
+
+\begin_layout Itemize
+Go to 
+\begin_inset Formula $Wizard\rightarrow Mutagenesis...$
+\end_inset
+
+ The right panel will now have a 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Mutagenesis$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ box.
+ 
+\end_layout
+
+\begin_layout Itemize
+Left click on the residue you want to mutate.
+ 
+\end_layout
+
+\begin_layout Itemize
+Click on 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $No\ mutation$
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ which will bring up a menu allowing you to choose the thing you're mutating
+ to.
+ 
+\end_layout
+
+\begin_layout Itemize
+Select the amino acid you want to jam in.
+ 
+\end_layout
+
+\begin_layout Itemize
+Use the arrow keys to walk through different 
+\begin_inset Quotes eld
+\end_inset
+
+rotamers
+\begin_inset Quotes erd
+\end_inset
+
+ of the amino acid, selecting the one with the fewest clashes.
+\end_layout
+
+\begin_layout Itemize
+Click 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Apply$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ in the mutagenesis box and then 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Done$
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+TASK:
+\end_layout
+
+\begin_layout Enumerate
+In a new PyMOL session, download the structure of 
+\begin_inset Formula $Staphylococcal\ nuclease$
+\end_inset
+
+ (1STN).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mutate Valine 66 to Lysine.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Can you find a rotamer that doesn't clash with the rest of the protein?
+\end_layout
+
+\begin_layout Enumerate
+Do you think that this structure is reasonable?
+\end_layout
+
+\begin_layout Enumerate
+What do you think the charge state of Lys-66 would be at 
+\begin_inset Formula $pH\ 7$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection
+How can I align two structures?
+\end_layout
+
+\begin_layout Itemize
+Load in both structures and type 
+\begin_inset Formula $align\ MOVE,\ REF$
+\end_inset
+
+ where 
+\begin_inset Formula $MOVE$
+\end_inset
+
+ is the name structure to move and 
+\begin_inset Formula $REF$
+\end_inset
+
+ is the name of the structure to align 
+\begin_inset Formula $MOVE$
+\end_inset
+
+ to.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TASK:
+\end_layout
+
+\begin_layout Enumerate
+Download the structures of human 
+\begin_inset Formula $\gamma$
+\end_inset
+
+D-crystallin (2G98) and human 
+\begin_inset Formula $\gamma$
+\end_inset
+
+B-crystallin (2JDF).
+\end_layout
+
+\begin_layout Enumerate
+Align 2JDF to 2G98.
+\end_layout
+
+\begin_layout Enumerate
+Display them both as cartoons.
+\end_layout
+
+\begin_layout Enumerate
+Why do you think there are non-overlapping chains of 2G98 floating out in
+ space? 
+\end_layout
+
+\begin_layout Subsection
+How do I calculate more interesting things than just structure?
+\end_layout
+
+\begin_layout Itemize
+Polar contacts: 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Go to the 
+\begin_inset Formula $A$
+\end_inset
+
+ column for the structure of interest on the right.
+\end_layout
+
+\begin_layout Itemize
+Go to 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Find\rightarrow Polar\ contacts\rightarrow selection\ you\ want$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Electrostatics:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Go to the 
+\begin_inset Formula $A$
+\end_inset
+
+ column for the structure of interest on the right.
+\end_layout
+
+\begin_layout Itemize
+Go to 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Generate\rightarrow Vacuum\ electrostatics\rightarrow protein\ contact\ potential$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+WARNING: the actual electrostatic field is total crap.
+ This is 
+\emph on
+only
+\emph default
+ for identifying patches of more positive (blue) or more negative (red)
+ residues.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+TASK:
+\end_layout
+
+\begin_layout Enumerate
+Open a new PyMOL session and load in 2JDF and calculate its electrostatic
+ surface.
+\end_layout
+
+\begin_layout Enumerate
+How would you describe the charge distribution?
+\end_layout
+
+\begin_layout Enumerate
+Open a new PyMOL session, load in the structure of the
+\emph on
+ Y.
+ pestis 
+\emph default
+virulence factor YopM (1G9U), and calculate its electrostatic surface.
+\end_layout
+
+\begin_layout Enumerate
+How would you describe the charge distribution?
+\end_layout
+
+\begin_layout Enumerate
+What do you think happens to the 
+\begin_inset Quotes eld
+\end_inset
+
+stability
+\begin_inset Quotes erd
+\end_inset
+
+ of 2JDF as you add salt? What about 1G9U? Why?
+\end_layout
+
+\end_body
+\end_document
