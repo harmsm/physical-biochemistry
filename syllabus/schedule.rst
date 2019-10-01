@@ -106,10 +106,10 @@ Schedule
 .. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/08_single-molec-vs-avg
 
 .. homework links
-.. _HW1: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw1.pdf
-.. _HW2: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw2.pdf
-.. _HW3: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw3.pdf
-.. _HW4: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw4.pdf
-.. _HW5: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw5.pdf
-.. _HW6: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw6.pdf
-.. _HW7: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw7.pdf
+.. _HW1: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw1/
+.. _HW2: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw2/
+.. _HW3: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw3/
+.. _HW4: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw4/
+.. _HW5: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw5/
+.. _HW6: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw6/
+.. _HW7: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw7/
