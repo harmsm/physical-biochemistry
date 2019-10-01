@@ -1,0 +1,582 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\usepackage{adjustbox}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Coulomb interactions
+\end_layout
+
+\begin_layout Standard
+The work required to bring to charges from infinite distance to distance
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ is given by:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that we continue to pretend that enthalpy and internal energy are equivalen
+t.
+ The thermodynamics police made me put this disclaimer here.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{coulomb}=k\frac{q_{1}q_{2}}{\varepsilon r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ are the charges on atoms one and two (numbers like 
+\begin_inset Formula $-2$
+\end_inset
+
+, 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\begin_inset Formula $+1$
+\end_inset
+
+); 
+\begin_inset Formula $k$
+\end_inset
+
+ is a constant that gives units (
+\begin_inset Formula $1,389\ \text{Å}\cdot kJ\cdot mol^{-1}$
+\end_inset
+
+); 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the 
+\begin_inset Quotes eld
+\end_inset
+
+dielectric constant
+\begin_inset Quotes erd
+\end_inset
+
+ that describes how well the environment damps electric fields.
+ For biomolecules, 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is a 
+\begin_inset Quotes eld
+\end_inset
+
+fudge factor
+\begin_inset Quotes erd
+\end_inset
+
+ that weakens coulomb interactions.
+ Reasonable values are given below.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+environment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vacuum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+protein interior
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+protein surface
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx20$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+water
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $78.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+insulator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Task
+\end_layout
+
+\begin_layout Itemize
+Load 1STN.pdb in pymol
+\end_layout
+
+\begin_layout Itemize
+Zoom in on residue 121 (this should be a histidine).
+\end_layout
+
+\begin_layout Itemize
+The histidine sidechain is forming an ion pair with another residue.
+ What residue is this? What is the distance (in 
+\begin_inset Formula $\text{Å}$
+\end_inset
+
+) between the polar atoms on histidine and its partner?
+\end_layout
+
+\begin_layout Itemize
+Estimate how much this interaction stabilizes the folded state of the protein.
+\end_layout
+
+\begin_layout Itemize
+Is this a lot or a little?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Conformational Entropy
+\end_layout
+
+\begin_layout Standard
+The entropy of a state is given by:
+\begin_inset Formula 
+\[
+S=Rln(N)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $R$
+\end_inset
+
+ is the gas constant and 
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of configurations (microstates, as we've constructed things).
+ The change in entropy between two states is: 
+\begin_inset Formula 
+\[
+\Delta S_{A\rightarrow B}=Rln\left(\frac{N_{B}}{N_{A}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Task
+\end_layout
+
+\begin_layout Itemize
+Load ala.pdb in pymol
+\end_layout
+
+\begin_layout Itemize
+Use the 
+\begin_inset Quotes eld
+\end_inset
+
+Wizard
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Mutagenesis
+\begin_inset Quotes erd
+\end_inset
+
+ tool and click on the alanine.
+\end_layout
+
+\begin_layout Itemize
+Mutate it to your assigned amino acid.
+ 
+\end_layout
+
+\begin_layout Itemize
+Estimate the entropy to immobilize the amino acid in a folded protein.
+ 
+\end_layout
+
+\begin_layout Itemize
+What assumptions did you make in this estimate? Are they justified? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Hydrophobic effect
+\end_layout
+
+\begin_layout Standard
+Download excel spreadsheet shows 
+\begin_inset Formula $\Delta\Delta G_{water\rightarrow octanol}$
+\end_inset
+
+ for blocked Ala-X-Ala peptides at 
+\begin_inset Formula $25\ ^{\circ}C$
+\end_inset
+
+, where X is an amino acid.
+ (The 
+\begin_inset Formula $\Delta\Delta$
+\end_inset
+
+ arises because these energies are determined relative to the energy to
+ transfer the amino acid glycine from water to octanol).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Which amino acids are 
+\emph on
+most
+\emph default
+ favorable to transfer? Does this make sense?
+\end_layout
+
+\begin_layout Enumerate
+Which amino acids are 
+\emph on
+least
+\emph default
+ favorable to transfer? Does this make sense?
+\end_layout
+
+\begin_layout Enumerate
+How might you predict/calculate amino acid transfer free energies from these
+ structures?
+\end_layout
+
+\begin_layout Standard
+Now we're going to try to understand where these transfer energies come
+ from, and practice 
+\emph on
+PyMOL
+\emph default
+ on the way.
+ Download ala-gln-ala.pdb.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Next, you will calculate the surface area of polar atoms (N and O) and nonpolar
+ atoms (C and S).
+ In the command line, type:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+get_area (name N*,O*)
+\end_layout
+
+\begin_layout Enumerate
+get_area (name C*,S*)
+\end_layout
+
+\begin_layout Enumerate
+Record the values in Angstroms^2 that are returned.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Put these values into the 
+\begin_inset Quotes eld
+\end_inset
+
+N/O
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+C/S
+\begin_inset Quotes erd
+\end_inset
+
+ columns of the spreadsheet.
+ (I pre-calculated these values for the rest of the amino acids).
+ Then plot:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Delta\Delta G$
+\end_inset
+
+ vs the N/O areas.
+ Fit a line to the data.
+ What do you observe?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Delta\Delta G$
+\end_inset
+
+ vs the C/S areas.
+ Fit a line to the data.
+ What do you observe?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Justify these graphs in molecular/atomic terms.
+\end_layout
+
+\end_body
+\end_document

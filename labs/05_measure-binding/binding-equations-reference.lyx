@@ -1,0 +1,586 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\usepackage{ulem}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Relating back to 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Think about the binding reaction between a macromolecule 
+\begin_inset Formula $M$
+\end_inset
+
+ and some ligand 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+M+X\rightleftharpoons MX
+\]
+
+\end_inset
+
+The free energy of this interaction depends on the intrinsic interaction
+ energy between these molecules (under standard conditions: all components
+ at 
+\begin_inset Formula $1\ M$
+\end_inset
+
+, standard temperature and pressure) and the concentrations of all species
+ in solution.
+ We can write:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G([M],[X],[MX])=\Delta G^{\circ}+RTln\left(\frac{[M][X]}{[MX]}\right)
+\]
+
+\end_inset
+
+At 
+\begin_inset Formula $[MX]=[M]$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta G=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $[M]$
+\end_inset
+
+ and 
+\begin_inset Formula $[MX]$
+\end_inset
+
+ cancel, giving:
+\begin_inset Formula 
+\[
+0=\Delta G^{\circ}+RTln\left([X]_{[MX]=[M]}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=-RTln([X]_{[MX]=[M]})
+\]
+
+\end_inset
+
+This special concentration 
+\begin_inset Formula $[X]_{[MX]=[M]}$
+\end_inset
+
+---the concentration of 
+\begin_inset Formula $X$
+\end_inset
+
+ at which 
+\begin_inset Formula $M$
+\end_inset
+
+ is half-saturated---is defined as the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+[X]_{[MX]=[M]}=K_{D}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=-RTln(K_{D})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G=-RTln(K_{D})+RTln\left(\frac{[M][X]}{[MX]}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Full binding equilibrium:
+\end_layout
+
+\begin_layout Standard
+We're often interested in the fractional saturation of 
+\begin_inset Formula $M$
+\end_inset
+
+ at a given concentration of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ This is given by 
+\begin_inset Formula $\Theta$
+\end_inset
+
+, defined as: 
+\begin_inset Formula 
+\[
+\Theta=\frac{[MX]}{[M]+[MX]}
+\]
+
+\end_inset
+
+We'd like to write an expression for 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ and things we can manipulate experimentally: 
+\begin_inset Formula $[M]_{tot}$
+\end_inset
+
+ and 
+\begin_inset Formula $[X]_{tot}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If we let the system come to equilibrium, 
+\begin_inset Formula $\Delta G\equiv0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=-RTln(K_{D})+RTln\left(\frac{[M][X]}{[MX]}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+RTln(K_{D})=RTln\left(\frac{[M][X]}{[MX]}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{D}=\frac{[M][X]}{[MX]}
+\]
+
+\end_inset
+
+We also need to establish mass-action: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[M]_{tot}=[M]+[MX]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[X]_{tot}=[X]+[MX]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our problem is that we can experimentally alter 
+\begin_inset Formula $[M]_{tot}$
+\end_inset
+
+ and 
+\begin_inset Formula $[X]_{tot}$
+\end_inset
+
+, but have no access to 
+\begin_inset Formula $[X]$
+\end_inset
+
+, 
+\begin_inset Formula $[M]$
+\end_inset
+
+, or 
+\begin_inset Formula $[MX]$
+\end_inset
+
+.
+ We're going to do some algebra to write out a relationship for 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ that does not involve terms we can't access.
+ First, rearrange:
+\begin_inset Formula 
+\[
+[M]=[M]_{tot}-[MX]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[X]=[M]_{tot}-[MX]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute and rearrange again:
+\begin_inset Formula 
+\[
+K_{D}=\frac{([M]_{tot}-[MX])([X]_{tot}-[MX])}{[MX]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{D}=\frac{[M]_{tot}[X]_{tot}-[X]_{tot}[MX]-[M]_{tot}[MX]+[MX]^{2}}{[MX]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{D}[MX]=[M]_{tot}[X]_{tot}-[X]_{tot}[MX]-[M]_{tot}[MX]+[MX]^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=[M]_{tot}[X]_{tot}-[X]_{tot}[MX]-[M]_{tot}[MX]-K_{D}[MX]+[MX]^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=[M]_{tot}[X]_{tot}-([X]_{tot}+[M]_{tot}+K_{D})[MX]+[MX]^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the positive root of 
+\begin_inset Formula $[MX]$
+\end_inset
+
+ using the quadratic formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[MX]=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=-([X]_{tot}+[M]_{tot}+K_{D})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=[M]_{tot}[X]_{tot}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[MX]=\frac{[X]_{tot}+[M]_{tot}+K_{D}-\sqrt{([X]_{tot}+[M]_{tot}+K_{D})^{2}-4[M]_{tot}[X]_{tot}}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, find the fractional saturation:
+\begin_inset Formula 
+\[
+\Theta=\frac{[MX]}{[M]_{tot}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta=\frac{[X]_{tot}+[M]_{tot}+K_{D}-\sqrt{([X]_{tot}+[M]_{tot}+K_{D})^{2}-4[M]_{tot}[X]_{tot}}}{2[M]_{tot}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This relationship is ugly, but correct.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Limiting case of low 
+\begin_inset Formula $[M]_{tot}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $[M]_{tot}\ll K_{D}$
+\end_inset
+
+, binding will never deplete 
+\begin_inset Formula $[X]_{tot}$
+\end_inset
+
+ appreciably (meaning 
+\begin_inset Formula $[X]\approx[X]_{tot}$
+\end_inset
+
+).
+ This simplifies things.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{D}=\frac{[M][X]}{[MX]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{D}\approx\frac{([M]_{tot}-[MX])[X]_{tot}}{[MX]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{D}[MX]=([M]_{tot}-[MX])[X]_{tot}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{D}[MX]=[M]_{tot}[X]_{tot}-[MX][X]_{tot}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{D}[MX]+[X]_{tot}[MX]=[M]_{tot}[X]_{tot}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[MX](K_{D}+[X]_{tot})=[M]_{tot}[X]_{tot}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[MX]=\frac{[M]_{tot}[X]_{tot}}{K_{D}+[X]_{tot}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta=\frac{[MX]}{[M]_{tot}}=\frac{[M]_{tot}[X]_{tot}}{[M]_{tot}(K_{D}+[X]_{tot})}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta=\frac{[X]_{tot}}{K_{D}+[X]_{tot}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,149 @@
+
+ PyMOL(TM) Molecular Graphics System, Version 1.7.2.1.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+ 
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+ 
+ Hit ESC anytime to toggle between text and graphics.
+ 
+ Detected OpenGL version 2.0 or greater. Shaders available.
+ Detected GLSL version 1.30.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Open Source Technology Center
+  GL_RENDERER: Mesa DRI Intel(R) HD Graphics 5500 (Broadwell GT2) 
+  GL_VERSION:  3.0 Mesa 17.2.4
+ Adjusting settings to improve performance for Intel cards.
+ Detected 4 CPU cores.  Enabled multithreaded rendering.
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-ala-ala.pdb" loaded as "ala-ala-ala".
+ CmdLoad: "ala-arg-ala.pdb" loaded as "ala-arg-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-asn-ala.pdb" loaded as "ala-asn-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-asp-ala.pdb" loaded as "ala-asp-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-cys-ala.pdb" loaded as "ala-cys-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-gln-ala.pdb" loaded as "ala-gln-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-glu-ala.pdb" loaded as "ala-glu-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-gly-ala.pdb" loaded as "ala-gly-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-his-ala.pdb" loaded as "ala-his-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-ile-ala.pdb" loaded as "ala-ile-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-leu-ala.pdb" loaded as "ala-leu-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-lys-ala.pdb" loaded as "ala-lys-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-met-ala.pdb" loaded as "ala-met-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-phe-ala.pdb" loaded as "ala-phe-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-pro-ala.pdb" loaded as "ala-pro-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-ser-ala.pdb" loaded as "ala-ser-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-thr-ala.pdb" loaded as "ala-thr-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-trp-ala.pdb" loaded as "ala-trp-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-tyr-ala.pdb" loaded as "ala-tyr-ala".
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: "ala-val-ala.pdb" loaded as "ala-val-ala".l
+PyMOL>load yo.pml
+PyMOL>get_area (ala-ala-ala and name C*,S*)
+ cmd.get_area: 178.243 Angstroms^2.
+PyMOL>get_area (ala-ala-ala and name N*,O*)
+ cmd.get_area: 105.663 Angstroms^2.
+PyMOL>get_area (ala-arg-ala and name C*,S*)
+ cmd.get_area: 207.214 Angstroms^2.
+PyMOL>get_area (ala-arg-ala and name N*,O*)
+ cmd.get_area: 155.530 Angstroms^2.
+PyMOL>get_area (ala-asn-ala and name C*,S*)
+ cmd.get_area: 175.177 Angstroms^2.
+PyMOL>get_area (ala-asn-ala and name N*,O*)
+ cmd.get_area: 136.701 Angstroms^2.
+PyMOL>get_area (ala-asp-ala and name C*,S*)
+ cmd.get_area: 175.406 Angstroms^2.
+PyMOL>get_area (ala-asp-ala and name N*,O*)
+ cmd.get_area: 136.444 Angstroms^2.
+PyMOL>get_area (ala-cys-ala and name C*,S*)
+ cmd.get_area: 198.513 Angstroms^2.
+PyMOL>get_area (ala-cys-ala and name N*,O*)
+ cmd.get_area: 103.181 Angstroms^2.
+PyMOL>get_area (ala-gln-ala and name C*,S*)
+ cmd.get_area: 189.966 Angstroms^2.
+PyMOL>get_area (ala-gln-ala and name N*,O*)
+ cmd.get_area: 141.187 Angstroms^2.
+PyMOL>get_area (ala-glu-ala and name C*,S*)
+ cmd.get_area: 190.183 Angstroms^2.
+PyMOL>get_area (ala-glu-ala and name N*,O*)
+ cmd.get_area: 139.889 Angstroms^2.
+PyMOL>get_area (ala-gly-ala and name C*,S*)
+ cmd.get_area: 164.291 Angstroms^2.
+PyMOL>get_area (ala-gly-ala and name N*,O*)
+ cmd.get_area: 106.918 Angstroms^2.
+PyMOL>get_area (ala-his-ala and name C*,S*)
+ cmd.get_area: 205.883 Angstroms^2.
+PyMOL>get_area (ala-his-ala and name N*,O*)
+ cmd.get_area: 121.990 Angstroms^2.
+PyMOL>get_area (ala-ile-ala and name C*,S*)
+ cmd.get_area: 218.887 Angstroms^2.
+PyMOL>get_area (ala-ile-ala and name N*,O*)
+ cmd.get_area: 99.424 Angstroms^2.
+PyMOL>get_area (ala-leu-ala and name C*,S*)
+ cmd.get_area: 223.090 Angstroms^2.
+PyMOL>get_area (ala-leu-ala and name N*,O*)
+ cmd.get_area: 103.758 Angstroms^2.
+PyMOL>get_area (ala-lys-ala and name C*,S*)
+ cmd.get_area: 215.977 Angstroms^2.
+PyMOL>get_area (ala-lys-ala and name N*,O*)
+ cmd.get_area: 124.084 Angstroms^2.
+PyMOL>get_area (ala-met-ala and name C*,S*)
+ cmd.get_area: 229.658 Angstroms^2.
+PyMOL>get_area (ala-met-ala and name N*,O*)
+ cmd.get_area: 102.110 Angstroms^2.
+PyMOL>get_area (ala-phe-ala and name C*,S*)
+ cmd.get_area: 245.969 Angstroms^2.
+PyMOL>get_area (ala-phe-ala and name N*,O*)
+ cmd.get_area: 99.419 Angstroms^2.
+PyMOL>get_area (ala-pro-ala and name C*,S*)
+ cmd.get_area: 201.042 Angstroms^2.
+PyMOL>get_area (ala-pro-ala and name N*,O*)
+ cmd.get_area: 98.299 Angstroms^2.
+PyMOL>get_area (ala-ser-ala and name C*,S*)
+ cmd.get_area: 170.834 Angstroms^2.
+PyMOL>get_area (ala-ser-ala and name N*,O*)
+ cmd.get_area: 121.894 Angstroms^2.
+PyMOL>get_area (ala-thr-ala and name C*,S*)
+ cmd.get_area: 185.927 Angstroms^2.
+PyMOL>get_area (ala-thr-ala and name N*,O*)
+ cmd.get_area: 120.952 Angstroms^2.
+PyMOL>get_area (ala-trp-ala and name C*,S*)
+ cmd.get_area: 256.296 Angstroms^2.
+PyMOL>get_area (ala-trp-ala and name N*,O*)
+ cmd.get_area: 109.594 Angstroms^2.
+PyMOL>get_area (ala-tyr-ala and name C*,S*)
+ cmd.get_area: 237.688 Angstroms^2.
+PyMOL>get_area (ala-tyr-ala and name N*,O*)
+ cmd.get_area: 118.055 Angstroms^2.
+PyMOL>get_area (ala-val-ala and name C*,S*)
+ cmd.get_area: 204.296 Angstroms^2.
+PyMOL>get_area (ala-val-ala and name N*,O*)
+ cmd.get_area: 99.424 Angstroms^2.
