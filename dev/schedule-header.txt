@@ -1,0 +1,12 @@
+Schedule
+========
+
++ Reading should be done *before* the class it covers.  The abbreviation "MoL"
+  indicates the "Molecules of Life" text.  The abbreviation "SSTB" indicates the
+  "Simple Statistical Thermodynamics for the Biochemist" packet. 
++ The class materials (notes, handouts, etc.) will be posted after the class
+  session in the "Material" column.
++ Lab and homework material will be updated throughout the course.
++ This schedule is approximate and subject to revision, with the exception of
+  the dates of the exams.
+
