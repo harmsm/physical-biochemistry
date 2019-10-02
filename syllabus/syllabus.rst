@@ -18,7 +18,8 @@ Willamette 340A
 Office Hour: 9-10 am, Thursdays
 
 Dillon Willis (TA)
-Office Hour: TBA
+diwillis@uoregon.edu
+Office Hour: 9-10 am, Tuesdays, KLA 331
 
 Class structure:
 ================
