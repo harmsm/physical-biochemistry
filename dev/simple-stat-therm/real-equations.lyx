@@ -1,0 +1,404 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Physical Biochemical Relationships
+\end_layout
+
+\begin_layout Standard
+Before delving into our simple models, we'll summarize the thermodynamic
+ relationships that we will cover.
+ We are starting here for two reasons.
+ First, it looks imprressive: by the end of this document you will hopefully
+ have a handle on the ideas that these (potentially intimidating) equations
+ capture.
+ Second, this list provides a way to cross-reference the simple models we
+ will present against the actual equations and language used by practicing
+ physical biochemists.
+ So, we begin:
+\end_layout
+
+\begin_layout Enumerate
+The 
+\emph on
+probabilistic definition of entropy 
+\emph default
+(also known as the 
+\emph on
+Shannon Entropy
+\emph default
+):
+\begin_inset Formula 
+\[
+S=-R\sum_{i=1}^{W}p_{i}ln\left(p_{i}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $S$
+\end_inset
+
+ is entropy, 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is the probability of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ state, 
+\begin_inset Formula $W$
+\end_inset
+
+ is the number of states, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is the gas constant.
+ If all states have the same probability, this simplifies to: 
+\begin_inset Formula 
+\[
+S=Rln\left(W\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Counting statistics
+\emph default
+.
+ The probability of seeing 
+\begin_inset Formula $k$
+\end_inset
+
+ out of 
+\begin_inset Formula $n$
+\end_inset
+
+ molecules in a state with probability 
+\begin_inset Formula $p$
+\end_inset
+
+ is: 
+\begin_inset Formula 
+\[
+P=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
+\]
+
+\end_inset
+
+The 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ notation is pronounced 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ choose 
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ and means, 
+\begin_inset Quotes eld
+\end_inset
+
+How many combinations of 
+\begin_inset Formula $k$
+\end_inset
+
+ molecules are possible when drawing from 
+\begin_inset Formula $n$
+\end_inset
+
+ total?
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The 
+\emph on
+thermodynamic definition of entropy
+\emph default
+:
+\begin_inset Formula 
+\[
+S=\frac{q_{rev}}{T}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q_{rev}$
+\end_inset
+
+ is the reversible heat of a reaction and 
+\begin_inset Formula $T$
+\end_inset
+
+ is the absolute temperature.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The microscopic meaning of heat (
+\begin_inset Formula $q$
+\end_inset
+
+), enthalpy (
+\begin_inset Formula $H$
+\end_inset
+
+) and free energy (
+\begin_inset Formula $G$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+The spontaneity of a reaction is determined by the change in enthalpy (
+\begin_inset Formula $\Delta H$
+\end_inset
+
+) and entropy (
+\begin_inset Formula $\Delta S$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\Delta G=\Delta H-T\Delta S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inter-relationships between 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+, 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+, and reaction rates:
+\begin_inset Formula 
+\[
+\Delta G=-RTln\left(K_{eq}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+ is the equilibrium constant for the reaction.
+ This can also be written in terms of reaction rates (
+\begin_inset Formula $k_{forward}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{reverse}$
+\end_inset
+
+) and equilibrium concentrations (
+\begin_inset Formula $[products]$
+\end_inset
+
+, 
+\begin_inset Formula $[reactants]$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+K_{eq}=\frac{k_{forward}}{k_{reverse}}=\frac{[products]}{[reactants]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First-order rate laws of the form:
+\begin_inset Formula 
+\[
+\frac{d[product]}{dt}=k_{forward}[rectant]-k_{reverse}[product]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The relative probabilities of states using 
+\emph on
+Boltzmann weights
+\emph default
+.
+ 
+\begin_inset Formula 
+\[
+p_{A}=\left(\frac{e^{-E_{A}/RT}}{\sum_{i}e^{-E_{i}/RT}}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{A}$
+\end_inset
+
+ is the probability of state 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ is the energy of state 
+\begin_inset Formula $i.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+How thermodynamic measurements provide insight into molecular mechanism,
+ with a focus on heat capacity:
+\begin_inset Formula 
+\[
+C_{p}=\left(\frac{\partial H}{\partial T}\right)_{P}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H(T)=\Delta H(T_{ref})+\Delta C_{p}(T-T_{ref})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S(T)=\Delta S(T_{ref})+\Delta C_{p}ln\left(\frac{T}{T_{ref}}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $C_{p}$
+\end_inset
+
+ is the heat capacity and 
+\begin_inset Formula $T_{ref}$
+\end_inset
+
+ is a chosen reference temperature.
+ 
+\end_layout
+
+\end_body
+\end_document
