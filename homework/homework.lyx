@@ -251,8 +251,31 @@ questions.
 Simple Statistical Thermodynamics
 \end_layout
 
-\begin_layout Subsection
-Warm up
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=-RTln(K_{eq})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{eq}=\frac{[product(s)]}{[reactant(s)]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=-R\sum_{i=1}^{i\le W}p_{i}ln(p_{i})
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -444,15 +467,6 @@ What fraction of the protein molecules are in the folded state for the mutant
 
 \end_deeper
 \begin_layout Enumerate
-Generate a plot of some kind of entropy thing...
- For two dice, 
-\begin_inset Formula $p_{6}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
 An unfolded protein occupies many conformations; a folded protein occupies
  relatively few.
  Understanding how an amino acid chain finds its native structure out of
@@ -641,6 +655,130 @@ What other factors might need to be accounted for to properly determine
 
 \end_deeper
 \begin_layout Enumerate
+Many proteins have multiple binding sites for ligands.
+ The most famous example might be hemoglobin, with its four 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ binding sites.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Generate a plot of the probability that a hemoglobin tetramer has 0, 1,
+ 2, 3, or 4 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ molecules bound vs.
+ the probability that an individual subunit binds 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+.
+ You'll want to use this expression, discussed in the Simple Statistical
+ Thermodynamics for Biochemists packet.
+ 
+\begin_inset Formula 
+\[
+P(n,k)=\binom{n}{k}p^{k}(1-p)^{n-k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Describe what 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+, and 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ mean when modeling hemoglobin 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ binding.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The plot below shows the measured proportion of hemoglobin tetramers with
+ 0, 1, 2, 3, or 4 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ molecules bound vs.
+ the probability that an individual subunit binds 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename hb-probs.png
+	lyxscale 50
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Does your plot reproduce this plot? Can you rationalize any differences
+ between your predicted and this observed plot? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Explain, in molecular terms:
 \end_layout
 
@@ -654,7 +792,18 @@ Why do both increasing the temperature and decreasing the temperature of
  a system lead to energy being converted to heat?
 \end_layout
 
+\begin_layout Enumerate
+What is enthalpy?
+\end_layout
+
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Differential scanning calorimetry and protein folding
 \end_layout
