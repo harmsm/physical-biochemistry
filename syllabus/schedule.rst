@@ -17,9 +17,9 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    1  | 10/2   | The statistics of biomolecules                                | ---                  | ---                                 | `01_slides`_, `01_notes`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    1  | 10/4   | Why do reactions have a direction?                            | ---                  | `SSTB 1-3`_, MoL pp. 294-305        | ---                        |
+|    1  | 10/4   | Why do reactions have a direction?                            | ---                  | `SSTB 1-3`_, MoL pp. 294-305        | `02_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    2  | 10/7   | Free energy, enthalpy, and entropy                            | ---                  | `SSTB 4-5`_, MoL pp. 383-409        | ---                        |
+|    2  | 10/7   | Free energy, enthalpy, and entropy                            | ---                  | `SSTB 4`_, MoL pp. 383-409          | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/9   | The molecular interpretation of heat                          | ---                  | `Nelson pp. 82-89`_, `SSTB 6`_      | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -78,7 +78,7 @@ Schedule
 
 .. reading links
 .. _`SSTB 1-3`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
-.. _`SSTB 4-5`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
+.. _`SSTB 4`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Nelson pp. 82-89`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/nelson.pdf
 .. _`SSTB 6`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Anfinsen`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/anfinsen_1973_folding.pdf
@@ -95,6 +95,7 @@ Schedule
 .. material links
 .. _`01_slides`: https://harmsm.github.io/physical-biochemistry/lectures/01_introduction/index.html
 .. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdf
+.. _`02_notes`: https://harmsm.github.io/physical-biochemistry/notes/02_reaction-direction.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc

@@ -2181,84 +2181,71 @@ If we substitute this into the expression for
 
 \end_inset
 
-As with our rate law, we see that the final ration of 
+You have also probably seen that:
+\begin_inset Formula 
+\[
+K_{eq}=\frac{[products]}{[reactants]}.
+\]
+
+\end_inset
+
+Can we get there with the DFR? From our rate law, we found that the final
+ concentration of 
 \begin_inset Formula $\epsdice{6}$
 \end_inset
 
- to other dice faces is determined by the probability of obtaining a 
-\begin_inset Formula $\epsdice{6}$
-\end_inset
-
- the probability of losing a 
-\begin_inset Formula $\epsdice{6}$
+ was 
+\begin_inset Formula $p_{\epsdice{6}}N$
 \end_inset
 
 .
+ If we substitute this into our equation for 
+\begin_inset Formula $K_{eq}$
+\end_inset
+
+ above, we get:
+\begin_inset Formula 
+\[
+K_{eq}=\frac{N_{\epsdice{6}}}{N-N_{\epsdice{6}}}=\frac{p_{\epsdice{6}}N}{N-p_{\epsdice{6}}N}=\frac{p_{\epsdice{6}}}{1-p_{\epsdice{6}}}.
+\]
+
+\end_inset
+
+Hopefully from this quick analysis you can see better what first-order rate
+ constants and equilibrium constants mean.
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-K_{eq}=\frac{p_{six}}{1-p_{six}}
-\]
-
+\begin_layout Itemize
+\begin_inset Formula $k$
 \end_inset
 
+ (first-order rate constant): How often one tries a reaction times the probabili
+ty the reaction occurs.
+ 
+\end_layout
 
-\begin_inset Formula 
-\[
-K_{eq}=\frac{w_{6}/\sum_{i=1}^{i\le6}w_{i}}{1-w_{6}/\sum_{i=1}^{i\le6}w_{i}}.
-\]
-
+\begin_layout Itemize
+\begin_inset Formula $K_{eq}=\frac{k_{forward}}{k_{reverse}}=\frac{[products]}{[reactants]}$
 \end_inset
 
-To make this a little bit less unweildy, we can recognize that 
-\begin_inset Formula $\sum_{i=1}^{i\le6}w_{i}/\sum_{i=1}^{i\le6}w_{i}=1$
+: The concentration of products and reactants that, when combined with the
+ rates of the forward and reverse reaction, cause the two reactions to exactly
+ offset one another.
+ At 
+\begin_inset Formula $N_{\epsdice{6}}=p_{\epsdice{6}}N$
 \end_inset
 
-, so:
-\begin_inset Formula 
-\[
-K_{eq}=\frac{w_{6}/\cancel{\sum_{i=1}^{i\le6}w_{i}}}{Q/\cancel{\sum_{i=1}^{i\le6}w_{i}}-w_{6}/\cancel{\sum_{i=1}^{i\le6}w_{i}}}
-\]
-
+, the rate of losing 
+\begin_inset Formula $\epsdice{6}$
 \end_inset
 
-
-\begin_inset Formula 
-\[
-K_{eq}=\frac{w_{6}}{\sum_{i=1}^{i\le6}w_{i}-w_{6}}
-\]
-
+ is exactly offset by the rate of gaining 
+\begin_inset Formula $\epsdice{6}$
 \end_inset
 
-
-\begin_inset Formula 
-\[
-K_{eq}=\frac{w_{6}}{w_{1}+w_{2}+w_{3}+w_{4}+w_{5}+\cancel{w_{6}}-\cancel{w_{6}}}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-K_{eq}=\frac{w_{6}}{w_{1}+w_{2}+w_{3}+w_{4}+w_{5}}
-\]
-
-\end_inset
-
-Hopefully you can see from above that this is actually just another way
- to write:
-\begin_inset Formula 
-\[
-K_{eq}=\frac{[products]}{[reactants]}
-\]
-
-\end_inset
-
-
+ and the reaction has equilibrated.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2800,21 +2787,17 @@ entropy
 \end_inset
 
 —just as there are vastly more ways to have a losing lottery number than
- a winning lottery number—it is essentially impossible end up with an all-
-\begin_inset Formula $\epsdice{6}$
-\end_inset
-
- by randomly rolling the dice.
- 
+ a winning lottery number—it is essentially impossible 
 \end_layout
 
-\begin_layout Subsection*
-SStuff
+\begin_layout Subsection
+Equilibrium balances probable outcomes against outcomes that can happen
+ in many ways 
 \end_layout
 
 \begin_layout Standard
-The above argument lets us understand why we do not see something extreme
- like all 
+This argument lets us understand why we do not see something extreme like
+ all 
 \begin_inset Formula $\epsdice{6}$
 \end_inset
 
@@ -3161,10 +3144,6 @@ end{adjustbox}
 \begin_inset Newline newline
 \end_inset
 
-FIX GRAPHIC
-\begin_inset Newline newline
-\end_inset
-
 The formula for 
 \begin_inset Formula $\binom{n}{k}$
 \end_inset
@@ -3230,6 +3209,10 @@ COMBIN
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3243,10 +3226,35 @@ noprefix "false"
 
 \end_inset
 
- is powerful and extremely important.
+ is a very powerful way to think about thermodynamics.
  
 \series bold
-If you can understand Fig 
+If you can understand how it works, you are on your way to understanding
+ a ton of physical biochemistry.
+ 
+\series default
+One way to appreciate this is to plot the main parts of this equation as
+ a function of increasing 
+\begin_inset Formula $k$
+\end_inset
+
+—that is, going from no 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (
+\begin_inset Formula $k=0$
+\end_inset
+
+) to all 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ (
+\begin_inset Formula $k=n$
+\end_inset
+
+) (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:multiplicity"
@@ -3256,7 +3264,7 @@ noprefix "false"
 
 \end_inset
 
-, you are on your way to understanding a ton of physical biochemistry
+).
 \end_layout
 
 \begin_layout Standard
@@ -3281,7 +3289,7 @@ begin{adjustbox}{center}
 
 \begin_inset Graphics
 	filename adding-more-N.png
-	lyxscale 25
+	lyxscale 80
 	width 20cm
 
 \end_inset
@@ -3312,21 +3320,7 @@ name "fig:multiplicity"
 
 \end_inset
 
-asdfaa
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-These panels show increasing total numbers of dice: 
+These panels show increasing total numbers of dice from left to right 
 \begin_inset Formula $10$
 \end_inset
 
@@ -3356,21 +3350,989 @@ These panels show increasing total numbers of dice:
 \end_inset
 
  (bottom).
- Informally, the top row is 
-\begin_inset Formula $S$
+ Note the log scale used for the 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
 \end_inset
 
-, the middle row is 
-\begin_inset Formula $H$
+ y-axis.
+ 
+\end_layout
+
 \end_inset
 
-, and the bottom row is 
-\begin_inset Formula $G$
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, consider the 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ chunk (top row).
+ This function is centered at 
+\begin_inset Formula $50\%$
+\end_inset
+
+, meaning that the the highest number of configurations occurs for 
+\begin_inset Formula $k=n/2$
 \end_inset
 
 .
- Let's unpack this.
+ Hopefully this makes intuitive sense.
+ (This can be seen graphically in the 
+\begin_inset Formula $n-choose-k$
+\end_inset
+
+ box above: intermediate values of 
+\begin_inset Formula $k$
+\end_inset
+
+ maximize the number of ways to arrange the system.) Note also that the peak
+ gets 
+\emph on
+large
+\emph default
+.
+ For the 
+\begin_inset Formula $n=300$
+\end_inset
+
+ case, there are 
+\begin_inset Formula $10^{88}$
+\end_inset
+
+ possible arrangments of 
+\begin_inset Formula $150$
+\end_inset
+
  
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and 
+\begin_inset Formula $150$
+\end_inset
+
+ not-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ dice.
+ 
+\end_layout
+
+\begin_layout Standard
+Next, consider the 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ chunk (middle row).
+ This function decreases exponentially from 
+\begin_inset Formula $k=0$
+\end_inset
+
+ to 
+\begin_inset Formula $k=n$
+\end_inset
+
+ (note the log scale on the y-axis).
+ This is because 
+\begin_inset Formula $(1-p)>p$
+\end_inset
+
+ for a fair dice.
+ A collection of rolls containing fewer 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ will always be more probable than a collection of rolls with more 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ But, because this function goes as the 
+\begin_inset Formula $(n-k)th$
+\end_inset
+
+ power, these numbers are even smaller than the 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ values are large.
+ For the 
+\begin_inset Formula $k=150,n=300$
+\end_inset
+
+ case 
+\begin_inset Formula $\binom{n}{k}\approx10^{88}$
+\end_inset
+
+, but 
+\begin_inset Formula $p^{k}(1-p)^{n-k}\approx10^{-129}$
+\end_inset
+
+.
+ Even the most likely set of rolls—
+\begin_inset Formula $k=0$
+\end_inset
+
+, containing no 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+—has a very low overall probability (
+\begin_inset Formula $1.8\times10^{-24}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+If you combine 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ with 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ (bottom) row, you end up with the total probability of observing 
+\begin_inset Formula $P(n,k)$
+\end_inset
+
+.
+ For clarity, we've put the numerical values of these functions in the table
+ below for a few key values of 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ In the table, one can see that the configuration with the most states from
+ 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ function (
+\begin_inset Formula $k=150,n=300$
+\end_inset
+
+) is obliterated by the tiny value 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ function.
+ The highest magnitude for 
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+ function (
+\begin_inset Formula $k=0$
+\end_inset
+
+), is still tiny.
+ Since there is only one way to achieve this outcome—don't roll a single
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+—its overall probabilty remains very low.
+ It's only at 
+\begin_inset Formula $k\approx50$
+\end_inset
+
+ that these two chunks come together to yield 
+\begin_inset Formula $P(n,k)$
+\end_inset
+
+ with reasonable probabilities (
+\begin_inset Formula $p=0.06$
+\end_inset
+
+).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(n,k)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.8\times10^{-24}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.8\times10^{-24}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.1\times10^{57}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.0\times10^{-59}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.06$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9.4\times10^{88}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.5\times10^{-129}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.4\times10^{-40}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.6\times10^{-234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.6\times10^{-234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Put directly: the equilibrium value for the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is the result of a balance between 1) the probability of rolling a 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ versus something else (
+\begin_inset Formula $p^{k}(1-p)^{n-k}$
+\end_inset
+
+) and 2) tending towards states with maximum multiplicity (
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsection
+Beginnings of a link to thermodynamics
+\end_layout
+
+\begin_layout Standard
+Fine, you say: what does any of this have to do with thermodynamics? Let's
+ make the connection explicit.
+ Hopefully, in some chemistry class somewhere, you came across the following:
+\begin_inset Formula 
+\[
+\Delta G=\Delta H-T\Delta S.
+\]
+
+\end_inset
+
+You likely remeber that 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ (the free energy) indicates whether a reaction is 
+\begin_inset Quotes eld
+\end_inset
+
+spontaneous
+\begin_inset Quotes erd
+\end_inset
+
+ or not.
+ Maybe 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ (the change in enthalpy) was described in terms of the difference in the
+ energies of bonds formed in the products and reactants.
+ Finally, 
+\begin_inset Formula $\Delta S$
+\end_inset
+
+ (the change in entropy) might have been explained as a change in the amount
+ of disorder between the products and reactants.
+ Believe it or not, analogs of these exist even in something as simple as
+ the DFR.
+ 
+\end_layout
+
+\begin_layout Standard
+To show this, let's calculate the relative probability of being in the in
+ the 
+\begin_inset Formula $k=k_{2}$
+\end_inset
+
+ state versus the 
+\begin_inset Formula $k=k_{1}$
+\end_inset
+
+ state.
+ The ratio of these two probabilities is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{P(n,k_{2})}{P(n,k_{1})}=\text{\ensuremath{\frac{\binom{n}{k_{2}}p^{k_{2}}\left(1-p\right)^{n-k_{2}}}{\binom{n}{k_{1}}p^{k_{1}}(1-p)^{n-k_{1}}}}}
+\]
+
+\end_inset
+
+The 
+\begin_inset Formula $\binom{n}{k_{1}}$
+\end_inset
+
+ notation is a bit unwieldly, so let's replace it with a 
+\begin_inset Formula $W_{k}$
+\end_inset
+
+, which will still represent the number of arragements that are possible
+ for 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+W_{k}=\binom{n}{k}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{P(n,k_{2})}{P(n,k_{1})}=\text{\ensuremath{\frac{W_{k_{2}}p^{k_{2}}\left(1-p\right)^{n-k_{2}}}{W_{k_{1}}p^{k_{1}}(1-p)^{n-k_{1}}}}}
+\]
+
+\end_inset
+
+To make things simpler, let's take the 
+\begin_inset Formula $-ln$
+\end_inset
+
+ of both sides.
+ (This makes it way easier to deal with a probability like 
+\begin_inset Formula $10^{-234}$
+\end_inset
+
+ because: 
+\begin_inset Formula $-ln\left(10^{-234}\right)=234ln(10)=538.8$
+\end_inset
+
+.)
+\begin_inset Formula 
+\[
+-ln\left[\frac{P(n,k_{2})}{P(n,k_{1})}\right]=-ln\left[\text{\ensuremath{\frac{W_{k_{2}}p^{k_{2}}\left(1-p\right)^{n-k_{2}}}{W_{k_{1}}p^{k_{1}}(1-p)^{n-k_{1}}}}}\right]
+\]
+
+\end_inset
+
+Because 
+\begin_inset Formula $log(a\cdot b)=log(a)+log(b)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+-ln\left[\frac{P(n,k_{2})}{P(n,k_{1})}\right]=-ln\left[\text{\ensuremath{\frac{W_{k_{2}}}{W_{k_{1}}}}}\right]-ln\left[\text{\ensuremath{\frac{p^{k_{2}}\left(1-p\right)^{n-k_{2}}}{p^{k_{1}}(1-p)^{n-k_{1}}}}}\right]
+\]
+
+\end_inset
+
+Hopefully this beginning to look an awful lot like things like 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $H$
+\end_inset
+
+, and 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ As formulated by chemists, 
+\begin_inset Formula 
+\[
+\Delta G=-RTln\left(K_{eq}\right)=-RTln\left(\frac{[product]}{[reactant]}\right)
+\]
+
+\end_inset
+
+This is directly analogous to:
+\begin_inset Formula 
+\[
+-ln\left[\frac{P(n,k_{2})}{P(n,k_{1})}\right]
+\]
+
+\end_inset
+
+Just like 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+, this measures which dice configuration is more probable at equilibrium,
+ with a negative value indicating that 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ is more favorable than 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+.
+ If we put in 
+\begin_inset Formula $k_{1}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{2}=50$
+\end_inset
+
+ (meaning we go from no 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ to 
+\begin_inset Formula $1/6$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+), this gives us
+\begin_inset Formula 
+\[
+-ln\left[\frac{P(300,50)}{P(300,0)}\right]\approx-33.7
+\]
+
+\end_inset
+
+This means that if we started at 
+\begin_inset Formula $k=0$
+\end_inset
+
+, the system would 
+\emph on
+spontaneously
+\emph default
+ go to 
+\begin_inset Formula $k=50$
+\end_inset
+
+.
+ This is exactly the meaning for 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ usually given in a chemistry textbook.
+ 
+\end_layout
+
+\begin_layout Standard
+This probability is determined by two, offsetting terms.
+ The first measures the difference in the number of possible arrangements
+ of dice between the 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+.
+ This is also highly favorable.
+ This is because there are many more ways to arrange 
+\begin_inset Formula $50$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ than 
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+-ln\left[\text{\ensuremath{\frac{W_{k_{2}}}{W_{k_{1}}}}}\right]=-ln\left[\text{\ensuremath{\frac{W_{50}}{W_{0}}}}\right]\approx-132.4
+\]
+
+\end_inset
+
+This is a change in 
+\begin_inset Formula $entropy$
+\end_inset
+
+: the system tending towards states with higher multiplicity.
+
+\emph on
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, this tendency towards states of higher multiplicity is opposed
+ by the fact that increasing the number of 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ means having less likely rolls: more 
+\begin_inset Formula $1/6$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ and fewer 
+\begin_inset Formula $5/6$
+\end_inset
+
+ not-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+.
+ This is captured in the second term, which quantifies the probability of
+ the individual 
+\begin_inset Quotes eld
+\end_inset
+
+microstates
+\begin_inset Quotes erd
+\end_inset
+
+ (rolls) that make up each 
+\begin_inset Quotes eld
+\end_inset
+
+state
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ or not-
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+).
+ 
+\begin_inset Formula 
+\[
+-ln\left[\text{\ensuremath{\frac{p^{k_{2}}\left(1-p\right)^{n-k_{2}}}{p^{k_{1}}(1-p)^{n-k_{1}}}}}\right]=-ln\left[\text{\ensuremath{\frac{p^{50}\left(1-p\right)^{300-50}}{p^{50}(1-p)^{300-0}}}}\right]\approx98.7
+\]
+
+\end_inset
+
+This term is positive and 
+\emph on
+opposes 
+\emph default
+the entropic drive towards more states.
+ This is behaving similarly to an 
+\emph on
+enthalpy 
+\emph default
+in this case, where the energy stored in bonds can become less favorable
+ in a reaction if there if this is offset by a change in entropy.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Key points:
+\end_layout
+
+\begin_layout Enumerate
+The probability of seeing exactly 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ out of 
+\begin_inset Formula $n$
+\end_inset
+
+ rolls, where the probability of rolling 
+\begin_inset Formula $\epsdice{6}$
+\end_inset
+
+ is: 
+\begin_inset Formula 
+\[
+P(n,k)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The chunks of this equation correspond to the typical breakdown of 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+, and 
+\begin_inset Formula $\Delta S$
+\end_inset
+
+ in chemical reactions.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P(n,k)$
+\end_inset
+
+ measures the relative probability of each state – the free energy
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ describes the multiplicity of each state — the entropy
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p^{k}\left(1-p\right)^{n-k}$
+\end_inset
+
+ measures the probability of the rolls required to make the state – the
+ enthalpy.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
