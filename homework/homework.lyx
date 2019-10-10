@@ -607,14 +607,16 @@ Assume that, in the unfolded state, each amino acid samples
  angles with the same probability they are observed in protein coil regions.
  Calculate the entropy change for taking an amino acid from this unfolded
  distribution to a single folded conformation.
- For simplicity, you may assume that the folded conformation occupies a
- single grid square on the histogram.
  (The grid is 
 \begin_inset Formula $60\times60$
 \end_inset
 
 .
- The probability values are given in 
+ The probability values for each of the 
+\begin_inset Formula $3,600$
+\end_inset
+
+ possible conformations are given in 
 \begin_inset Formula $coil.csv$
 \end_inset
 
