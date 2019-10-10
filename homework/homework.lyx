@@ -788,8 +788,8 @@ What is heat?
 \end_layout
 
 \begin_layout Enumerate
-Why do both increasing the temperature and decreasing the temperature of
- a system lead to energy being converted to heat?
+Why do both adding high velocity atoms and removing high velocity atoms
+ lead to an entropically-driven redistribution of states? 
 \end_layout
 
 \begin_layout Enumerate
@@ -968,7 +968,7 @@ T_{m}=326\ K
 
 \begin_inset Formula 
 \[
-\Delta H_{m}^{\circ}=83.83\ kcal\cdot mol^{-1}
+\Delta H_{m}^{\circ}=350.7\ kJ\cdot mol^{-1}
 \]
 
 \end_inset
@@ -976,7 +976,7 @@ T_{m}=326\ K
 
 \begin_inset Formula 
 \[
-\Delta C_{p}=1.91\ kcal\cdot mol^{-1}\cdot K^{-1}
+\Delta C_{p}=7.99\ kJ\cdot mol^{-1}\cdot K^{-1}
 \]
 
 \end_inset
@@ -1028,7 +1028,7 @@ You make a mutation that decreases
 \end_inset
 
  to 
-\begin_inset Formula $23.83\ kcal\cdot mol^{-1}$
+\begin_inset Formula $99.7\ kcal\cdot mol^{-1}$
 \end_inset
 
  but does not affect 
@@ -1059,11 +1059,7 @@ Lysine in a salt bridge to an aspartic acid.
 \end_layout
 
 \begin_layout Enumerate
-Lysine with a decreased 
-\begin_inset Formula $pK_{a}$
-\end_inset
-
- to an aspartic acid. 
+Lysine in the hydrophobic core to an aspartic acid. 
 \end_layout
 
 \begin_layout Enumerate
@@ -1099,12 +1095,28 @@ Thermotoga
 .
  You then measure the stability of each mutant, plot and fit the data using
  the Gibbs-Hemholtz equation (see graph below).
+ The curves are for wildtype (black), mutant 1 (red), mutant 2 (blue), and
+ mutant 3 (green).
+ The dashed vertical lines indicate the growth temperatures of 
+\emph on
+Bacillus 
+\emph default
+and 
+\emph on
+Thermotoga
+\emph default
+, respectively.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Which of three mutants would be the most likely to be able to replace the
- wild type ferredoxin in Thermatoga? Please justify your answer.
+Which mutant(s) would be the most likely to be able to replace the wild
+ type ferredoxin in 
+\emph on
+Thermatoga
+\emph default
+? Please justify your answer.
  
 \end_layout
 
@@ -1133,8 +1145,8 @@ begin{adjustbox}{center}
 
 
 \begin_inset Graphics
-	filename thermophile_ps1.jpg
-	lyxscale 25
+	filename dG-vs-T-hw2_mutants.png
+	lyxscale 75
 	width 6cm
 
 \end_inset
