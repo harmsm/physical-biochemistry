@@ -926,7 +926,7 @@ begin{adjustbox}{center}
 
 
 \begin_inset Graphics
-	filename ../../../../2018/physical-biochemistry/exams/dG-v-T.png
+	filename dG-v-T.png
 	lyxscale 10
 	width 7cm
 
@@ -943,6 +943,226 @@ status open
 end{adjustbox}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You are studying the thermodynamics of folding for the enzyme ferredoxin
+ from the bacterium 
+\emph on
+Bacillus subtilis
+\emph default
+.
+ Using differential scanning calorimetry, folding appears reversible and
+ apparently two-state.
+ You find the following parameters: 
+\begin_inset Formula 
+\[
+T_{m}=326\ K
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{m}^{\circ}=83.83\ kcal\cdot mol^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta C_{p}=1.91\ kcal\cdot mol^{-1}\cdot K^{-1}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta H_{m}^{\circ}$
+\end_inset
+
+ is the standard enthalpy change at 
+\begin_inset Formula $T=T_{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the standard entropy change at 
+\begin_inset Formula $T_{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Generate a plot of the standard free energy change for the unfolding reaction
+ as a function of temperature, from 
+\begin_inset Formula $250$
+\end_inset
+
+ to 
+\begin_inset Formula $380\ K$
+\end_inset
+
+.
+ Label axes, including units.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What is the temperature at which ferredoxin is most stable?
+\end_layout
+
+\begin_layout Enumerate
+You make a mutation that decreases 
+\begin_inset Formula $\Delta H_{m}^{\circ}$
+\end_inset
+
+ to 
+\begin_inset Formula $23.83\ kcal\cdot mol^{-1}$
+\end_inset
+
+ but does not affect 
+\begin_inset Formula $T_{m}$
+\end_inset
+
+ or 
+\begin_inset Formula $\Delta C_{p}$
+\end_inset
+
+.
+ Which of the following mutations would most likely lead to this drop in
+ 
+\begin_inset Formula $\Delta H_{m}^{\circ}$
+\end_inset
+
+? Please justify your answer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Leucine in the hydrophobic core to an alanine
+\end_layout
+
+\begin_layout Enumerate
+Lysine in a salt bridge to an aspartic acid.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Lysine with a decreased 
+\begin_inset Formula $pK_{a}$
+\end_inset
+
+ to an aspartic acid. 
+\end_layout
+
+\begin_layout Enumerate
+Leucine on the surface of the protein to an arginine.
+\end_layout
+
+\begin_layout Enumerate
+Leucine on the surface of the protein to an alanine. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Thermotoga maritima
+\emph default
+ is a thermophilic bacterium that lives in hydrothermal vents, where water
+ temperatures can be near 
+\begin_inset Formula $90\ ^{\circ}C$
+\end_inset
+
+.
+ You are studying how ferredoxin has evolved to be stable at such high temperatu
+res.
+ You create three mutant version of 
+\emph on
+Bacillus
+\emph default
+ ferredoxin in which amino acids have been changed to match those in 
+\emph on
+Thermotoga
+\emph default
+.
+ You then measure the stability of each mutant, plot and fit the data using
+ the Gibbs-Hemholtz equation (see graph below).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Which of three mutants would be the most likely to be able to replace the
+ wild type ferredoxin in Thermatoga? Please justify your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In which of the three mutants does the hydrophobic effect contribute the
+ least to the overall stability of the protein? Please justify your answer.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename thermophile_ps1.jpg
+	lyxscale 25
+	width 6cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 

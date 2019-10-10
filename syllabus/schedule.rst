@@ -21,7 +21,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/7   | The molecular interpretation of heat                          | ---                  | `SSTB 4`_, MoL pp. 383-409          | `03_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    2  | 10/9   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_, `SSTB 6`_      | ---                        |
+|    2  | 10/9   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_, `SSTB 6`_      | `04_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/11  | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_        | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -97,6 +97,7 @@ Schedule
 .. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdf
 .. _`02_notes`: https://harmsm.github.io/physical-biochemistry/notes/02_reaction-direction.pdf
 .. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
+.. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
