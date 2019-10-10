@@ -21,7 +21,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/7   | The molecular interpretation of heat                          | ---                  | `SSTB 4`_, MoL pp. 383-409          | `03_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    2  | 10/9   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_, `SSTB 6`_      | `04_notes`_                |
+|    2  | 10/9   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_                 | `04_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/11  | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_        | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -80,7 +80,6 @@ Schedule
 .. _`SSTB 1-3`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`SSTB 4`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Nelson pp. 82-89`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/nelson.pdf
-.. _`SSTB 6`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Anfinsen`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/anfinsen_1973_folding.pdf
 .. _`Dill`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/dill.pdf
 .. _`Kauzmann`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/kauzmann.pdf
