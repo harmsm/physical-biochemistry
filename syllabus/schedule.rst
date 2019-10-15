@@ -25,7 +25,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    2  | 10/11  | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_        | `05_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    3  | 10/14  | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                | ---                        |
+|    3  | 10/14  | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                | `06_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    3  | 10/16  | Molecular ensembles and evolution (Anneliese Morrison)        | ---                  | `Sailer`_                           | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -98,6 +98,7 @@ Schedule
 .. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
 .. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
 .. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdf
+.. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc

@@ -1186,10 +1186,366 @@ end{adjustbox}
 Protein structure
 \end_layout
 
-\begin_layout Standard
-asdf
+\begin_layout Enumerate
+We're going to consider the structural and energetic effects of mutations
+ to the protein lysozyme.
+ To do so, we'll compare four crystal structures of lysozyme: 2BQA, 2BQC,
+ 2BQM and 2BQI.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Which residues are within 
+\begin_inset Formula $3\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+ of the residue I23 in the wildtype structure (2BQA)? This can be done using
+ the PyMol command 
+\emph on
+sele byres resi 23 around 3
+\emph default
+.
+ This means 
+\begin_inset Quotes eld
+\end_inset
+
+create a selection containing all residues that have at least one atom within
+ 
+\begin_inset Formula $3\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+ of one atom in residue 23.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The PDB file contains 2BQC contains the structure for lysozyme with the
+ mutation I23V.
+ Describe how the lysozyme structure responded to the mutation.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Repeat the analysis you did in steps (a) and (b) for mutations V74A (2BQM)
+ and V121A (2BQI).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on your analysis, is protein structure sensitive or insensitive to
+ sequence? 
+\end_layout
+
+\begin_layout Enumerate
+The I23V, V74A, and V121A mutations destabilize the protein (i.e.
+ decrease 
+\begin_inset Formula $\Delta G_{unfold}^{\circ}$
+\end_inset
+
+) by 
+\begin_inset Formula $-1.72$
+\end_inset
+
+, 
+\begin_inset Formula $-1.80$
+\end_inset
+
+, and 
+\begin_inset Formula $-7.28\ kJ\cdot mol^{-1}$
+\end_inset
+
+, respectively.
+ Using these structure, come up with hypotheses that explain their different
+ effects on 
+\begin_inset Formula $\Delta G^{\circ}$
+\end_inset
+
+ of unfolding.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pentose sugars pucker to relieve steric strain.
+ Ribose and deoxyribose are pentoses that differ only in a single moeity
+ at position C2.
+ In ribose, this is a hydroxyl group; in deoxyribose, it is a hydrogen atom.
+ Relative to hydrogen, the bulkier hydroxyl restricts the number of puckering
+ conformations that the ring can adopt.
+ As a result, ribose adopts only 4 puckered conformations, while deoxyribose
+ populates 8.
+ An enzyme can bind both ribose and deoxyribose with identical interactions
+ and, thus, identical binding enthalpy.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the difference in the standard entropy of binding (
+\begin_inset Formula $\Delta S_{bind}^{\circ}$
+\end_inset
+
+) for the two sugars.
+ Assume that except for differences in the configurational entropy of the
+ sugar, all other contributions to the binding entropy are the same for
+ the two sugars and can be neglected.
+\end_layout
+
+\begin_layout Enumerate
+If the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ for the ribose binding to the enzyme at 
+\begin_inset Formula $25\ ^{\circ}C$
+\end_inset
+
+ is 
+\begin_inset Formula $3.4\ \mu M$
+\end_inset
+
+, calculate the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ of deoxyribose binding to the enzyme.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using the information below, answer the following questions.
+ Your arguments should include both thermodynamic and molecular/chemical
+ reasoning.
+ Make sure you state any assumptions you make as part of the analysis.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the average strength of a hydrogen bond in an alanine 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ helix? 
+\end_layout
+
+\begin_layout Enumerate
+What is the contribution of the hydrophobic effect to formation of the helix?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Information for answering the questions:
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+md-snapshots 
+\emph default
+directory contain snapshots at 1.25 ns intervals from a molecular dynamics
+ simulation of an Alanine dodecamer peptide.
+ Three of the snapshots capture the peptide in the unfolded state; three
+ capture the peptide in the unfolded state.
+ All snapshots include water molecules within 
+\begin_inset Formula $5\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+ of any atom in the peptide.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Some analyses that might help you answer the questions above:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How many hydrogen bonds are formed between the peptide and water? What is
+ their average length? To as this using PyMol click on the 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ button on the rightmost panel and do the following: 
+\begin_inset Formula $[A]\rightarrow find\rightarrow polar\ contacts\rightarrow involving\ solvent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+How many hydrogen bonds are formed between the protein and water? What is
+ their average length? To ask this using PyMol, 
+\begin_inset Formula $[A]\rightarrow find\rightarrow polar\ contacts\rightarrow excluding\ solvent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+What is the change in the nonpolar and polar surface area between the folded
+ and unfolded structures? To do so, go to 
+\begin_inset Formula $File\rightarrow Run\ script...$
+\end_inset
+
+ and run 
+\begin_inset Quotes eld
+\end_inset
+
+md-snapshots/calc_area.pml
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Note that this script assumes you only have one structure loaded at once.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Extrapolating from work by Lopez and colleages (https://doi.org/10.1073/pnas.032665
+199), experimental estimates for the following thermodynamic parameters
+ at 
+\begin_inset Formula $298\ K$
+\end_inset
+
+ are:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Delta H_{F\rightarrow U}=45.2\pm0.5\ kJ\cdot mol^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Delta C_{p,F\rightarrow U}=0\pm0.1\ kJ\cdot mol^{-1}\cdot K^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Delta G_{F\rightarrow U}=50.2\pm0.5\ kJ\cdot mol^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Consider the model binding interaction shown below.
+ When unbound, the black ligand can exchange between the conformations shown
+ on the left (all conformations are shown).
+ When bound to the gray protein, it takes on the conformation shown on the
+ right.
+ A favorable interaction occurs when a red dot is next to a blue dot, and
+ is favorable by 
+\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ The system temperature is 
+\begin_inset Formula $298\ K$
+\end_inset
+
+.
+ The diagram shows the entire system—no water, ions, or other molecules
+ affect this interaction.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename binding.png
+	lyxscale 10
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the change in the conformational entropy of the ligand upon binding?
+\end_layout
+
+\begin_layout Enumerate
+What is the change in the enthalpy of the system upon binding?
+\end_layout
+
+\begin_layout Enumerate
+Do you have sufficient information to calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ for this reaction? If so, calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+.
+ If not, explain what further information you would need.
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Forcefields
 \end_layout
@@ -2195,98 +2551,6 @@ If an arginine side chain forms an ion pair with a negatively charged amino
 \end_layout
 
 \begin_layout Enumerate
-Consider the model binding interaction shown below.
- When unbound, the black ligand can exchange between the conformations shown
- on the left (all conformations are shown).
- When bound to the gray protein, it takes on the conformation shown on the
- right.
- A favorable interaction occurs when a red dot is next to a blue dot, and
- is favorable by 
-\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
-\end_inset
-
-.
- The system temperature is 
-\begin_inset Formula $298\ K$
-\end_inset
-
-.
- The diagram shows the entire system—no water, ions, or other molecules
- affect this interaction.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename binding.png
-	lyxscale 10
-	width 14cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-What is the change in the conformational entropy of the ligand upon binding?
-\end_layout
-
-\begin_layout Enumerate
-What is the change in the enthalpy of the system upon binding?
-\end_layout
-
-\begin_layout Enumerate
-Do you have sufficient information to calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
- for this reaction? If so, calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
-.
- If not, explain what further information you would need.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
 You are studying the interaction between a protein kinase and its peptide
  substrate.
  The interaction is 1:1 and the affinity is 
@@ -2647,54 +2911,6 @@ Design an experiment to test your hypothesis, describing how the possible
 Kinetics
 \end_layout
 
-\begin_layout Enumerate
-Pentose sugars pucker to relieve steric strain.
- Ribose and deoxyribose are pentoses that differ only in a single moeity
- at position C2.
- In ribose, this is a hydroxyl group; in deoxyribose, it is a hydrogen atom.
- Relative to hydrogen, the bulkier hydroxyl restricts the number of puckering
- conformations that the ring can adopt.
- As a result, ribose adopts only 4 puckered conformations, while deoxyribose
- populates 8.
- An enzyme can bind both ribose and deoxyribose with identical interactions
- and, thus, identical binding enthalpy.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Calculate the difference in the standard entropy of binding (
-\begin_inset Formula $\Delta S_{bind}^{\circ}$
-\end_inset
-
-) for the two sugars.
- Assume that except for differences in the configurational entropy of the
- sugar, all other contributions to the binding entropy are the same for
- the two sugars and can be neglected.
-\end_layout
-
-\begin_layout Enumerate
-If the 
-\begin_inset Formula $K_{D}$
-\end_inset
-
- for the ribose binding to the enzyme at 
-\begin_inset Formula $25\ ^{\circ}C$
-\end_inset
-
- is 
-\begin_inset Formula $3.4\ \mu M$
-\end_inset
-
-, calculate the 
-\begin_inset Formula $K_{D}$
-\end_inset
-
- of deoxyribose binding to the enzyme.
- 
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Consider the following reaction:
 \begin_inset Newline newline
