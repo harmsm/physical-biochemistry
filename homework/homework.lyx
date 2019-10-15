@@ -1326,11 +1326,11 @@ Using the information below, answer the following questions.
 
 \begin_deeper
 \begin_layout Enumerate
-What is the average strength of a hydrogen bond in an alanine 
+Estimate the average strength of a hydrogen bond in an alanine 
 \begin_inset Formula $\alpha$
 \end_inset
 
- helix? 
+ helix.
 \end_layout
 
 \begin_layout Enumerate
@@ -1446,6 +1446,18 @@ Extrapolating from work by Lopez and colleages (https://doi.org/10.1073/pnas.032
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+The 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ to break a water-water hydrogen bond is worth 
+\begin_inset Formula $20\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Newpage pagebreak
@@ -1454,98 +1466,6 @@ Extrapolating from work by Lopez and colleages (https://doi.org/10.1073/pnas.032
 
 \end_layout
 
-\begin_layout Enumerate
-Consider the model binding interaction shown below.
- When unbound, the black ligand can exchange between the conformations shown
- on the left (all conformations are shown).
- When bound to the gray protein, it takes on the conformation shown on the
- right.
- A favorable interaction occurs when a red dot is next to a blue dot, and
- is favorable by 
-\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
-\end_inset
-
-.
- The system temperature is 
-\begin_inset Formula $298\ K$
-\end_inset
-
-.
- The diagram shows the entire system—no water, ions, or other molecules
- affect this interaction.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename binding.png
-	lyxscale 10
-	width 14cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-What is the change in the conformational entropy of the ligand upon binding?
-\end_layout
-
-\begin_layout Enumerate
-What is the change in the enthalpy of the system upon binding?
-\end_layout
-
-\begin_layout Enumerate
-Do you have sufficient information to calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
- for this reaction? If so, calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
-.
- If not, explain what further information you would need.
- 
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Forcefields
 \end_layout
@@ -1573,106 +1493,6 @@ Reason effectively about protein energetics.
  
 \end_layout
 
-\begin_layout Enumerate
-Proteins often bury ion pairs in active sites.
- We are going to explore whether this is favorable or not.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Derive an equation that expresses the electrostatic component of the energy
- to transfer an ion pair from water to the protein interior (
-\begin_inset Formula $\Delta G_{transfer}^{\circ}$
-\end_inset
-
-).
- This will be a function of the system dielectric constants (
-\begin_inset Formula $\varepsilon_{water}$
-\end_inset
-
- and 
-\begin_inset Formula $\varepsilon_{protein}$
-\end_inset
-
-), the charge on each ion (
-\begin_inset Formula $q_{i}$
-\end_inset
-
- and 
-\begin_inset Formula $q_{j}$
-\end_inset
-
-), the radius of each ion (
-\begin_inset Formula $r_{i}$
-\end_inset
-
- and 
-\begin_inset Formula $r_{j}$
-\end_inset
-
-) and the distance between the centers of mass for each ion (
-\begin_inset Formula $r_{ij}$
-\end_inset
-
-).
- You may ignore the effects of salt in this analysis.
- 
-\end_layout
-
-\begin_layout Enumerate
-Create three plots, all as a function of the protein dielectric constant
- 
-\begin_inset Formula $\varepsilon_{p}$
-\end_inset
-
-: 
-\begin_inset Formula $\Delta G_{born}^{\circ}$
-\end_inset
-
-, 
-\begin_inset Formula $\Delta G_{coulomb}^{\circ}$
-\end_inset
-
-, and 
-\begin_inset Formula $\Delta G_{transfer}^{\circ}$
-\end_inset
-
-.
- You may assume that 
-\begin_inset Formula $\varepsilon_{water}=78.5$
-\end_inset
-
-, 
-\begin_inset Formula $q_{i}=1$
-\end_inset
-
-, 
-\begin_inset Formula $q_{j}=-1$
-\end_inset
-
-, 
-\begin_inset Formula $r_{i}=r_{j}=2\ \mbox{\text{\normalfont}Å}$
-\end_inset
-
-, and that 
-\begin_inset Formula $r_{ij}=3\ \mbox{\text{\normalfont}Å}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Does the Coulomb interaction 
-\emph on
-ever
-\emph default
- fully offset the desolvation penalty? Whatever your answer: can you justify
- this result molecularly? 
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Estimate the strength of the Coulomb interaction between the charged amino
  acids shown in the diagram below.
@@ -1982,80 +1802,6 @@ Can you explain these results mechanistically?
 
 \end_deeper
 \begin_layout Enumerate
-What does a dielectric constant measure? 
-\end_layout
-
-\begin_layout Enumerate
-You are studying a protein that consists of two domains connected by a flexible
- linker.
- Using FRET, you can distinguish between a closed conformation and an open
- conformation.
- In the open conformation, two charged residues are 
-\begin_inset Formula $10\ \text{Å}$
-\end_inset
-
- apart.
- In the closed conformation, the same two residues are 
-\begin_inset Formula $5\ \text{Å}$
-\end_inset
-
- apart (see diagram).
- Using single-molecule FRET, you measure the relative populations of the
- open and closed conformations.
- In 
-\begin_inset Formula $100\ mM\ NaCl$
-\end_inset
-
-, the protein is closed 99% of the time.
- In 
-\begin_inset Formula $500\ mM\ NaCl$
-\end_inset
-
-, the protein is closed 50% of the time.
- Can this result be explained by salt screening of the two charged residues?
- Please justify your answer.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename fret-electrostatics.png
-	lyxscale 10
-	width 7cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
 Both 
 \begin_inset Formula $\Delta G_{coulomb}$
 \end_inset
@@ -2109,27 +1855,105 @@ bulk
 
 \end_deeper
 \begin_layout Enumerate
-Consider a protein in which the carboxylic acid of an asparate sidechain
- forms an ion pair with the amine of a lysine sidechain.
- The interaction is favorable by 
-\begin_inset Formula $-15\ kJ\cdot mol^{-1}.$
-\end_inset
-
- If the 
-\begin_inset Formula $pK_{a}$
-\end_inset
-
- of the aspartate carboxylic acid in water is 
-\begin_inset Formula $4.0$
-\end_inset
-
-, what is its 
-\begin_inset Formula $pK_{a}$
-\end_inset
-
- value in this protein? 
+Proteins often bury ion pairs in active sites.
+ We are going to explore whether this is favorable or not.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Derive an equation that expresses the electrostatic component of the energy
+ to transfer an ion pair from water to the protein interior (
+\begin_inset Formula $\Delta G_{transfer}^{\circ}$
+\end_inset
+
+).
+ This will be a function of the system dielectric constants (
+\begin_inset Formula $\varepsilon_{water}$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{protein}$
+\end_inset
+
+), the charge on each ion (
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+), the radius of each ion (
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+) and the distance between the centers of mass for each ion (
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+).
+ You may ignore the effects of salt in this analysis.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Create three plots, all as a function of the protein dielectric constant
+ 
+\begin_inset Formula $\varepsilon_{p}$
+\end_inset
+
+: 
+\begin_inset Formula $\Delta G_{born}^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta G_{coulomb}^{\circ}$
+\end_inset
+
+, and 
+\begin_inset Formula $\Delta G_{transfer}^{\circ}$
+\end_inset
+
+.
+ You may assume that 
+\begin_inset Formula $\varepsilon_{water}=78.5$
+\end_inset
+
+, 
+\begin_inset Formula $q_{i}=1$
+\end_inset
+
+, 
+\begin_inset Formula $q_{j}=-1$
+\end_inset
+
+, 
+\begin_inset Formula $r_{i}=r_{j}=2\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+, and that 
+\begin_inset Formula $r_{ij}=3\ \mbox{\text{\normalfont}Å}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Does the Coulomb interaction 
+\emph on
+ever
+\emph default
+ fully offset the desolvation penalty? Whatever your answer: can you justify
+ this result molecularly? 
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -2404,126 +2228,6 @@ Which dielectric constant is best (and why do you think so)?
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-Molecular dynamics simulations are powerful tools for understanding protein
- function, but they can also be black boxes.
- In the following, you will develop a very simple forcefield and use it
- to calculate the dynamics of two particles.
- Consider two ions in water at 
-\begin_inset Formula $25\ ^{\circ}C$
-\end_inset
-
- with no other ions present.
- They have the same charge (
-\begin_inset Formula $q$
-\end_inset
-
-) and their centers of mass are separated by 
-\begin_inset Formula $r$
-\end_inset
-
-.
- They begin with zero relative velocity.
- Write expressions for:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-...the 
-\emph on
-work
-\emph default
- required to bring the two ions from infinite distance to a separation 
-\begin_inset Formula $r_{ij}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-...the instantaneous 
-\emph on
-force
-\emph default
- experienced by each ion when at 
-\begin_inset Formula $r_{ij}$
-\end_inset
-
- (remember, 
-\begin_inset Formula $E=\int Fdx$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-...the instantaneous 
-\emph on
-acceleration 
-\emph default
-of each ion.
-\end_layout
-
-\begin_layout Enumerate
-...the 
-\emph on
-velocity
-\emph default
- of each ion after some short time 
-\begin_inset Formula $dt$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-...the 
-\emph on
-position
-\emph default
- of each ion after 
-\begin_inset Formula $dt$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-From these expressions, what information do you need to calculate their
- position and velocity? 
-\end_layout
-
-\begin_layout Enumerate
-Assume these are sodium atoms separated by 
-\begin_inset Formula $4\ \mbox{\text{\normalfont}Å}$
-\end_inset
-
-.
- Find the information you discovered you neded in (f) and calculate their
- positions and velocities after 
-\begin_inset Formula $10^{-15}\ s$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-From this analysis, what are basic the 
-\begin_inset Quotes eld
-\end_inset
-
-ingredients
-\begin_inset Quotes erd
-\end_inset
-
- to any molecular dynamics simulation?
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Binding interactions
 \end_layout
@@ -2548,6 +2252,190 @@ If an arginine side chain forms an ion pair with a negatively charged amino
 \end_inset
 
  shift up, down, or stay the same? Please justify your answer.
+\end_layout
+
+\begin_layout Enumerate
+Consider a protein in which the carboxylic acid of an asparate sidechain
+ forms an ion pair with the amine of a lysine sidechain.
+ The interaction is favorable by 
+\begin_inset Formula $-15\ kJ\cdot mol^{-1}.$
+\end_inset
+
+ If the 
+\begin_inset Formula $pK_{a}$
+\end_inset
+
+ of the aspartate carboxylic acid in water is 
+\begin_inset Formula $4.0$
+\end_inset
+
+, what is its 
+\begin_inset Formula $pK_{a}$
+\end_inset
+
+ value in this protein? 
+\end_layout
+
+\begin_layout Enumerate
+Consider the model binding interaction shown below.
+ When unbound, the black ligand can exchange between the conformations shown
+ on the left (all conformations are shown).
+ When bound to the gray protein, it takes on the conformation shown on the
+ right.
+ A favorable interaction occurs when a red dot is next to a blue dot, and
+ is favorable by 
+\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ The system temperature is 
+\begin_inset Formula $298\ K$
+\end_inset
+
+.
+ The diagram shows the entire system—no water, ions, or other molecules
+ affect this interaction.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename binding.png
+	lyxscale 10
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the change in the conformational entropy of the ligand upon binding?
+\end_layout
+
+\begin_layout Enumerate
+What is the change in the enthalpy of the system upon binding?
+\end_layout
+
+\begin_layout Enumerate
+Do you have sufficient information to calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ for this reaction? If so, calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+.
+ If not, explain what further information you would need.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You are studying a protein that consists of two domains connected by a flexible
+ linker.
+ Using FRET, you can distinguish between a closed conformation and an open
+ conformation.
+ In the open conformation, two charged residues are 
+\begin_inset Formula $10\ \text{Å}$
+\end_inset
+
+ apart.
+ In the closed conformation, the same two residues are 
+\begin_inset Formula $5\ \text{Å}$
+\end_inset
+
+ apart (see diagram).
+ Using single-molecule FRET, you measure the relative populations of the
+ open and closed conformations.
+ In 
+\begin_inset Formula $100\ mM\ NaCl$
+\end_inset
+
+, the protein is closed 99% of the time.
+ In 
+\begin_inset Formula $500\ mM\ NaCl$
+\end_inset
+
+, the protein is closed 50% of the time.
+ Can this result be explained by salt screening of the two charged residues?
+ Please justify your answer.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fret-electrostatics.png
+	lyxscale 10
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
