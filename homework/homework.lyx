@@ -1386,8 +1386,8 @@ A
 \end_layout
 
 \begin_layout Itemize
-How many hydrogen bonds are formed between the protein and water? What is
- their average length? To ask this using PyMol, 
+How many hydrogen bonds are formed between the peptide and itself? What
+ is their average length? To ask this using PyMol, 
 \begin_inset Formula $[A]\rightarrow find\rightarrow polar\ contacts\rightarrow excluding\ solvent$
 \end_inset
 
@@ -1416,7 +1416,7 @@ md-snapshots/calc_area.pml
 \begin_layout Itemize
 Extrapolating from work by Lopez and colleages (https://doi.org/10.1073/pnas.032665
 199), experimental estimates for the following thermodynamic parameters
- at 
+ for helix formation at 
 \begin_inset Formula $298\ K$
 \end_inset
 
