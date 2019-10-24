@@ -1467,30 +1467,7 @@ The
 \end_layout
 
 \begin_layout Section
-Forcefields
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Conceptual goals: 
-\series default
-Understand that the energetic properties of proteins can be estimated using
- a physical model and the 3D structure of the protein.
- Specifically, understand some of the considerations that go into electrostatics
- calculations.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Skill goal: 
-\series default
-Reason effectively about protein energetics.
- Manipulate quantitative descriptions of protein energetics.
- Reason about links between experiments and physical models.
- 
+Structure-based calculations
 \end_layout
 
 \begin_layout Enumerate
@@ -1800,6 +1777,23 @@ end{adjustbox}
 Can you explain these results mechanistically?
 \end_layout
 
+\begin_layout Enumerate
+Predict 
+\begin_inset Formula $\Delta G_{H2O\rightarrow bilayer}$
+\end_inset
+
+ at 
+\begin_inset Formula $pH\ 3$
+\end_inset
+
+ and 
+\begin_inset Formula $pH\ 11$
+\end_inset
+
+.
+ 
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Both 
@@ -1955,279 +1949,21 @@ ever
 
 \end_deeper
 \begin_layout Enumerate
-
-\series bold
-GRAD STUDENTS: 
-\series default
-Write a program that can read a PDB file and calculate the sum of the Coulomb
- interactions between charged residues in the protein, accounting for the
- effect of salt concentration using the Debye-Hückel approximation.
- You may assume that all Lys, Arg, His, Asp, and Glu are charged.
- Place the charge on the following atoms:
-\begin_inset Newline newline
+Estimate the strength of the homodimer interface for the protein 
+\begin_inset Formula $\beta B1$
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-amino acid
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-atom
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-charge
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ASP
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CG
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
--1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-GLU
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CD
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
--1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARG
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CZ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-+1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HIS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NE2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-+1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LYS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NZ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-+1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Calculate 
-\begin_inset Formula $\Delta G_{coulomb}$
-\end_inset
-
- as a function of 
-\begin_inset Formula $\varepsilon$
-\end_inset
-
- for the pdb file 1STN at 
-\begin_inset Formula $I=0.1\ M$
-\end_inset
-
-, 
-\begin_inset Formula $T=298\ K$
-\end_inset
-
-.
+ crystallin (PDB ID: 1OKI).
  
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-How much does total energy change between 
-\begin_inset Formula $\varepsilon=1$
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
- and 
-\begin_inset Formula $\varepsilon=78.5$
-\end_inset
 
-?
 \end_layout
 
-\begin_layout Enumerate
-Which dielectric constant is best (and why do you think so)?
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Binding interactions
 \end_layout
@@ -3870,6 +3606,288 @@ Shown below and to the left is the concentration of a protein (measured
  to the shapes shown below and to the right.
  (In other words, why isn’t the boundary between the solvent and the sedimenting
  macromolecule a sharp boundary?) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+GRAD STUDENTS: 
+\series default
+Write a program that can read a PDB file and calculate the sum of the Coulomb
+ interactions between charged residues in the protein, accounting for the
+ effect of salt concentration using the Debye-Hückel approximation.
+ You may assume that all Lys, Arg, His, Asp, and Glu are charged.
+ Place the charge on the following atoms:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+amino acid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+atom
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+charge
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ASP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GLU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ARG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CZ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HIS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NE2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LYS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NZ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Calculate 
+\begin_inset Formula $\Delta G_{coulomb}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ for the pdb file 1STN at 
+\begin_inset Formula $I=0.1\ M$
+\end_inset
+
+, 
+\begin_inset Formula $T=298\ K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+How much does total energy change between 
+\begin_inset Formula $\varepsilon=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon=78.5$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Which dielectric constant is best (and why do you think so)?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \end_deeper

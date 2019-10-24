@@ -33,7 +33,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    4  | 10/21  | X-ray crystallography (Arden Perkins)                         | ---                  | ---                                 | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    4  | 10/23  | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                    | ---                        |
+|    4  | 10/23  | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                    | `10_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    4  | 10/25  | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -99,6 +99,7 @@ Schedule
 .. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
 .. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdf
 .. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdf
+.. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
