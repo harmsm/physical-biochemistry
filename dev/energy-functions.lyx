@@ -1,0 +1,1232 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{adjustbox}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Calculating protein energetics
+\end_layout
+
+\begin_layout Subsection*
+Coulomb energy
+\end_layout
+
+\begin_layout Standard
+The energy change that accompanies moving two ions from an infinite distance
+ to distance 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is given by Coulomb's law:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{coulomb}=\alpha\frac{q_{i}q_{j}}{\varepsilon r_{ij}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a constant: 
+\begin_inset Formula $\alpha\equiv1389\ kJ\cdot mol^{-1}\cdot\mbox{\text{\normalfont}Å}$
+\end_inset
+
+.
+ This takes care of things like the Coulomb constant, unit conversion to
+ 
+\begin_inset Formula $\mbox{\text{\normalfont}Å}$
+\end_inset
+
+ and 
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+, etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ are the partial charges on each ion (things like +1.0, +0.5, -0.2, +11, etc.)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the dielectric constant, a unitless real number 
+\begin_inset Formula $\in[1,\infty)$
+\end_inset
+
+ that scales how much the medium separating the charges attenuates the interacti
+on.
+ In biological systems, the relevant range is from 1 (vacuum) to water (78.5).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is the distance between the ion centers in 
+\begin_inset Formula $\text{\normalfont}\text{Å}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Salt screening
+\end_layout
+
+\begin_layout Standard
+In most biological contexts, there is salt in the solution that forms a
+ mobile cloud which screens Coulomb interactions.
+ This effect depends on distance (with greater attenuation over longer distances
+) and concentration (with greater attenuation with higher salt concentrations).
+ One common way to model this is using the Debye-Hückel approximation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U([ions])=U_{coulomb}e^{-r_{ij}/\kappa}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the 
+\emph on
+Debye Length.
+ 
+\emph default
+This has units of 
+\begin_inset Formula $\mbox{\text{\normalfont}Å}$
+\end_inset
+
+ and measures how quickly interaction strength decays.
+ A shorter 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ means that the Coulomb interaction is felt at longer distances.
+
+\emph on
+ 
+\emph default
+At 
+\begin_inset Formula $r_{ij}=\kappa$
+\end_inset
+
+, the Coulomb interaction is 
+\begin_inset Formula $\approx37\%$
+\end_inset
+
+ of what it would be without salt present.
+ 
+\begin_inset Formula $\kappa$
+\end_inset
+
+is given by:
+\begin_inset Formula 
+\[
+\kappa\equiv\gamma\sqrt{\frac{\varepsilon T}{I}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a constant: 
+\begin_inset Formula $\gamma\equiv0.01988\ M^{1/2}\cdot K^{-1/2}\cdot\mbox{\text{\normalfont}Å}$
+\end_inset
+
+.
+ Like 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ above, this constant takes care of vacuum permitivity, unit conversion,
+ and the like.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the dielectric constant.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ is the temperature in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I$
+\end_inset
+
+ is the ionic strength in 
+\begin_inset Formula $M$
+\end_inset
+
+ (https://en.wikipedia.org/wiki/Ionic_strength).
+\end_layout
+
+\begin_layout Subsection*
+Solvation energy
+\end_layout
+
+\begin_layout Standard
+Ions possess a 
+\begin_inset Quotes eld
+\end_inset
+
+self energy
+\begin_inset Quotes erd
+\end_inset
+
+: the energy required to carve out a charged sphere in a given environment.
+ If an ion maintains its charge and environment throughout a reaction, we
+ can generally ignore this term.
+ If, however, the magnitude of the charge and/or its environment changes,
+ we must take this term into account.
+ For example, if an aspartic acid deprotonates in the course of the reaction,
+ we must account for the cost to create the charge in any energetic calculation.
+ The Born solvation model describes this as the energy to bring the charge
+ from being evenly distributed across the the surface of an a sphere with
+ infinite radius to being distributed across a sphere with radius 
+\begin_inset Formula $r_{ion}$
+\end_inset
+
+.
+ It is given by:
+\begin_inset Formula 
+\[
+G_{born}=\alpha\frac{q_{ion}^{2}}{\varepsilon r_{ion}}.
+\]
+
+\end_inset
+
+This can be derived from Coulomb's law by breaking 
+\begin_inset Formula $q_{ion}$
+\end_inset
+
+ into infinitesimal pieces and integrating over the process of bringing
+ these charge pieces together onto the surface of a sphere.
+\end_layout
+
+\begin_layout Subsection*
+Hydrogen bonding
+\end_layout
+
+\begin_layout Standard
+Hydrogen bonds are challenging to (efficiently) describe.
+ There are three basic approaches.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calculate the energy using a quantum mechanics.
+ This is the most accurate approach, but is computationally intensive.
+ For biomolecules, quantum mechanical calculations are generally only used
+ specific questions about enzyme active states and the like, often coupled
+ to a classical simulation.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use an empirical potential that accounts for both distance an angular informatio
+n.
+ One such function is:
+\begin_inset Formula 
+\[
+U_{hbond}=4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are adjustable parameters for eight different hydrogen bond combinations
+ (see table below).
+ 
+\begin_inset Formula $q_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ are partial charges on the acceptor and donor.
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ is the distance between the hydrogen and the hydrogen-bond acceptor in
+ 
+\begin_inset Formula $\normalfontÅ$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between 
+\begin_inset Formula $donor-hyrogen-acceptor$
+\end_inset
+
+ in degrees.
+ This potential function is taken from Rezac et al.
+ (2009) 
+\emph on
+JCTC 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1021/ct9000922"
+target "https://doi.org/10.1021/ct9000922"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The general protocol for such functions is to calculate the angular and
+ distance dependence for different classes of hydrogen bonds using quanum
+ mechanics, and then fit terms like 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $c$
+\end_inset
+
+ to reproduce those values.
+ The sorts of functions used have been reveiwed nicely by Martin Korth (2011)
+ 
+\emph on
+ChemPhysChem
+\emph default
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1002/cphc.201100540"
+target "https://doi.org/10.1002/cphc.201100540"
+literal "false"
+
+\end_inset
+
+.
+ These potentials are a bit hacked together: the general idea is to make
+ them work rather than to capture deep theory.
+ The sorts of approximations made can be seen, for example, in O'Meara et
+ al.
+ (2015) 
+\emph on
+JCTC 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1021/ct500864r"
+target "https://doi.org/10.1021/ct500864r"
+literal "false"
+
+\end_inset
+
+, who describe how they came up with a new potential function.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bond type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ (with no hydrogens) interacting with any 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $14.4209$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1.3273\times10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.2874$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ (with one hydrogen) interacting with any 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $73.3566$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-5.3979\times10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.0920$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ (with two or three hydrogens) interacting with any 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $48.7161$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.9844\times10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.4259$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O$
+\end_inset
+
+ (except carbonyl) interacting with 
+\begin_inset Formula $HN$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $29.8036$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.1262\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.9768$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O$
+\end_inset
+
+ (carbonyl) interacting with 
+\begin_inset Formula $HN$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-6.4578$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.3142\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.8379$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O$
+\end_inset
+
+ interacting with 
+\begin_inset Formula $HO$
+\end_inset
+
+ that is not water or carboxyl 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $23.1582$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-4.8015\times10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.9382$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O$
+\end_inset
+
+ interacting with 
+\begin_inset Formula $H$
+\end_inset
+
+ in water
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $15.3029$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2.0789\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.0365$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O$
+\end_inset
+
+ interacting with 
+\begin_inset Formula $H$
+\end_inset
+
+ in carboxyl
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $14.8668$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-4.6652\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.9111$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The simplest approach is to treat them Coulomb interactions between partial
+ charges.
+ This approach is straightforward, but does not properly account for the
+ angular dependence in the strength of a hydrogen bond.
+ Because of its speed, however, many standard molecular dynamics forcefields
+ use this approach.
+ 
+\end_layout
+
+\begin_layout Subsection*
+van der Waal's interactions
+\end_layout
+
+\begin_layout Standard
+Van der Waal's interactions are usually described as:
+\begin_inset Formula 
+\[
+U_{vdw}=\left(\epsilon_{i}\epsilon_{j}\right)^{1/2}\left[\left(\frac{\sigma_{i}+\sigma_{j}}{2r_{ij}}\right)^{12}-2\left(\frac{\sigma_{i}+\sigma_{j}}{2r_{ij}}\right)^{6}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ is the van der Waal's radius of an atom and 
+\begin_inset Formula $\epsilon_{x}$
+\end_inset
+
+ measures the strength of the contribution of atom 
+\begin_inset Formula $x$
+\end_inset
+
+ to the interaction.
+ The values of 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{x}$
+\end_inset
+
+ depend on the types of atoms involved.
+ 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is the distance between the centers of the interacting atoms.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Hydrophobic effect
+\end_layout
+
+\begin_layout Standard
+Using a solvent transfer energy studies, the following empirical relationships
+ have been established that link transfer free energy to extent of burial
+ of surface area.
+ Key papers along the way are:
+\end_layout
+
+\begin_layout Itemize
+McAuliffe (1966) 
+\emph on
+J Phys Chem
+\emph default
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1021/j100876a049"
+target "https://doi.org/10.1021/j100876a049"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Baldwin (1986) 
+\emph on
+PNAS 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1073/pnas.83.21.8069"
+target "https://doi.org/10.1073/pnas.83.21.8069"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Murphy and Gill (1991) 
+\emph on
+JMB 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1016/0022-2836(91)90506-2"
+target "https://doi.org/10.1016/0022-2836(91)90506-2"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+D'Aquino et al.
+ (1996) 
+\emph on
+Proteins 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1002/(SICI)1097-0134(199606)25:2<143::AID-PROT1>3.0.CO;2-J"
+target "https://doi.org/10.1002/(SICI)1097-0134(199606)25:2<143::AID-PROT1>3.0.CO;2-J"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Auton and Bolen (2005) 
+\emph on
+PNAS 
+\emph default
+
+\begin_inset CommandInset href
+LatexCommand href
+name "doi.org/10.1073/pnas.0507053102"
+target "https://doi.org/10.1073/pnas.0507053102"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the following, 
+\begin_inset Formula $\Delta ASA$
+\end_inset
+
+ is calculated in 
+\begin_inset Formula $\text{\normalfont}\text{Å}^{2}$
+\end_inset
+
+, energies are given in 
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+, and temperatures are in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ The thermodynamics of transferring nonpolar surface area from fully water
+ inaccessible to fully water accessible is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta C_{p,nonpolar}=1.883\times\Delta ASA_{nonpolar}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{nonpolar}=-35.313\times\Delta ASA_{nonpolar}+\Delta C_{p,nonpolar}\left(T-333.15\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S_{nonpolar,Tref}=\Delta C_{p,nonpolar}\times ln\left(\frac{T}{385.15}\right)
+\]
+
+\end_inset
+
+The thermodynamics of transferring polar surface area from fully water inaccessi
+ble to fully water accessible is given by:
+\begin_inset Formula 
+\[
+\Delta C_{p,polar}=-1.088\times\Delta ASA_{polar}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{polar}=131.378\times\Delta ASA_{polar}+\Delta C_{p,polar}\left(T-333.15\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S_{polar,Tref}=\Delta C_{p,polar}\times ln\left(\frac{T}{335.15}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
