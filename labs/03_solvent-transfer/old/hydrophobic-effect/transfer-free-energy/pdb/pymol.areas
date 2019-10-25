@@ -1,0 +1,759 @@
+XXX ala-ala-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-ala-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-ala-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 337.941 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 171.747 Angstroms^2.
+PyMOL>quit
+XXX ala-arg-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-arg-ala.pdb
+ CmdLoad: PDB-string loaded into object "ala-arg-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 352.532 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 284.243 Angstroms^2.
+PyMOL>quit
+XXX ala-asn-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-asn-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-asn-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 306.141 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 228.255 Angstroms^2.
+PyMOL>quit
+XXX ala-asp-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-asp-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-asp-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 308.417 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 227.058 Angstroms^2.
+PyMOL>quit
+XXX ala-cys-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-cys-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-cys-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 364.201 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 158.526 Angstroms^2.
+PyMOL>quit
+XXX ala-gln-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-gln-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-gln-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 315.428 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 263.398 Angstroms^2.
+PyMOL>quit
+XXX ala-glu-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-glu-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-glu-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 315.503 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 259.711 Angstroms^2.
+PyMOL>quit
+XXX ala-gly-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-gly-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-gly-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 314.539 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 181.736 Angstroms^2.
+PyMOL>quit
+XXX ala-his-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-his-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-his-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 367.963 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 185.052 Angstroms^2.
+PyMOL>quit
+XXX ala-ile-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-ile-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-ile-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 401.658 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 148.013 Angstroms^2.
+PyMOL>quit
+XXX ala-leu-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-leu-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-leu-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 404.693 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 152.142 Angstroms^2.
+PyMOL>quit
+XXX ala-lys-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-lys-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-lys-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 368.962 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 212.344 Angstroms^2.
+PyMOL>quit
+XXX ala-met-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-met-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-met-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 428.957 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 157.284 Angstroms^2.
+PyMOL>quit
+XXX ala-phe-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-phe-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-phe-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 420.943 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 143.021 Angstroms^2.
+PyMOL>quit
+XXX ala-pro-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-pro-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-pro-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 363.386 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 157.326 Angstroms^2.
+PyMOL>quit
+XXX ala-ser-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-ser-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-ser-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 313.873 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 198.995 Angstroms^2.
+PyMOL>quit
+XXX ala-thr-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-thr-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-thr-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 343.250 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 191.519 Angstroms^2.
+PyMOL>quit
+XXX ala-trp-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-trp-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-trp-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 418.493 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 166.496 Angstroms^2.
+PyMOL>quit
+XXX ala-tyr-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-tyr-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-tyr-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 390.201 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 192.138 Angstroms^2.
+PyMOL>quit
+XXX ala-val-ala.pdb
+ PyMOL(TM) Molecular Graphics System, Version 2.3.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.1. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   Intel Inc.
+  GL_RENDERER: Intel(R) Iris(TM) Plus Graphics 655
+  GL_VERSION:  2.1 INTEL-12.10.12
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>load ala-val-ala.pdb
+COMPND    BLOCKED PEPTIDE IN EXTENDED FORM
+ CmdLoad: PDB-string loaded into object "ala-val-ala", state 1.
+PyMOL>set dot_solvent, 1
+ Setting: dot_solvent set to on.
+PyMOL>get_area (name C*,S*)
+ cmd.get_area: 377.303 Angstroms^2.
+PyMOL>get_area (name N*,O*)
+ cmd.get_area: 148.652 Angstroms^2.
+PyMOL>quit

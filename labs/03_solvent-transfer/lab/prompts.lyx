@@ -1,0 +1,242 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+For this analysis, use on the 
+\emph on
+neutral 
+\emph default
+sidechains, not the 
+\emph on
+ionized 
+\emph default
+sidechains.
+\end_layout
+
+\begin_layout Enumerate
+Is the surface area of carbon, nitrogen, or oxygen a better predictor of
+ the octanol transfer free energy? Can you explain why this might be?
+\end_layout
+
+\begin_layout Enumerate
+Graph the octanol transfer free energy for the neutral amino acids against
+ the surface area you identified above.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What points are outliers?
+\end_layout
+
+\begin_layout Enumerate
+What do they have in common?
+\end_layout
+
+\begin_layout Enumerate
+What molecular explanation might explain this?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Remove the weirdo data points you identified in #2.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+How many 
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+ of free energy do you gain for transferring a square angstrom of carbon
+ to octanol? 
+\end_layout
+
+\begin_layout Enumerate
+What is the 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ for the linear fit? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Again, using the non-weirdo points from #2:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+How well do the results correlate between octanol, NMA, EtOH, and hexane?
+\end_layout
+
+\begin_layout Enumerate
+What aspects of the protein interior do these solvents model well? Poorly?
+\end_layout
+
+\begin_layout Enumerate
+Can you learn anything about the intrinsic accuracy of these surface area/energy
+ calculations for proteins from the difference between the models?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+These surface areas were calculated using the structures in the 
+\begin_inset Quotes eld
+\end_inset
+
+pdb
+\begin_inset Quotes erd
+\end_inset
+
+ directory, using a single conformation for each sidechain.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Choose two (non-weirdo) amino acids of your choice.
+ Load up the structures from the 
+\begin_inset Quotes eld
+\end_inset
+
+pdb
+\begin_inset Quotes erd
+\end_inset
+
+ directory in PyMOL.
+ Use the mutagenesis wizard to put the sidechain in different conformations.
+ Measure the solvent-accessible surface area of carbon for each conformation.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How big is the spread of SASA relative to the trend 
+\begin_inset Formula $\Delta G_{transfer}$
+\end_inset
+
+ vs.
+ SASA? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Finally: the 
+\begin_inset Quotes eld
+\end_inset
+
+Calculating protein energetics
+\begin_inset Quotes erd
+\end_inset
+
+ packet has a model carefully parameterized to reproduce the hydrophobic
+ effect associated with protein folding.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the 
+\emph on
+nonpolar
+\emph default
+ portion of the model to estimate 
+\begin_inset Formula $\Delta G_{transfer}$
+\end_inset
+
+ for each amino acid.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How well does this corrleaate with the octanol scale?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Combining what you observed in #4, #5, and #6: can you estimate the confidence
+ you would have in an energy calculated using a surface area calculation?
+ (You may not have the stats skills to do this rigorously.
+ That's fine.
+ The goal is to wrestle with it intellectually).
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,4 +1,6 @@
 
+set dot_solvent, 1
+
 get_area (ala-ala-ala and name C*,S*)
 get_area (ala-ala-ala and name N*,O*)
 
