@@ -76,16 +76,182 @@
 
 \begin_body
 
+\begin_layout Section*
+Solvent-transfer models to study the energetics of the hydrophobic effect
+\end_layout
+
 \begin_layout Standard
-For this analysis, use on the 
+To understand the energetics to bury an amino acid—whether during protein
+ folding or at a protein-protein interface—we need to 
 \emph on
-neutral 
+model 
 \emph default
-sidechains, not the 
+the process in a way that is simpler than a complete protein structure.
+ One common, powerful approach is a 
+\begin_inset Quotes eld
+\end_inset
+
+solvent transfer
+\begin_inset Quotes erd
+\end_inset
+
+ model.
+ The idea is simple: measure the energy to move small molecules from water
+ into various solvents, and then use that information to try to come up
+ with emprical rules that reproduce the transfer energy.
+ The solvent is a 
 \emph on
-ionized 
+model
 \emph default
-sidechains.
+ for the protein interior that may capture some molecular features well,
+ and other aspects poorly.
+ We can use the rules we come up with for solvent transfer to predict the
+ energetics of moving an amino acid into the protein interior.
+ 
+\end_layout
+
+\begin_layout Subsection*
+The data
+\end_layout
+
+\begin_layout Standard
+In this exercise, we are going to explore the transfer energy for amino
+ acids going from water into four different solvents: 1-octanol, N-methylacetami
+de, ethanol, and hexanes.
+ The data we are going to use comes from transfer of blocked peptides of
+ the form:
+\begin_inset Formula 
+\[
+Ala-X-Ala
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $X$
+\end_inset
+
+ is the amino acid of interest.
+ The transfer free energy of 
+\begin_inset Formula $Ala-Gly-Ala$
+\end_inset
+
+ is the reference free energy (
+\begin_inset Formula $0\ kJ\cdot mol^{-1}$
+\end_inset
+
+); all transfer energies are relative to this value.
+ The measured values come from Damodara & Song (1986) 
+\emph on
+JBC 
+\emph default
+(https://www.ncbi.nlm.nih.gov/pubmed/3711086) and Wimley, Creamer & White (1996)
+ 
+\emph on
+Biochemistry 
+\emph default
+(https://www.ncbi.nlm.nih.gov/pubmed/8611495).
+ 
+\end_layout
+
+\begin_layout Standard
+We will correlate these transfer free energies to the solvent-accessible
+ surface areas (SASA) of 
+\begin_inset Formula $Ala-X-Ala$
+\end_inset
+
+ peptides calculated in PyMOL.
+ As with the transfer free energies, the SASA of the 
+\begin_inset Formula $Ala-Gly-Ala$
+\end_inset
+
+ peptide has been subtracted from the SASA value of other peptides.
+ 
+\end_layout
+
+\begin_layout Standard
+These data are given in the 
+\begin_inset Quotes eld
+\end_inset
+
+transfer-free-energy.xlsx
+\begin_inset Quotes erd
+\end_inset
+
+ file that came with this lab.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Approach
+\end_layout
+
+\begin_layout Standard
+We are going to try to find a quantitative relationship between the surface
+ area and transfer free energy into different solvents.
+ We will ask what we can and cannot rerporduce, and hopefully gain some
+ molecular insights into the solvent-transfer/protein-folding process along
+ the way.
+ 
+\end_layout
+
+\begin_layout Standard
+We are going to use 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ as a metric in this analysis.
+ Quick review: 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ measures the fraction of the variation in some obsevable that is explained
+ by a computational model.
+ An 
+\begin_inset Formula $R^{2}=1.0$
+\end_inset
+
+ means the computational model explains everything; 
+\begin_inset Formula $R^{2}=0$
+\end_inset
+
+ means the computationala model explains nothing.
+ Having an 
+\begin_inset Formula $R^{2}=0.6$
+\end_inset
+
+ would mean that a computational model captures 
+\begin_inset Formula $60\%$
+\end_inset
+
+ of the variation in the observable; meaning 
+\begin_inset Formula $40\%$
+\end_inset
+
+ of our variation is explained by something that is not captured in our
+ computational model.
+ Such comparisons are powerful.
+ If our computational model only describes the hydrophobic effect, whatever
+ variation is left over is likely due to something besides the hydrophobic
+ effect—a pointer towards what to improve in the computational model.
+ 
+\end_layout
+
+\begin_layout Standard
+Since our goal is to figure out what correlates and why between transfer
+ energy and accessible surface area, some of what we will do below will
+ involve deleting points to improve the fit.
+ This might feel like cheating.
+ The point, however, is to understand 
+\emph on
+why 
+\emph default
+some amino acids work well and others do not.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Prompts
 \end_layout
 
 \begin_layout Enumerate
@@ -96,12 +262,17 @@ Is the surface area of carbon, nitrogen, or oxygen a better predictor of
 \begin_layout Enumerate
 Graph the octanol transfer free energy for the neutral amino acids against
  the surface area you identified above.
+ (Put the surface area on the 
+\begin_inset Formula $x$
+\end_inset
+
+ axis).
  
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-What points are outliers?
+Are there points that systematically fall off the line?
 \end_layout
 
 \begin_layout Enumerate
@@ -136,6 +307,10 @@ What is the
  for the linear fit? 
 \end_layout
 
+\begin_layout Enumerate
+What does this mean molecularly? 
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Again, using the non-weirdo points from #2:
@@ -147,12 +322,16 @@ How well do the results correlate between octanol, NMA, EtOH, and hexane?
 \end_layout
 
 \begin_layout Enumerate
-What aspects of the protein interior do these solvents model well? Poorly?
+Make a table for the four solvents that has two columns: molecular features
+ of that solvent that model the protein interior well; molecular features
+ of that solvent that model the protein interior poorly.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Can you learn anything about the intrinsic accuracy of these surface area/energy
- calculations for proteins from the difference between the models?
+Given how much these four solvent models differ from one another, how different
+ might you expect transfer to the protein interior is from any one of these
+ models? 
 \end_layout
 
 \end_deeper
@@ -186,6 +365,39 @@ pdb
  
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Load the pdb file
+\end_layout
+
+\begin_layout Enumerate
+set dot_solvent, 1
+\end_layout
+
+\begin_layout Enumerate
+get_area name C*
+\end_layout
+
+\begin_layout Enumerate
+Introduce mutation using the Wizard and hit 
+\begin_inset Quotes eld
+\end_inset
+
+Apply
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Repeat iii.
+ and iv.
+ for all rotatmers.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 How big is the spread of SASA relative to the trend 
 \begin_inset Formula $\Delta G_{transfer}$
@@ -197,26 +409,59 @@ How big is the spread of SASA relative to the trend
 
 \end_deeper
 \begin_layout Enumerate
-Finally: the 
-\begin_inset Quotes eld
-\end_inset
-
-Calculating protein energetics
-\begin_inset Quotes erd
-\end_inset
-
- packet has a model carefully parameterized to reproduce the hydrophobic
- effect associated with protein folding.
+The mathematical model below was carefully parameterized to reproduce the
+ energetics of protein folding associated with the hydrophobic effect.
  
+\begin_inset Formula $\Delta ASA$
+\end_inset
+
+ is calculated in 
+\begin_inset Formula $\text{\normalfont}\text{Å}^{2}$
+\end_inset
+
+, energies are given in 
+\begin_inset Formula $J\cdot mol^{-1}$
+\end_inset
+
+, and temperatures are in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta C_{p,nonpolar}=1.883\times\Delta ASA_{nonpolar}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{nonpolar}=-35.313\times\Delta ASA_{nonpolar}+\Delta C_{p,nonpolar}\left(T-333.15\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S_{nonpolar,Tref}=\Delta C_{p,nonpolar}\times ln\left(\frac{T}{385.15}\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Use the 
-\emph on
-nonpolar
-\emph default
- portion of the model to estimate 
+Use this mathematical model to estimate 
 \begin_inset Formula $\Delta G_{transfer}$
 \end_inset
 
@@ -225,7 +470,15 @@ nonpolar
 \end_layout
 
 \begin_layout Enumerate
-How well does this corrleaate with the octanol scale?
+How well does this corrleate with the octanol scale? Does this 
+\begin_inset Quotes eld
+\end_inset
+
+protein interior
+\begin_inset Quotes erd
+\end_inset
+
+ model match to the extent you predicted in 4(c)? 
 \end_layout
 
 \end_deeper
