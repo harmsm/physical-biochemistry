@@ -1230,8 +1230,8 @@ The PDB file contains 2BQC contains the structure for lysozyme with the
 \end_layout
 
 \begin_layout Enumerate
-Repeat the analysis you did in steps (a) and (b) for mutations V74A (2BQM)
- and V121A (2BQI).
+Repeat the analysis you did in step (b) for mutations V74A (2BQM) and V121A
+ (2BQI).
  
 \end_layout
 
@@ -1330,7 +1330,11 @@ Estimate the average strength of a hydrogen bond in an alanine
 \begin_inset Formula $\alpha$
 \end_inset
 
- helix.
+ helix? 
+\end_layout
+
+\begin_layout Enumerate
+Can you explain this result molecularly? 
 \end_layout
 
 \begin_layout Enumerate
@@ -1447,11 +1451,11 @@ Extrapolating from work by Lopez and colleages (https://doi.org/10.1073/pnas.032
 
 \end_deeper
 \begin_layout Itemize
-The 
-\begin_inset Formula $\Delta G$
+You may assume that 
+\begin_inset Formula $\Delta H$
 \end_inset
 
- to break a water-water hydrogen bond is worth 
+ to break a protein-water hydrogen bond is worth 
 \begin_inset Formula $20\ kJ\cdot mol^{-1}$
 \end_inset
 
@@ -1947,6 +1951,25 @@ ever
  this result molecularly? 
 \end_layout
 
+\begin_layout Enumerate
+As noted above, such ion pairs do occur in enzyme active sites.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hypothesize: how is this energetically costly feat achieved by real proteins?
+\end_layout
+
+\begin_layout Enumerate
+Hypothesize: 
+\emph on
+why 
+\emph default
+do proteins go to the trouble to bury ion pairs?
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Estimate the strength of the homodimer interface for the protein 
