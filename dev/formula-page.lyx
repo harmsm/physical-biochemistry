@@ -81,7 +81,7 @@
 
 \begin_body
 
-\begin_layout Subsubsection*
+\begin_layout Subsection*
 Constants
 \end_layout
 
@@ -112,20 +112,7 @@ N_{A}=6.022\times10^{23}
 
 \end_layout
 
-\begin_layout Subsubsection*
-Electrostatics
-\end_layout
-
-\begin_layout Enumerate
-Constants:
-\begin_inset Formula 
-\[
-\alpha=1,389\ \text{Å}\cdot kJ\cdot mol^{-1}
-\]
-
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset Formula 
 \[
 \varepsilon_{vacuum}=1
@@ -144,15 +131,7 @@ Constants:
 
 \begin_inset Formula 
 \[
-\varepsilon_{water}=80
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\gamma\equiv0.01988\ M^{1/2}\cdot K^{-1/2}\cdot\mbox{\text{\normalfont}Å}
+\varepsilon_{water}=78.5
 \]
 
 \end_inset
@@ -160,88 +139,11 @@ Constants:
 
 \end_layout
 
-\begin_layout Enumerate
-Born desolvation:
-\begin_inset Formula 
-\[
-\Delta G_{born}=\alpha\frac{q^{2}}{r_{ion}\varepsilon}
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $q$
-\end_inset
-
- is the unit charge on the ion and 
-\begin_inset Formula $r_{ion}$
-\end_inset
-
- is the radius of the ion in 
-\begin_inset Formula $\text{Å}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Coulomb interactions:
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula 
-\[
-\Delta G_{coulomb}=\alpha\frac{q_{i}q_{j}}{r_{ij}\varepsilon}
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $q_{x}$
-\end_inset
-
- is the unit charge on each ion and 
-\begin_inset Formula $r_{ij}$
-\end_inset
-
- is the distance between the centers of the ions in 
-\begin_inset Formula $\text{Å}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Salt screening:
-\begin_inset Formula 
-\[
-\Delta G_{coulomb}([ions])=\Delta G_{coulomb}e^{-r_{ij}/\kappa}
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $\kappa$
-\end_inset
-
- is:
+\begin_layout Subsection*
+Free energy relationships:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\kappa\equiv\gamma\sqrt{\frac{\varepsilon T}{I}}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Free energy relationships:
 \begin_inset Formula 
 \[
 \Delta G^{\circ}=\Delta H^{\circ}-T\Delta S^{\circ}
@@ -279,9 +181,273 @@ S=Rln(W)
 
 \begin_inset Formula 
 \[
+S=-\sum_{i=1}^{W}p_{i}ln(p_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
 \Delta G^{\circ}=-RTln(K_{eq})
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Born desolvation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta G_{born}=\alpha\frac{q^{2}}{r_{ion}\varepsilon}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha=1,389\ \text{Å}\cdot kJ\cdot mol^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ is the unit charge on the ion and 
+\begin_inset Formula $r_{ion}$
+\end_inset
+
+ is the radius of the ion in 
+\begin_inset Formula $\text{Å}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Coulomb interactions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{coulomb}(I)=\alpha\frac{q_{i}q_{j}}{r_{ij}\varepsilon}e^{-r_{ij}/\kappa}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha=1,389\ \text{Å}\cdot kJ\cdot mol^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $q_{x}$
+\end_inset
+
+ is the unit charge on each ion and 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is the distance between the centers of the ions in 
+\begin_inset Formula $\text{Å}$
+\end_inset
+
+, and 
+\begin_inset Formula 
+\[
+\kappa\equiv\gamma\sqrt{\frac{\varepsilon T}{I}}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\gamma\equiv0.01988\ M^{1/2}\cdot K^{-1/2}\cdot\mbox{\text{\normalfont}Å}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+van der Waals
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{vdw}=\left(\epsilon_{i}\epsilon_{j}\right)^{1/2}\left[\left(\frac{\sigma_{i}+\sigma_{j}}{2r_{ij}}\right)^{12}-2\left(\frac{\sigma_{i}+\sigma_{j}}{2r_{ij}}\right)^{6}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ is the van der Waal's radius of an atom and 
+\begin_inset Formula $\epsilon_{x}$
+\end_inset
+
+ measures the strength of the contribution of atom 
+\begin_inset Formula $x$
+\end_inset
+
+ to the interaction.
+ The values of 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{x}$
+\end_inset
+
+ depend on the types of atoms involved.
+ 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ is the distance between the centers of the interacting atoms.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Hydrogen bonds
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{hbond}=4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r_{HA}}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ are the partial charges on the acceptor and donor, 
+\begin_inset Formula $r_{HA}^{2}$
+\end_inset
+
+ is the distance between the donor proton and acceptor, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between the 
+\begin_inset Formula $D-H:A$
+\end_inset
+
+ atoms, and 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ are constants that depend on the atoms involved in the interaction.
+\end_layout
+
+\begin_layout Subsection*
+Solvent transfer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta ASA$
+\end_inset
+
+ is calculated in 
+\begin_inset Formula $\text{\normalfont}\text{Å}^{2}$
+\end_inset
+
+, energies are given in 
+\begin_inset Formula $J\cdot mol^{-1}$
+\end_inset
+
+, and temperatures are in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ The thermodynamics of transferring nonpolar surface area from fully water
+ inaccessible to fully water accessible during protein unfolding is given
+ by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta C_{p,nonpolar}=1.883\times\Delta ASA_{nonpolar}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{nonpolar}=-35.313\times\Delta ASA_{nonpolar}+\Delta C_{p,nonpolar}\left(T-333.15\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S_{nonpolar,Tref}=\Delta C_{p,nonpolar}\times ln\left(\frac{T}{385.15}\right)
+\]
+
+\end_inset
+
+The thermodynamics of transferring polar surface area from fully water inaccessi
+ble to fully water accessible during protein unfolding is given by:
+\begin_inset Formula 
+\[
+\Delta C_{p,polar}=-1.088\times\Delta ASA_{polar}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta H_{polar}=131.378\times\Delta ASA_{polar}+\Delta C_{p,polar}\left(T-333.15\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta S_{polar,Tref}=\Delta C_{p,polar}\times ln\left(\frac{T}{335.15}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Newpage pagebreak
 \end_inset
 
 

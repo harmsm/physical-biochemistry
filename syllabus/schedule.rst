@@ -37,9 +37,9 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    4  | 10/25  | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                | `energetics`_              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    5  | 10/28  | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_  | ---                        |
+|    5  | 10/28  | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_  | `12_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
-|    5  | 10/30  | SBC: sampling strategies                                      | ---                  | ---                                 | ---                        |
+|    5  | 10/30  | SBC: sampling strategies                                      | ---                  | ---                                 | `13_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
 |    5  | 11/1   | `Lab: drug design`_                                           | HW4_                 | ---                                 | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------+----------------------------+
@@ -101,6 +101,8 @@ Schedule
 .. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdf
 .. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdf
 .. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdf
+.. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdf
+.. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
