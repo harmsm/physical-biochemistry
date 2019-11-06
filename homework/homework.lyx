@@ -1991,28 +1991,6 @@ Estimate the strength of the homodimer interface for the protein
 Binding interactions
 \end_layout
 
-\begin_layout Standard
-asda
-\end_layout
-
-\begin_layout Enumerate
-The acid reaction for arginine is shown below.
- 
-\begin_inset Formula 
-\[
-Arg\cdot H^{+}\rightleftarrows Arg+H^{+}
-\]
-
-\end_inset
-
-If an arginine side chain forms an ion pair with a negatively charged amino
- acid, does its 
-\begin_inset Formula $pK_{a}$
-\end_inset
-
- shift up, down, or stay the same? Please justify your answer.
-\end_layout
-
 \begin_layout Enumerate
 Consider a protein in which the carboxylic acid of an asparate sidechain
  forms an ion pair with the amine of a lysine sidechain.
@@ -2035,98 +2013,6 @@ Consider a protein in which the carboxylic acid of an asparate sidechain
  value in this protein? 
 \end_layout
 
-\begin_layout Enumerate
-Consider the model binding interaction shown below.
- When unbound, the black ligand can exchange between the conformations shown
- on the left (all conformations are shown).
- When bound to the gray protein, it takes on the conformation shown on the
- right.
- A favorable interaction occurs when a red dot is next to a blue dot, and
- is favorable by 
-\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
-\end_inset
-
-.
- The system temperature is 
-\begin_inset Formula $298\ K$
-\end_inset
-
-.
- The diagram shows the entire system—no water, ions, or other molecules
- affect this interaction.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename binding.png
-	lyxscale 10
-	width 14cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-What is the change in the conformational entropy of the ligand upon binding?
-\end_layout
-
-\begin_layout Enumerate
-What is the change in the enthalpy of the system upon binding?
-\end_layout
-
-\begin_layout Enumerate
-Do you have sufficient information to calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
- for this reaction? If so, calculate 
-\begin_inset Formula $\Delta G$
-\end_inset
-
-.
- If not, explain what further information you would need.
- 
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 You are studying a protein that consists of two domains connected by a flexible
  linker.
@@ -2199,7 +2085,7 @@ end{adjustbox}
 
 \begin_layout Enumerate
 You are studying the interaction between a protein kinase and its peptide
- substrate.
+ substrate by ITC.
  The interaction is 1:1 and the affinity is 
 \begin_inset Formula $2.2\ \mu M$
 \end_inset
@@ -2270,8 +2156,8 @@ onal entropy without influencing any of its interactions with the kinase.
 
 \begin_layout Enumerate
 Mutation #2 reduces the amount of non-polar surface area buried when the
- substrate peptide binds, but does not influence the net energy from van
- Der Waal’s interactions or hydrogen bonds.
+ substrate peptide binds, but does not influence the net contribution from
+ van der Waal’s interactions or hydrogen bonds.
  
 \end_layout
 
@@ -2324,7 +2210,7 @@ Does this result match what you expect? How might you explain this result,
 
 \end_deeper
 \begin_layout Enumerate
-Using Isothermal Titration Calorimetry, you meausre the enthalpy for a binding
+Using Isothermal Titration Calorimetry, you measure the enthalpy for a binding
  reaction at multiple different temperatures:
 \begin_inset Newline newline
 \end_inset
@@ -2554,6 +2440,118 @@ Design an experiment to test your hypothesis, describing how the possible
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+You are studying the function of the cytoskeletal protein actin and want
+ to set use ITC to measure how tightly it binds to an actin regulatory protein
+ called Scar.
+ You titrate a 1.3 mL solution of 25 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ actin with a series of 
+\begin_inset Formula $5\ \mu L$
+\end_inset
+
+ titrations of 450 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ Scar.
+ From another experiment (using a method other than ITC), you determined
+ that Scar binds to actin with a one-to-one stoichiometry at a 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ of 0.9 
+\begin_inset Formula $\mu M$
+\end_inset
+
+ (
+\begin_inset Formula $T=298K$
+\end_inset
+
+) and that the standard enthalpy change for the binding reaction is 
+\begin_inset Formula $-42.3\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From the information given, use a spreadsheet to generate the expected plot
+ of the heat (
+\begin_inset Formula $kJ\cdot mol^{-1}$
+\end_inset
+
+ of injectant) versus the molar ratio of Scar to actin.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Are these conditions under which you could reliably determine the value
+ of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ by ITC? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How much heat is released when the first injection is made? (Show your work)
+\end_layout
+
+\begin_layout Enumerate
+For the same reaction, plot 
+\begin_inset Formula $[Scar]_{T}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $[Scar]_{free}$
+\end_inset
+
+ versus 
+\begin_inset Formula $[Scar\cdot actin]/[actin]_{T}$
+\end_inset
+
+.
+ Based on your plots, are the reaction conditions here considered “excess
+ ligand conditions”? Explain your answer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+You use a fitting program to determine the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ from your ITC data and you find that it exactly matches the binding affinity
+ you measured using the other technique, 
+\begin_inset Formula $0.9\ \mu M$
+\end_inset
+
+.
+ What is the standard free energy change for the binding reaction? 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Kinetics
 \end_layout
@@ -3907,10 +3905,98 @@ Which dielectric constant is best (and why do you think so)?
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the model binding interaction shown below.
+ When unbound, the black ligand can exchange between the conformations shown
+ on the left (all conformations are shown).
+ When bound to the gray protein, it takes on the conformation shown on the
+ right.
+ A favorable interaction occurs when a red dot is next to a blue dot, and
+ is favorable by 
+\begin_inset Formula $-10\ kJ\cdot mol^{-1}$
+\end_inset
+
+.
+ The system temperature is 
+\begin_inset Formula $298\ K$
+\end_inset
+
+.
+ The diagram shows the entire system—no water, ions, or other molecules
+ affect this interaction.
+ 
 \begin_inset Newline newline
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename binding.png
+	lyxscale 10
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the change in the conformational entropy of the ligand upon binding?
+\end_layout
+
+\begin_layout Enumerate
+What is the change in the enthalpy of the system upon binding?
+\end_layout
+
+\begin_layout Enumerate
+Do you have sufficient information to calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+ for this reaction? If so, calculate 
+\begin_inset Formula $\Delta G$
+\end_inset
+
+.
+ If not, explain what further information you would need.
+ 
 \end_layout
 
 \end_deeper
