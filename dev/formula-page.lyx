@@ -326,9 +326,13 @@ Hydrogen bonds
 \end_layout
 
 \begin_layout Standard
+The energy to form a hydrogen bond is:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-U_{hbond}=4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r_{HA}}\right]
+U_{hbond}=-4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{-r_{HA}}\right]
 \]
 
 \end_inset
@@ -342,7 +346,7 @@ where
 \end_inset
 
  are the partial charges on the acceptor and donor, 
-\begin_inset Formula $r_{HA}^{2}$
+\begin_inset Formula $r_{HA}$
 \end_inset
 
  is the distance between the donor proton and acceptor, 

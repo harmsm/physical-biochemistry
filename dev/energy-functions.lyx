@@ -346,10 +346,10 @@ Calculate the energy using a quantum mechanics.
 \begin_layout Enumerate
 Use an empirical potential that accounts for both distance an angular informatio
 n.
- One such function is:
+ One such function gives the energy to form a hydrogen bond as:
 \begin_inset Formula 
 \[
-U_{hbond}=4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r}\right]
+U_{hbond}=-4.814\times a\left[\frac{q_{A}q_{H}}{r_{HA}^{2}}cos(\theta)+bc^{r}\right]
 \]
 
 \end_inset
