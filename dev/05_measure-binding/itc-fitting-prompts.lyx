@@ -1,0 +1,410 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Using Regression to Extract Thermodynamic Information from ITC Data
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conceptual goal:
+\series default
+ Understand how nonlinear regression works and can be used to extract biophysica
+l parameters from experiments.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Skill goal
+\series default
+: Improved spreadsheet skills; ability to analyze data by regression.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mechanics
+\end_layout
+
+\begin_layout Enumerate
+Open the 
+\emph on
+itc-fitting.xlsx
+\emph default
+ spreadsheet in Excel.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Make sure you have 
+\begin_inset Quotes eld
+\end_inset
+
+Solver
+\begin_inset Quotes erd
+\end_inset
+
+ installed in Excel.
+ (It should be at the bottom of the 
+\begin_inset Quotes eld
+\end_inset
+
+Tools
+\begin_inset Quotes erd
+\end_inset
+
+ menu).
+ If it is not there, instructions for installing are here https://tinyurl.com/yde
+hj42m.
+\end_layout
+
+\begin_layout Enumerate
+Create a plot of 
+\begin_inset Quotes eld
+\end_inset
+
+injection
+\begin_inset Quotes erd
+\end_inset
+
+ versus 
+\begin_inset Quotes eld
+\end_inset
+
+observed heat.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Fill in the 
+\family typewriter
+[MX]/[M]T
+\family default
+ column with calculated values for 
+\begin_inset Formula $[MX]/[M]_{T}$
+\end_inset
+
+ given 
+\begin_inset Formula $[X]_{T}$
+\end_inset
+
+, 
+\begin_inset Formula $[M]_{T}$
+\end_inset
+
+, and 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+.
+ Have the formula point to the 
+\family typewriter
+KD
+\family default
+ cell in the spreadsheet (indicated in red).
+ Remember:
+\begin_inset Formula 
+\[
+[MX]=\frac{-b-\sqrt{b^{2}-4ac}}{2a}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+a=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=-(K_{D}+[M]_{T}+[X]_{T})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=[X]_{T}[M]_{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Fill in the 
+\family typewriter
+calculated heat
+\family default
+ column.
+ The heat evolved at injection 
+\begin_inset Formula $i$
+\end_inset
+
+ depends on the change in the fractional saturation of the reaction and
+ the enthalpy of the reaction.
+ For the enthalpy, point to the 
+\family typewriter
+dH
+\family default
+ cell (indicated in blue).
+ 
+\begin_inset Formula 
+\[
+Q_{i}=\Delta H\left[\left(\frac{[MX]}{[M]_{T}}\right)_{i}-\left(\frac{[MX]}{[M]_{T}}\right)_{i-1}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plot the values in calculated heat versus injection on the same plot as
+ the experimental plot.
+ Change the values in the 
+\family typewriter
+KD
+\family default
+ and 
+\family typewriter
+dH
+\family default
+ columns to try to match to the data.
+ What values do you find?
+\end_layout
+
+\begin_layout Enumerate
+Fill in 
+\family typewriter
+square residuals
+\family default
+ column.
+ For each injection, calculate:
+\begin_inset Formula 
+\[
+(Q_{calc}-Q_{obs})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Create a cell holding the sum of the square residuals column.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Go to 
+\begin_inset Formula $Tools\rightarrow Solver$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Point the 
+\family typewriter
+Set Objective
+\family default
+ cell to point to the sum of square residuals that you calculated.
+\end_layout
+
+\begin_layout Enumerate
+Point the 
+\family typewriter
+By Changing Variable Cells
+\family default
+ cell to point to the 
+\family typewriter
+KD
+\family default
+ and 
+\family typewriter
+dH
+\family default
+ cells.
+\end_layout
+
+\begin_layout Enumerate
+Make sure that 
+\family typewriter
+Make Unconstrained Variables Non-Negative
+\family default
+ is unchecked.
+ (If it's not, Excel will helpfully never allow a negative value in the
+ solver.)
+\end_layout
+
+\begin_layout Enumerate
+Select 
+\begin_inset Quotes eld
+\end_inset
+
+GRG Nonlinear
+\begin_inset Quotes erd
+\end_inset
+
+ for the 
+\family typewriter
+Solving Method
+\end_layout
+
+\begin_layout Enumerate
+Hit 
+\begin_inset Quotes eld
+\end_inset
+
+Solve
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What cells changed? What is the estimate of 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ from this analysis? 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Thinking
+\end_layout
+
+\begin_layout Enumerate
+How precise are these estimates? How might you estimate this?
+\end_layout
+
+\begin_layout Enumerate
+How accurate are these estimates? How might you estimates this?
+\end_layout
+
+\begin_layout Enumerate
+What if your protein has two sites and binds two ligands with slight different
+ affinities? Would you be able to tell from these data?
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Quotes eld
+\end_inset
+
+Replicates
+\begin_inset Quotes erd
+\end_inset
+
+ tab has three more columns of experimentally observed heats.
+ Do these provide similar estimates for 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+? (And just how do you define similar?) 
+\end_layout
+
+\end_body
+\end_document
