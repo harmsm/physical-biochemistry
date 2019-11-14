@@ -45,13 +45,13 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
 |    6  | 11/4   | Midterm                                                       | ---                  | ---                                       | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
-|    6  | 11/6   | Binding interactions                                          | ---                  | `binding methods`_, `binding equations`_  | ---                        |
+|    6  | 11/6   | Binding interactions                                          | ---                  | `binding methods`_, `binding equations`_  | `16_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
 |    6  | 11/8   | `Lab: measuring binding`_                                     | ---                  | ---                                       | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
-|    7  | 11/11  | pKa values: molecular sensors                                 | ---                  | ---                                       | ---                        |
+|    7  | 11/11  | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
-|    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | ---                                       | ---                        |
+|    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | ---                                       | `18_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
 |    7  | 11/15  | `Lab: markov matrices`_                                       | HW5_                 | `Pande`_                                  | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
@@ -105,6 +105,9 @@ Schedule
 .. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdf
 .. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdf
 .. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdf
+.. _`16_notes`: https://harmsm.github.io/physical-biochemistry/notes/16_binding-and-itc.pdf
+.. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_pka.pdf
+.. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
