@@ -2557,6 +2557,78 @@ Kinetics
 \end_layout
 
 \begin_layout Enumerate
+The energy diagram for a multi-intermediate enzyme mechanism is shown below:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename complex-reaction-coord.png
+	lyxscale 10
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You determine that a mutation of the enzyme causes a 250-fold decrease in
+ 
+\begin_inset Formula $k_{obs}$
+\end_inset
+
+ (rate of product accumulation).
+ What is the change in the energy of the transition state for the mutant
+ compared to the wt enzyme at 
+\begin_inset Formula $300\ K$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+Can you determine which elementary step(s) have been affected by the mutation
+ based on your experiments? Why or why not? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Consider the following reaction:
 \begin_inset Newline newline
 \end_inset
@@ -2599,33 +2671,6 @@ If you start with the concentrations
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-You are studying the formation of homodimer.
- The protein monomer is 
-\begin_inset Formula $16\ kDa$
-\end_inset
-
- and can be viewed as a sphere with a radius of 
-\begin_inset Formula $1.5\ nm$
-\end_inset
-
-.
- At 
-\begin_inset Formula $298\ K$
-\end_inset
-
-, in water 
-\begin_inset Formula $(\eta=0.05\ kg\cdot m^{-1}\cdot s^{-1}$
-\end_inset
-
-), you measure the rate of dimer formation as 
-\begin_inset Formula $1\times10^{8}\ M^{-1}\cdot s^{-1}$
-\end_inset
-
-.
- Does this reaction appear to be diffusion limited? 
-\end_layout
-
 \begin_layout Enumerate
 In some biological reactions, two molecules of 
 \begin_inset Formula $A$
@@ -2765,301 +2810,80 @@ Are your results consistent with theirs? Why or why not?
 \end_layout
 
 \begin_layout Enumerate
-The energy diagram for a multi-intermediate enzyme mechanism is shown below:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename complex-reaction-coord.png
-	lyxscale 10
-	width 7cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-You determine that a mutation of the enzyme causes a 250-fold decrease in
+You are studying an enzyme that converts a non-fluorescent substrate into
+ a fluorescent product.
+ You use a flourimeter to measure the fluorescence of a buffer sample as
  
-\begin_inset Formula $k_{obs}$
+\begin_inset Formula $18,989$
 \end_inset
 
- (rate of product accumulation).
- What is the change in the energy of the transition state for the mutant
- compared to the wt enzyme at 
-\begin_inset Formula $300\ K$
+ units and 
+\begin_inset Formula $100\ \mu M$
 \end_inset
 
-? 
-\end_layout
-
-\begin_layout Enumerate
-Can you determine which elementary step(s) have been affected by the mutation
- based on your experiments? Why or why not? 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Myosin function and nucleotide binding: You wish to determine the rate-limiting
- step for the ATPase cycle for a Type II myosin.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-You set up a series of reactions in which you measure the initial rate of
- ATP hydrolysis in the presence of 
-\begin_inset Formula $25\ nM$
+ product as 
+\begin_inset Formula $289,108$
 \end_inset
 
- myosin and a range of concentration of ATP.
- Shown below is the plot of the initial velocity versus the initial ATP
- concentration.
- What is the 
-\begin_inset Formula $k_{cat}$
-\end_inset
-
- for the hydrolysis of ATP by myosin? (Note that the units for [ATP] are
- 
+ units.
+ You add substrate at differing concentrations (given in 
 \begin_inset Formula $\mu M$
 \end_inset
 
- and 
-\begin_inset Formula $V_{max}=0.25\ μM\cdot s^{-1}$
+) to a solution containing 
+\begin_inset Formula $1\ nM$
 \end_inset
 
-).
+ enzyme and then collect the data in 
+\begin_inset Quotes eld
+\end_inset
+
+observation.csv.
+\begin_inset Quotes erd
+\end_inset
+
  
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Graphics
-	filename myosin-scheme-1.png
-	lyxscale 25
-	width 7cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
+\begin_deeper
+\begin_layout Enumerate
+What is the apparent rate constant under each reaction condition?
 \end_layout
 
 \begin_layout Enumerate
-In a separate experiment, you preincubate 
-\begin_inset Formula $25\ nM$
-\end_inset
-
- myosin with 
-\begin_inset Formula $4\ \mu M$
-\end_inset
-
- ADP, add 
-\begin_inset Formula $500\ \mu M$
-\end_inset
-
- mant-ADP (a fluorescent analogue of ADP), and then measure the fluorescence
- signal versus time.
- Shown below is the data.
- Write an equation that expresses the fluorescent signal as a function of
- time, expressing RFU (relative fluorescent units) as a function of time,
- 
-\begin_inset Formula $k_{obs}$
-\end_inset
-
-, 
-\begin_inset Formula $RFU_{max}$
+What is 
+\begin_inset Formula $k_{cat}$
 \end_inset
 
  and 
-\begin_inset Formula $RFU_{min}$
+\begin_inset Formula $K_{M}$
 \end_inset
 
-.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustbox}{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename myosin-scheme-2.png
-	lyxscale 25
-	width 7cm
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustbox}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
+?
 \end_layout
 
 \begin_layout Enumerate
-The 
-\begin_inset Formula $k_{obs}$
-\end_inset
-
- value you calculate for this experiment is 
-\begin_inset Formula $200\cdot s^{-1}$
-\end_inset
-
-.
- If you repeat the experiment with 
-\begin_inset Formula $50\ nM$
-\end_inset
-
- myosin, will you expect the value of 
-\begin_inset Formula $k_{obs}$
-\end_inset
-
- to increase, decrease, or stay the same? Explain your answer.
- 
-\end_layout
-
-\begin_layout Enumerate
-To measure the interaction of ADP with myosin, you set up a reaction in
- which you rapidly mix a range of concentrations of ADP with
-\begin_inset Formula $10\ nM$
-\end_inset
-
- myosin and measure the increase in fluorescence.
- 
-\begin_inset Formula $[ADP]\gg[myosin]$
-\end_inset
-
- in these experiments.
- A fit of 
-\begin_inset Formula $k_{obs}$
-\end_inset
-
- versus 
-\begin_inset Formula $[ADP]$
-\end_inset
-
- for each reaction yields a straight line with a slope of 
-\begin_inset Formula $10\ μM^{-1}\cdot s^{-1}$
-\end_inset
-
-.
- Based on this experiment and information presented earlier in this problem,
- calculate the binding affinity of ADP for myosin.
- 
-\end_layout
-
-\begin_layout Enumerate
-For the reaction conditions in (d), calculate the concentration of myosin
- ADP when 
-\begin_inset Formula $t=4\ ms$
-\end_inset
-
- and 
-\begin_inset Formula $[ADP]_{0}=15\ μM$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Based on the information in this problem, is ADP release the rate-limiting
- step for ATP hydrolysis when ATP is saturating? Explain your answer.
- 
+From these data, can you tell if the reaction is reversible? 
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Write out the reaction scheme consistent with this transition matrix.
+\begin_inset Formula 
+\[
+T=\left[\begin{array}{cccc}
+0.991 & 0.001 & 0.000 & 0.000\\
+0.001 & 0.999 & 0.010 & 0.000\\
+0.000 & 0.000 & 0.980 & 0.001\\
+0.008 & 0.000 & 0.010 & 0.999
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 The fastest enzymes end up being 
 \emph on
@@ -3134,11 +2958,46 @@ Could you tell the difference between the reaction/enzymatic mechanisms
 \end_inset
 
  from their reaction kinetics? Why or why not?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Section
 Diffusion and phase transitions
+\end_layout
+
+\begin_layout Enumerate
+You are studying the formation of homodimer.
+ The protein monomer is 
+\begin_inset Formula $16\ kDa$
+\end_inset
+
+ and can be viewed as a sphere with a radius of 
+\begin_inset Formula $1.5\ nm$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $298\ K$
+\end_inset
+
+, in water 
+\begin_inset Formula $(\eta=0.05\ kg\cdot m^{-1}\cdot s^{-1}$
+\end_inset
+
+), you measure the rate of dimer formation as 
+\begin_inset Formula $1\times10^{8}\ M^{-1}\cdot s^{-1}$
+\end_inset
+
+.
+ Does this reaction appear to be diffusion limited? 
 \end_layout
 
 \begin_layout Enumerate
