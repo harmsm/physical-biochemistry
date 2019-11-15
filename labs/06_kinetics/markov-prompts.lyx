@@ -240,7 +240,11 @@ resonable
 \begin_inset Formula $\Delta t$
 \end_inset
 
- for your analysis? 
+ for your analysis? Can you come up with a rule-of-thumb for a useful 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+? 
 \end_layout
 
 \end_deeper
@@ -355,7 +359,15 @@ Run the equations 15 times, taking the output each time as the input for
 \end_layout
 
 \begin_layout Enumerate
-Bonus: Write these equations in 
+What happens if you set 
+\begin_inset Formula $k_{-}=10\ s^{-1}?$
+\end_inset
+
+ Does this match what you would expect chemically?
+\end_layout
+
+\begin_layout Enumerate
+Bonus 1: Write these equations in 
 \emph on
 matrix 
 \emph default
