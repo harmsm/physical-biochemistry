@@ -53,7 +53,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
 |    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | ---                                       | `18_notes`_                |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
-|    7  | 11/15  | `Lab: markov matrices`_                                       | HW5_                 | `Pande`_                                  | ---                        |
+|    7  | 11/15  | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
 |    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | ---                                       | ---                        |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------+
@@ -115,7 +115,7 @@ Schedule
 .. _`Lab: solvent transfer and empirical SBC`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/03_solvent-transfer
 .. _`Lab: drug design`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/04_drug-design
 .. _`Lab: measuring binding`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/05_measure-binding
-.. _`Lab: markov matrices`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/06_markov-matrices
+.. _`Lab: kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/06_kinetics
 .. _`Lab: actin polymerization kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/07_actin-polymerization
 .. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/08_single-molec-vs-avg
 
