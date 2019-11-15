@@ -1,0 +1,379 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Consider the following reaction:
+\begin_inset Formula 
+\[
+A\rightleftarrows_{k-}^{k+}B
+\]
+
+\end_inset
+
+What is the probability that:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A molecule of 
+\begin_inset Formula $A$
+\end_inset
+
+ becomes 
+\begin_inset Formula $B$
+\end_inset
+
+ over a short time step 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+A molecule of 
+\begin_inset Formula $A$
+\end_inset
+
+ remains 
+\begin_inset Formula $A$
+\end_inset
+
+ over the time step? 
+\end_layout
+
+\begin_layout Enumerate
+A molecule of 
+\begin_inset Formula $B$
+\end_inset
+
+ becomes 
+\begin_inset Formula $A$
+\end_inset
+
+ over the time step?
+\end_layout
+
+\begin_layout Enumerate
+A molecule of 
+\begin_inset Formula $B$
+\end_inset
+
+ remains 
+\begin_inset Formula $B$
+\end_inset
+
+ over the time step? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construct an excel spreadsheet that lets you calculate a single 
+\begin_inset Quotes eld
+\end_inset
+
+move
+\begin_inset Quotes erd
+\end_inset
+
+ for the equations above.
+ However you set it up, make sure that you can easily change: 
+\begin_inset Formula $A(t)$
+\end_inset
+
+, 
+\begin_inset Formula $B(t)$
+\end_inset
+
+, 
+\begin_inset Formula $k_{+}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{-}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $[A]=100$
+\end_inset
+
+ and 
+\begin_inset Formula $[B]=0$
+\end_inset
+
+, 
+\begin_inset Formula $k_{+}=100\ s^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{-}=100\ s^{-1}$
+\end_inset
+
+.
+ Try values of 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ from 0 to very large.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What happens to 
+\begin_inset Formula $A(t+\Delta t)$
+\end_inset
+
+ and 
+\begin_inset Formula $B(t+\Delta t)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+Can you understand what is going on for large 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+What is a 
+\begin_inset Quotes eld
+\end_inset
+
+resonable
+\begin_inset Quotes erd
+\end_inset
+
+ value of 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ for your analysis? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Choose a 
+\begin_inset Quotes eld
+\end_inset
+
+reasonable
+\begin_inset Quotes erd
+\end_inset
+
+ value for 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ from your analysis above.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What happens to the concentration of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+Does this make sense, chemically?
+\end_layout
+
+\begin_layout Enumerate
+What is the value of 
+\begin_inset Formula $A(t)+B(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $A(t+\Delta t)+B(t+\Delta t)$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+What physical property of the reaction does this capture?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use 
+\begin_inset Formula $A(t+\Delta t)$
+\end_inset
+
+ and 
+\begin_inset Formula $B(t+\Delta t)$
+\end_inset
+
+ as 
+\emph on
+inputs 
+\emph default
+to the equations.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What happens to the concentrations of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+What is the sum of the concentrations of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Run the equations 15 times, taking the output each time as the input for
+ the next step.
+ Save your values for 
+\begin_inset Formula $[A]$
+\end_inset
+
+ and 
+\begin_inset Formula $[B]$
+\end_inset
+
+ at each step.
+ Make a graph of these against step.
+ What do you observe? 
+\end_layout
+
+\begin_layout Enumerate
+Bonus: Write these equations in 
+\emph on
+matrix 
+\emph default
+form.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Bonus 2: Write a matrix describing 
+\begin_inset Formula 
+\[
+A\rightleftarrows B\rightarrow C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
