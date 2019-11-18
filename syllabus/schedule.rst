@@ -55,7 +55,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 11/15  | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | ---                                       | ---                              |
+|    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | ---                                       | `20_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -110,6 +110,7 @@ Schedule
 .. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdf
 .. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdf
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
+.. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
