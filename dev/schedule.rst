@@ -57,7 +57,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | ---                                       | `20_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | ---                                       | ---                              |
+|    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | ---                                       | `21_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 11/22  | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -111,6 +111,7 @@ Schedule
 .. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdf
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
+.. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
