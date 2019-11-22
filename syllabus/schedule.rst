@@ -120,7 +120,7 @@ Schedule
 .. _`Lab: drug design`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/04_drug-design
 .. _`Lab: measuring binding`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/05_measure-binding
 .. _`Lab: kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/06_kinetics
-.. _`Lab: actin polymerization kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/07_actin-polymerization
+.. _`Lab: actin polymerization kinetics`: https://mybinder.org/v2/gh/harmsm/kinetics_simulator.git/master?filepath=markov-and-stochastic.ipynb
 .. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/08_single-molec-vs-avg
 
 .. homework links
