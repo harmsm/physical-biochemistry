@@ -137,6 +137,14 @@ N_{A}=6.022\times10^{23}
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\eta_{H_{2}O}=0.1\ g\cdot cm^{-1}\cdot s^{-1}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -450,14 +458,22 @@ ble to fully water accessible during protein unfolding is given by:
 
 \end_layout
 
-\begin_layout Subsubsection*
-\begin_inset Newpage pagebreak
+\begin_layout Standard
+asdfa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+pK_{a,obs}=pK_{a,model}+\frac{\Delta G_{env}}{RTln(10)}
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section*
 Isothermal titration calorimetry:
 \end_layout
 
@@ -553,14 +569,14 @@ c\equiv[M]_{T}[X]_{T}
 
 \end_layout
 
-\begin_layout Subsubsection*
-MWC model of cooperativity:
+\begin_layout Subsection*
+Reaction rates
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\theta=\left(\frac{n[X]}{K_{D}}\right)\frac{K^{*}(1+[X]/K_{D})^{n-1}}{1+K^{*}(1+[X]/K_{D})^{n}}
+k=Ae^{-E_{a}/RT}
 \]
 
 \end_inset
@@ -568,14 +584,14 @@ MWC model of cooperativity:
 
 \end_layout
 
-\begin_layout Subsubsection*
-Diffusion:
+\begin_layout Subsection*
+Diffusion
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-RMS_{displacement,x}=\sqrt{2xDt}
+MSD(t)=2xDt
 \]
 
 \end_inset
@@ -585,6 +601,19 @@ where
 \end_inset
 
  is the number of dimensions in which the particle is diffusing.
+ 
+\begin_inset Formula 
+\[
+MSD(t)=\frac{1}{N}\sum_{n=1}^{N}(x_{n}(t)-x_{n}(0))^{2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of particles.
  
 \begin_inset Formula 
 \[
@@ -604,7 +633,7 @@ D_{sphere}=\frac{k_{B}T}{6\pi\eta r}
 
 \begin_inset Formula 
 \[
-k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})N_{A}\times1,000
+k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})N_{A}\times6.022\times10^{20}
 \]
 
 \end_inset
@@ -626,7 +655,7 @@ Yields
 \end_inset
 
  in 
-\begin_inset Formula $m$
+\begin_inset Formula $cm$
 \end_inset
 
  and 
@@ -638,11 +667,57 @@ Yields
 \end_inset
 
  in 
-\begin_inset Formula $m^{2}\cdot s^{-1}$
+\begin_inset Formula $cm^{2}\cdot s^{-1}$
 \end_inset
 
 .
  
+\end_layout
+
+\begin_layout Subsection*
+FRET
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{1}{1+(r/R_{0})^{6}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ is the Forster distance for the dye pair and 
+\begin_inset Formula $E$
+\end_inset
+
+ is the FRET efficiency.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+MWC model of cooperativity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta=\left(\frac{n[X]}{K_{D}}\right)\frac{K^{*}(1+[X]/K_{D})^{n-1}}{1+K^{*}(1+[X]/K_{D})^{n}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
