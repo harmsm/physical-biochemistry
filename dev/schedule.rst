@@ -61,7 +61,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 11/22  | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | ---                                       | ---                              |
+|    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | ---                                       | `23_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -112,6 +112,7 @@ Schedule
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
+.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
@@ -120,7 +121,7 @@ Schedule
 .. _`Lab: drug design`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/04_drug-design
 .. _`Lab: measuring binding`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/05_measure-binding
 .. _`Lab: kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/06_kinetics
-.. _`Lab: actin polymerization kinetics`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/07_actin-polymerization
+.. _`Lab: actin polymerization kinetics`: https://mybinder.org/v2/gh/harmsm/kinetics_simulator.git/master?filepath=markov-and-stochastic.ipynb
 .. _`Lab: single molecules vs. solution averages`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/08_single-molec-vs-avg
 
 .. homework links

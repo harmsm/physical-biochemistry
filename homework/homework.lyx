@@ -2974,33 +2974,6 @@ Diffusion and phase transitions
 \end_layout
 
 \begin_layout Enumerate
-You are studying the formation of homodimer.
- The protein monomer is 
-\begin_inset Formula $16\ kDa$
-\end_inset
-
- and can be viewed as a sphere with a radius of 
-\begin_inset Formula $1.5\ nm$
-\end_inset
-
-.
- At 
-\begin_inset Formula $298\ K$
-\end_inset
-
-, in water 
-\begin_inset Formula $(\eta=0.05\ kg\cdot m^{-1}\cdot s^{-1}$
-\end_inset
-
-), you measure the rate of dimer formation as 
-\begin_inset Formula $1\times10^{8}\ M^{-1}\cdot s^{-1}$
-\end_inset
-
-.
- Does this reaction appear to be diffusion limited? 
-\end_layout
-
-\begin_layout Enumerate
 How long, on average, would it take a 
 \begin_inset Formula $60\ kDa$
 \end_inset
@@ -3029,14 +3002,59 @@ l.
 \end_layout
 
 \begin_layout Enumerate
-You are studying the polymerization of actin filaments from ATP-actin monomers.
- Using total internal reflection microscopy, you measured that the elongation
- rate of the fast-growing end of a single actin filament is 
-\begin_inset Formula $9.2\ subunits\cdot s^{-1}$
+You are studying the formation of a homodimer.
+ The protein monomer is 
+\begin_inset Formula $16\ kDa$
 \end_inset
 
- when the concentration of actin monomers is 
+ and can be viewed as a sphere with a radius of 
+\begin_inset Formula $1.5\ nm$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $298\ K$
+\end_inset
+
+, in water 
+\begin_inset Formula $(\eta=0.01\ kg\cdot m^{-1}\cdot s^{-1}$
+\end_inset
+
+), you measure the rate of dimer formation as 
+\begin_inset Formula $1\times10^{6}\ M^{-1}\cdot s^{-1}$
+\end_inset
+
+.
+ Does this reaction appear to be diffusion limited? 
+\end_layout
+
+\begin_layout Enumerate
+You are studying the polymerization of actin filaments from ATP-actin monomers
+ at 
+\begin_inset Formula $298\ K$
+\end_inset
+
+.
+ Actin filaments grow from a single, fast-growing end.
+ After a small amount of time under your experimental conditions, actin
+ filaments (and thus elongating ends) are 
+\begin_inset Formula $0.1\ nM$
+\end_inset
+
+ and actin monomers are 
 \begin_inset Formula $1\ \mu M$
+\end_inset
+
+.
+ You find that the elongation rate for each filament at this time point
+ is 
+\begin_inset Formula $0.9\ nM\cdot s^{-1}$
+\end_inset
+
+.
+ Using a separate experiment, you find that the dissociation rate constant
+ for actin monomers under these conditions is from the filament end is 
+\begin_inset Formula $1.4\ s^{-1}$
 \end_inset
 
 .
@@ -3045,54 +3063,109 @@ You are studying the polymerization of actin filaments from ATP-actin monomers.
 
 \begin_deeper
 \begin_layout Enumerate
-Assuming that dissociation rate constant for ATP actin subunits from the
- filament end is 
-\begin_inset Formula $1.4\ s^{-1}$
-\end_inset
-
-, what is the association rate constant of ATP-actin for the filament end
- based on this data? (Hint: assume the reaction is first-order in actin
- monomers and write out a differential equation for the rate.)
+What is the association rate constant of actin monomers for the filament
+ end under these conditions? 
 \end_layout
 
 \begin_layout Enumerate
-Assume that the diffusion constant for filaments is so much lower than for
- free monomers that its diffusion can be ignored in the calculation of the
- association rate.
- Treat actin monomers as spheres with a molecular weight of 
+Is the association of monomers and actin filaments diffusion limited or
+ not? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Filaments (and thus elongating ends) are huge and therefore moving much,
+ much slower than individual actin monomers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Each actin monomer can be viewed as a sphere of mass 
 \begin_inset Formula $42\ kDa$
 \end_inset
 
- and a density of 
+ with a density of 
 \begin_inset Formula $1.41\ g\cdot cm^{-3}$
 \end_inset
 
 .
- 
-\begin_inset Formula $T=298\ K$
-\end_inset
-
- and 
-\begin_inset Formula $\eta=0.01\ g\cdot cm^{-1}s^{-1}$
-\end_inset
-
-.
- Calculate the rate constant expected for association of ATP actin monomers
- with the barbed end if the association were diffusion limited.
- For simplicity, you may treat 
-\begin_inset Formula $r_{coll}$
-\end_inset
-
- as occuring between two actin monomers.
- 
 \end_layout
 
 \begin_layout Enumerate
-Is the association of ATP-actin monomers with the barbed ends of actin filaments
- diffusion limited or not? Explain your answer.
- 
+The reaction occurs at 
+\begin_inset Formula $298\ K$
+\end_inset
+
+ in water, which has 
+\begin_inset Formula $\eta=0.1\ g\cdot cm^{-1}\cdot s^{-1}$
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Enumerate
+The expression for 
+\begin_inset Formula $k_{coll}$
+\end_inset
+
+ we discussed in class (
+\begin_inset Formula $k_{coll}=4\pi(D_{A}+D_{B})(r_{A}+r_{B})\times6.022\times10^{20}$
+\end_inset
+
+) assumes that every collision is productive.
+ For actin, an interaction is productive only if the blue patch on the filament
+ lines up with the red patch on the incoming monomer (denoted by the bands
+ below).
+ This is a patch 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+ by 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+ on both the incoming actin monomer and the elongating end.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename actin-schematicc.png
+	lyxscale 50
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Shown below are traces from a Fluorescence Recovery After Photobleaching
@@ -3104,11 +3177,58 @@ Shown below are traces from a Fluorescence Recovery After Photobleaching
  destroyed) any fluorophores.
  They then followed the recovery of fluorescence within the monitored area,
  thus measuring the diffusion of new fluorophores into the area.
+ (See top row of the schematic).
  Note: For all of the FRAP plots below, only the fluorescence trace is shown,
  and not the axes.
  Assume that for each plot the y-axis is the fluorescence and the x-axis
  is time.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename frap-schematic.png
+	lyxscale 50
+	width 7cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3164,7 +3284,9 @@ end{adjustbox}
 \end_layout
 
 \begin_layout Enumerate
-The experiment in a is repeated, except the DNA is injected into the nucleus.
+The experiment in a is repeated, except the DNA is injected into the nucleus
+ and a FRAP experiment performed in the nucleus (see bottom row of schematic
+ above).
  What conclusions can be drawn from this experiment?
 \begin_inset Newline newline
 \end_inset
@@ -3275,45 +3397,6 @@ end{adjustbox}
 
 \end_deeper
 \begin_layout Enumerate
-The diffusion constant 
-\begin_inset Formula $D$
-\end_inset
-
- of bovine pancreatic ribonuclease, and enzyme that digests RNA, in dilute
- buffer at 
-\begin_inset Formula $25\ °C$
-\end_inset
-
- is 
-\begin_inset Formula $1.31\times10^{-6}\ cm^{2}\cdot s^{-1}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Assuming that the protein is spherical and that the viscosity of the solution
- is 
-\begin_inset Formula $0.01\ g\cdot cm^{-1}\cdot s^{-1}$
-\end_inset
-
-, calculate its hydrodynamic radius in angstroms.
- 
-\end_layout
-
-\begin_layout Enumerate
-Assuming the protein is a sphere with a density of 
-\begin_inset Formula $1.45\ g\cdot cm^{-3}$
-\end_inset
-
- (and ignoring the contribution of the hydration layer to the hydrodynamic
- radius) what is its molecular weight?
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
 Explain how 
 \begin_inset Quotes eld
 \end_inset
@@ -3335,6 +3418,13 @@ You would like to monitor a protein’s conformational change using FRET by
  the two cysteines change from 42 to 57 Å.
  Calculate the change in FRET efficiency that you would expect to observe
  by monitoring this change directly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -3856,6 +3946,111 @@ Do you have sufficient information to calculate
 .
  If not, explain what further information you would need.
  
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You are studying the polymerization of actin filaments from ATP-actin monomers.
+ Using total internal reflection microscopy, you measured that the elongation
+ rate of the fast-growing end of a single actin filament is 
+\begin_inset Formula $9.2\ subunits\cdot s^{-1}$
+\end_inset
+
+ when the concentration of actin monomers is 
+\begin_inset Formula $1\ \mu M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assuming that dissociation rate constant for ATP actin subunits from the
+ filament end is 
+\begin_inset Formula $1.4\ s^{-1}$
+\end_inset
+
+, what is the association rate constant of ATP-actin for the filament end
+ based on this data? (Hint: assume the reaction is first-order in actin
+ monomers and write out a differential equation for the rate.)
+\end_layout
+
+\begin_layout Enumerate
+Assume that the diffusion constant for filaments is so much lower than for
+ free monomers that its diffusion can be ignored in the calculation of the
+ association rate.
+ Treat actin monomers as spheres with a molecular weight of 
+\begin_inset Formula $42\ kDa$
+\end_inset
+
+ and a density of 
+\begin_inset Formula $1.41\ g\cdot cm^{-3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T=298\ K$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta=0.01\ g\cdot cm^{-1}s^{-1}$
+\end_inset
+
+.
+ Calculate the rate constant expected for association of ATP actin monomers
+ with the barbed end if the association were diffusion limited.
+ For simplicity, you may treat 
+\begin_inset Formula $r_{coll}$
+\end_inset
+
+ as occuring between two actin monomers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Is the association of ATP-actin monomers with the barbed ends of actin filaments
+ diffusion limited or not? Explain your answer.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The diffusion constant 
+\begin_inset Formula $D$
+\end_inset
+
+ of bovine pancreatic ribonuclease, and enzyme that digests RNA, in dilute
+ buffer at 
+\begin_inset Formula $25\ °C$
+\end_inset
+
+ is 
+\begin_inset Formula $1.31\times10^{-6}\ cm^{2}\cdot s^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assuming that the protein is spherical and that the viscosity of the solution
+ is 
+\begin_inset Formula $0.01\ g\cdot cm^{-1}\cdot s^{-1}$
+\end_inset
+
+, calculate its hydrodynamic radius in angstroms.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Assuming the protein is a sphere with a density of 
+\begin_inset Formula $1.45\ g\cdot cm^{-3}$
+\end_inset
+
+ (and ignoring the contribution of the hydration layer to the hydrodynamic
+ radius) what is its molecular weight?
 \end_layout
 
 \end_deeper
