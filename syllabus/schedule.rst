@@ -63,7 +63,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | ---                                       | `23_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | ---                              |
+|    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | `24_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/29  | Thanksgiving                                                  | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -113,6 +113,7 @@ Schedule
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
 .. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
+.. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
