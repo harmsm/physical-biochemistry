@@ -95,8 +95,45 @@ lobes
  product).
  You design an inhibitor and want to understand which structure it binds
  to.
- You use a technique called FRET, which lets you measure an apparent distance
- between two fluorophores (the stars in the picture).
+ 
+\end_layout
+
+\begin_layout Standard
+You use a technique called FRET (Förster resonance energy transfer), which
+ lets you measure an apparent distance between two fluorophores (the stars
+ in the picture).
+ You excite one flourophore (say, green star) but not the other (say purple
+ star).
+ If you choose your fluorophores wisely, the emission from the green fluorophore
+ will excite the purple fluorophore.
+ This means you can excite green, but observe emssion on purple.
+ One can measure the FRET efficiency (
+\begin_inset Formula $E$
+\end_inset
+
+), which is basically how well energy is transferred from the first to the
+ second fluorophore.
+ This can be related to distance by the following:
+\begin_inset Formula 
+\[
+E=\frac{1}{1+(r/R_{0})^{6}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the distance between the fluorophores and 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ depends on the fluorophores chosen.
+ Some fluorphores transfer efficiently only at short range, others have
+ very long range.
+ Thus, y choosing specific dye pairs, one can build an assay that is sensitive
+ to specific distance changes.
  
 \begin_inset Newline newline
 \end_inset
@@ -154,15 +191,17 @@ You measure the total fluorescence change for a cuvette containing billions
  of molecules.
  You measure an apparent distance of 7.5 nm in the absence of the drug, and
  5.0 nm in the presence of the drug.
- Come up with a model for what is happening when the drug binds.
+ Come up with a mechanistic model for what is happening when the drug binds.
 \end_layout
 
 \begin_layout Enumerate
 You repeat this experiment using TIRF microscopy, which lets you measure
  the apparent distance between lobes for individual molecules.
  You make 2,000 single-molecule measurements in the abscence of the drug,
- and 2,000 more measurments in the presence of the drug.
+ and 2,000 more measurements in the presence of the drug.
  Download the Excel spreadsheet containing these data.
+ (Each group will be assigned a different spreadsheet).
+ 
 \end_layout
 
 \begin_deeper
@@ -182,6 +221,27 @@ bulk
 Are these observations consistent with your model? If not, is there a model
  you can come up with that is consistent with both the bulk and individual
  observations?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+On the board, draw the following.
+ Be prepared to present your work to the rest of the class.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Your initial mechanism
+\end_layout
+
+\begin_layout Enumerate
+Your single-molecule data
+\end_layout
+
+\begin_layout Enumerate
+Your mechanism consistent with the data.
+ 
 \end_layout
 
 \end_deeper
