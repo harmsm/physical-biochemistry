@@ -67,7 +67,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/29  | Thanksgiving                                                  | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/2   | Phase transitions in biology                                  | ---                  | ---                                       | ---                              |
+|   10  | 12/2   | Phase transitions in biology                                  | ---                  | ---                                       | `27_slides`_                     |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 12/4   | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -115,6 +115,7 @@ Schedule
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
 .. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
+.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.html
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
