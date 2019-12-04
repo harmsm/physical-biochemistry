@@ -67,7 +67,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/29  | Thanksgiving                                                  | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/2   | Phase transitions in biology                                  | ---                  | `hyman_rosen`_                            | `27_slides`_                     |
+|   10  | 12/2   | Phase transitions in biology                                  | ---                  | `hyman_rosen`_, `rosen`_                  | `27_slides`_                     |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 12/4   | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -93,6 +93,7 @@ Schedule
 .. _`Pande`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/pande.pdf
 .. _`721-729`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
 .. _`hyman_rosen`: https://www.nature.com/articles/nrm.2017.7
+.. _`rosen`: https://www.ncbi.nlm.nih.gov/pubmed/22398450
 .. _`Thattai`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/thattai_2002_noise-cascade.pdf
 
 .. material links
