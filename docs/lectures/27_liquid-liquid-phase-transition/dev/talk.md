@@ -22,9 +22,9 @@
 >>>
 ![sm.image](fig4e.png)
 >>>
-![sm.video](t1.mp4) height="50%" width="50%" controls
->>>
 ![sm.image](multivalency.png)
+>>>
+![sm.video](t1.mp4) height="50%" width="50%" controls
 >>>
 ![sm.image](mech-phase.png)
 >>>
