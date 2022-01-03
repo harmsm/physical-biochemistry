@@ -1,6 +1,6 @@
-------------------------------------------------
-Syllabus: CH465/565 Physical Biochemistry (2019)
-------------------------------------------------
+-------------------------------------------------------
+Syllabus: CH465/565 Physical Biochemistry (Winter 2022)
+-------------------------------------------------------
 
 Course Description
 ------------------
@@ -15,28 +15,26 @@ Instructors:
 Mike Harms (instructor)
 harms@uoregon.edu
 Willamette 340A
-Office Hour: 9-10 am, Thursdays
+Office Hour: 15:00, Wednesdays
 
-Dillon Willis (TA)
-diwillis@uoregon.edu
-Office Hour: 9-10 am, Tuesdays, KLA 331
+Vandanna Reddy
+vandanar@uoregon.edu
+Office Hour: TBA
 
 Class structure:
 ================
 
-The class meets Monday and Wednesday from 10:00 to 10:50.  It meets Friday
-from 9:00 to 10:50.  All class sessions are in Onyx 171.
+The class meets Monday and Wednesday from 14:00 to 14:50 in 101 VOL.  It meets
+Friday 14:00-15:20 in B042 PSC.
 
 Textbook
 ========
 *The Molecules of Life: Physical and Chemical Principles.* John Kuriyan,
-Boyana Konforti, and David Wemmer.
+Boyana Konforti, and David Wemmer. This textbook is *not* required, but I do
+provide reading that can help amplify the course material. You will not be
+required to know any material from the book that is not covered in class. I will
+also post links to helpful reading material on the main course schedule.
 
-One copy of this book will be on reserve in the library. Much of the material
-that we cover in class will be in *The Molecules of Life*. You will not be
-required to know any material from the book that is not covered in class
-(unless it was covered in CH461). The reading assignments listed below are
-guidelines of sections you may consult to understand the material in class.
 Students should also consult additional material as necessary (including other
 sections in *The Molecules of Life*) and are encouraged to search the primary
 scientific literature for more information (e.g. through pubmed or Google
@@ -48,27 +46,19 @@ please let me know. Other textbooks that may be useful include:
 - *Principles of Physical Biochemisty.* Kensal van Holde, Curtis Johnson and
   Shing Ho.
 
-Course Prerequisites
-====================
-
-- CH461. Students will need to remember amino acid structures and understand
-  the basic concepts behind the thermodynamic principles that govern the
-  stability of macromolecules and their interactions. While some time will
-  be devoted to reviewing material in CH461, students with holes in their
-  foundational understanding of biochemistry will have to review key concepts
-  using one of the biochemistry text books listed below.
-
 Grading
 =======
 
-There are four ways in which to earn points in the class.  Grades will be
+There are three ways in which to earn points in the class.  Grades will be
 assigned on the basis of the total number of points acquired over the course of
 the term.
 
 - Class attendance (25% of points)
 - Homework sets (25% of points)
-- Midterm (20% of points)
-- Final (30% of points)
+- Summative Assessment (50% of points)
+
+On the first day of class, we will discuss how you would like to do summative
+assessment: midterm and final, projects, presentations, or something else.
 
 Letter grades: Letter grades will be determined based on total points, not on
 individual exams and assignments. Getting >90% of the points guarantees an A;

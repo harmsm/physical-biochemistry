@@ -3,7 +3,7 @@ Schedule
 
 + Reading should be done *before* the class it covers.  The abbreviation "MoL"
   indicates the "Molecules of Life" text.  The abbreviation "SSTB" indicates the
-  "Simple Statistical Thermodynamics for the Biochemist" packet. 
+  "Simple Statistical Thermodynamics for the Biochemist" packet.
 + The class materials (notes, handouts, etc.) will be posted after the class
   session in the "Material" column.
 + Lab and homework material will be updated throughout the course.
@@ -13,67 +13,67 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 | Week  | Date   | Topic                                                         | Due                  | Reading                                   | Material                         |
 +=======+========+===============================================================+======================+===========================================+==================================+
-|    1  | 9/30   | Rosh Hashanah; no class                                       | ---                  | ---                                       | ---                              |
+|    1  | 1/3    | Organizational meeting                                        | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    1  | 10/2   | The statistics of biomolecules                                | ---                  | ---                                       | `01_slides`_, `01_notes`_        |
+|    1  | 1/5    | The statistics of biomolecules                                | ---                  | ---                                       | `01_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    1  | 10/4   | Why do reactions have a direction?                            | ---                  | `SSTB 1-3`_, MoL pp. 294-305              | `02_notes`_                      |
+|    1  | 1/7    | Why do reactions have a direction?                            | ---                  | `SSTB 1-3`_, MoL pp. 294-305              | `02_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    2  | 10/7   | The molecular interpretation of heat                          | ---                  | `SSTB 4`_, MoL pp. 383-409                | `03_notes`_                      |
+|    2  | 1/10   | The molecular interpretation of heat                          | ---                  | `SSTB 4`_, MoL pp. 383-409                | `03_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    2  | 10/9   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_                       | `04_notes`_                      |
+|    2  | 1/12   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_                       | `04_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    2  | 10/11  | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_              | `05_notes`_                      |
+|    2  | 1/14   | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_              | `05_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    3  | 10/14  | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                      | `06_notes`_                      |
+|    3  | 1/17   | Martin Luther King Jr. Day                                    | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    3  | 10/16  | Molecular ensembles and evolution (Anneliese Morrison)        | ---                  | `Sailer`_                                 | ---                              |
+|    3  | 1/19   | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                      | `06_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    3  | 10/18  | `Lab: PyMOL`_                                                 | HW2_, Install pymol  | ---                                       | ---                              |
+|    3  | 1/21   | `Lab: PyMOL`_                                                 | HW2_, Install pymol  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    4  | 10/21  | X-ray crystallography (Arden Perkins)                         | ---                  | ---                                       | ---                              |
+|    4  | 1/24   | Methods for structure determination                           | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    4  | 10/23  | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                          | `10_notes`_                      |
+|    4  | 1/26   | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                          | `10_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    4  | 10/25  | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                      | `energetics`_                    |
+|    4  | 1/28   | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                      | `energetics`_                    |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 10/28  | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_        | `12_notes`_                      |
+|    5  | 1/31   | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_        | `12_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 10/30  | SBC: sampling strategies                                      | ---                  | ---                                       | `13_notes`_                      |
+|    5  | 2/2    | SBC: sampling strategies                                      | ---                  | ---                                       | `13_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 11/1   | `Lab: drug design`_                                           | HW4_                 | ---                                       | ---                              |
+|    5  | 2/4    | `Lab: drug design`_                                           | HW4_                 | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    6  | 11/4   | Midterm                                                       | ---                  | ---                                       | ---                              |
+|    6  | 2/7    | Midterm                                                       | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    6  | 11/6   | Binding interactions                                          | ---                  | `binding methods`_, `binding equations`_  | `16_notes`_                      |
+|    6  | 2/9    | Binding interactions                                          | ---                  | `binding methods`_, `binding equations`_  | `16_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    6  | 11/8   | `Lab: measuring binding`_                                     | ---                  | ---                                       | ---                              |
+|    6  | 2/11   | `Lab: measuring binding`_                                     | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 11/11  | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                      |
+|    7  | 2/14   | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | MoL pp. 673-687                           | `18_notes`_                      |
+|    7  | 2/16   | Kinetics #1: first-order kinetics and rate laws               | ---                  | MoL pp. 673-687                           | `18_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 11/15  | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
+|    7  | 2/18   | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | MoL pp. 709-718                           | `20_notes`_                      |
+|    8  | 2/21   | Kinetics #2: Arrhenius interpretation                         | ---                  | MoL pp. 709-718                           | `20_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | MoL pp. 688-709, `721-729`_               | `21_notes`_                      |
+|    8  | 2/23   | Kinetics #3: Second-order kinetics                            | ---                  | MoL pp. 688-709, `721-729`_               | `21_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/22  | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
+|    8  | 2/25   | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | MoL pp. 787-802, MoL pp. 810-817          | `23_notes`_                      |
+|    9  | 2/28   | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | MoL pp. 787-802, MoL pp. 810-817          | `23_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | `24_notes`_                      |
+|    9  | 3/2    | Methods to measure diffusion                                  | ---                  | ---                                       | `24_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/29  | Thanksgiving                                                  | ---                  | ---                                       | ---                              |
+|    9  | 3/4    | Phase transitions in biology                                  | ---                  | `hyman_rosen`_, `rosen`_                  | `27_slides`_                     |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/2   | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
+|   10  | 3/7    | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/4   | Phase transitions in biology                                  | ---                  | `hyman_rosen`_, `rosen`_                  | `27_slides`_                     |
+|   10  | 3/9    | Flex day                                                      | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/6   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | ---                              |
+|   10  | 3/11   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   11  | 12/11  | Final (10:15 am)                                              | ---                  | ---                                       | ---                              |
+|   11  | 3/15   | Final (2:45 pm)                                               | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 
 .. reading links
@@ -83,7 +83,6 @@ Schedule
 .. _`Anfinsen`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/anfinsen_1973_folding.pdf
 .. _`Dill`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/dill.pdf
 .. _`Kauzmann`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/kauzmann.pdf
-.. _`Sailer`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sailer.pdf
 .. _`Rothlisberger`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/rothlisberger.pdf
 .. _`Baldwin`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/baldwin.pdf
 .. _`Auton`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/auton_2005_transfer.pdf
@@ -97,7 +96,6 @@ Schedule
 .. _`rosen`: https://www.ncbi.nlm.nih.gov/pubmed/22398450
 
 .. material links
-.. _`01_slides`: https://harmsm.github.io/physical-biochemistry/lectures/01_introduction/index.html
 .. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdf
 .. _`02_notes`: https://harmsm.github.io/physical-biochemistry/notes/02_reaction-direction.pdf
 .. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
@@ -137,4 +135,3 @@ Schedule
 .. _HW5: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw5/
 .. _HW6: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw6/
 .. _HW7: https://github.com/harmsm/physical-biochemistry/blob/master/homework/hw7/
-
