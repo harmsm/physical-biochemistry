@@ -1,5 +1,5 @@
 # Course material for Physical Biochemistry
-### CH465/565, University of Oregon, Fall 2019
+### CH465/565, University of Oregon, Winter 2022
 
 ## For current students:
 
@@ -20,8 +20,7 @@ git clone https://github.com/harmsm/physical-biochemistry.git
 ```
 
 #### Content organization
-+ *docs*: Slides shown in class.  These are designed for use with [reveal.js](https://github.com/hakimel/reveal.js/).  
-  The slides can be viewed as slides at https://harmsm.github.io/physical-biochemistry/.
++ *presentations*: powerpoint presentation used in the class.
 + *homework*: Homework for the course.
 + *labs*: Interactive exercises, done in class, designed to develop specific skills.
   These are expected to take about 2 hr of class time.
