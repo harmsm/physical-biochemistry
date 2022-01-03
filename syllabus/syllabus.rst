@@ -70,6 +70,13 @@ would receive an A.
 
 Graduate students and undergraduates will be graded on different curves.
 
+Homework
+========
+
+There are seven homework sets, due at the beginning of class on Fridays as
+noted on the schedule. These can be turned in electronically on canvas or
+physically in class. 
+
 Community
 =========
 

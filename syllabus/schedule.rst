@@ -96,26 +96,26 @@ Schedule
 .. _`rosen`: https://www.ncbi.nlm.nih.gov/pubmed/22398450
 
 .. material links
-.. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdf
-.. _`02_notes`: https://harmsm.github.io/physical-biochemistry/notes/02_reaction-direction.pdf
-.. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
-.. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
-.. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdf
-.. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdf
-.. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdf
-.. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdf
-.. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdf
-.. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdf
-.. _`16_notes`: https://harmsm.github.io/physical-biochemistry/notes/16_binding-and-itc.pdf
-.. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_pka.pdf
-.. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdf
-.. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdf
-.. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
-.. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
-.. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
-.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
-.. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
-.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.html
+.. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdfx
+.. _`02_notes`: https://harmsm.github.io/physical-biochemistry/notes/02_reaction-direction.pdfx
+.. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdfx
+.. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdfx
+.. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdfx
+.. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdfx
+.. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdfx
+.. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdfx
+.. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdfx
+.. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdfx
+.. _`16_notes`: https://harmsm.github.io/physical-biochemistry/notes/16_binding-and-itc.pdfx
+.. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_pka.pdfx
+.. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdfx
+.. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdfx
+.. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdfx
+.. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdfx
+.. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdfx
+.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdfx
+.. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdfx
+.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.htmlx
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
