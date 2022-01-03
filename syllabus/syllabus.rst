@@ -75,7 +75,14 @@ Homework
 
 There are seven homework sets, due at the beginning of class on Fridays as
 noted on the schedule. These can be turned in electronically on canvas or
-physically in class. 
+physically in class.
+
+Attendance
+==========
+
+If you cannot come to class, please let Mike know *before* class to discuss
+accommodation, etc. Excused absences will not count against your attendance
+grade. 
 
 Community
 =========
