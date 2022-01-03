@@ -19,7 +19,7 @@ Office Hour: 15:00, Wednesdays
 
 Vandana Reddy
 vandanar@uoregon.edu
-Office Hour: TBA
+Office Hour: 13:00, Mondays Wil 342
 
 Class structure:
 ================
