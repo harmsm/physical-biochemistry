@@ -459,10 +459,6 @@ ble to fully water accessible during protein unfolding is given by:
 \end_layout
 
 \begin_layout Standard
-asdfa
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 pK_{a,obs}=pK_{a,model}+\frac{\Delta G_{env}}{RTln(10)}
@@ -473,7 +469,59 @@ pK_{a,obs}=pK_{a,model}+\frac{\Delta G_{env}}{RTln(10)}
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
+Binding
+\end_layout
+
+\begin_layout Standard
+For the reaction 
+\begin_inset Formula $MX\rightleftarrows M+X$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K_{D}=\frac{[M][X]}{[MX]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G=\Delta G^{\circ}+RTln\left(\frac{[M][X]}{[MX]}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta G^{\circ}=-RTln(K_{D})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta=\frac{[X]_{tot}+[M]_{tot}+K_{D}-\sqrt{([X]_{tot}+[M]_{tot}+K_{D})^{2}-4[M]_{tot}[X]_{tot}}}{2[M]_{tot}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta=\frac{[X]_{tot}}{K_{D}+[X]_{tot}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Isothermal titration calorimetry:
 \end_layout
 
@@ -633,7 +681,7 @@ D_{sphere}=\frac{k_{B}T}{6\pi\eta r}
 
 \begin_inset Formula 
 \[
-k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})N_{A}\times6.022\times10^{20}
+k_{coll}=4\pi(r_{A}+r_{B})(D_{A}+D_{B})\times6.022\times10^{20}
 \]
 
 \end_inset

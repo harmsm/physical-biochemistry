@@ -51,25 +51,25 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 11/11  | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | ---                                       | `18_notes`_                      |
+|    7  | 11/13  | Kinetics #1: first-order kinetics and rate laws               | ---                  | MoL pp. 673-687                           | `18_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 11/15  | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | ---                                       | `20_notes`_                      |
+|    8  | 11/18  | Kinetics #2: Arrhenius interpretation                         | ---                  | MoL pp. 709-718                           | `20_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | ---                                       | `21_notes`_                      |
+|    8  | 11/20  | Kinetics #3: Second-order kinetics                            | ---                  | MoL pp. 688-709, `721-729`_               | `21_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 11/22  | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | ---                                       | `23_notes`_                      |
+|    9  | 11/25  | Diffusion #1: the statistical mechanical view of diffusion    | HW6_                 | MoL pp. 787-802, MoL pp. 810-817          | `23_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | ---                              |
+|    9  | 11/27  | Methods to measure diffusion                                  | ---                  | ---                                       | `24_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    9  | 11/29  | Thanksgiving                                                  | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/2   | Phase transitions in biology                                  | ---                  | ---                                       | ---                              |
+|   10  | 12/2   | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 12/4   | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
+|   10  | 12/4   | Phase transitions in biology                                  | ---                  | `hyman_rosen`_, `rosen`_                  | `27_slides`_                     |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 12/6   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -91,7 +91,10 @@ Schedule
 .. _`binding methods`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/binding-methods-and-regression.pdf
 .. _`binding equations`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/binding-equations-reference.pdf
 .. _`Pande`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/pande.pdf
+.. _`721-729`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
 .. _`Thattai`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/thattai_2002_noise-cascade.pdf
+.. _`hyman_rosen`: https://www.nature.com/articles/nrm.2017.7
+.. _`rosen`: https://www.ncbi.nlm.nih.gov/pubmed/22398450
 
 .. material links
 .. _`01_slides`: https://harmsm.github.io/physical-biochemistry/lectures/01_introduction/index.html
@@ -113,6 +116,8 @@ Schedule
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdf
 .. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
+.. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
+.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.html
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc

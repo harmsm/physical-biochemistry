@@ -2162,7 +2162,8 @@ Mutation #2 reduces the amount of non-polar surface area buried when the
 \end_layout
 
 \begin_layout Enumerate
-Mutation #3 replaces the Asp in an Asp-Lys salt bridge with an Arg.
+Mutation #3 replaces the Asp in an Asp-Lys salt bridge between the protein
+ and pepetide with an Arg.
  
 \end_layout
 
@@ -2180,8 +2181,8 @@ JMB
 \begin_inset Formula $pK_{a}$
 \end_inset
 
- values of histidine residues when they mutated acidic residues throughout
- the protein.
+ values of histidine residues when they mutated acidic residues all over
+ the protein surface to polar, uncharged amino acids.
  They then measured the distance between the acidic residue and histidine
  in the crystal structure of the protein.
  The experiments were done at 
@@ -2842,12 +2843,13 @@ observation.csv.
 \begin_inset Quotes erd
 \end_inset
 
- 
+ [xx update data in observation.csv so they go to longer times.
+ see the dev/mm-enzyme folder]
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-What is the apparent rate constant under each reaction condition?
+What is the initial velocity under each reaction condition?
 \end_layout
 
 \begin_layout Enumerate
@@ -2902,7 +2904,7 @@ You are studying spontaneous unimolecular reactions at
 \end_inset
 
 .
- 
+ [xx draw barrier]
 \end_layout
 
 \begin_deeper
@@ -3069,7 +3071,7 @@ What is the association rate constant of actin monomers for the filament
 
 \begin_layout Enumerate
 Is the association of monomers and actin filaments diffusion limited or
- not? 
+ not? Use the information below.
 \end_layout
 
 \begin_deeper
