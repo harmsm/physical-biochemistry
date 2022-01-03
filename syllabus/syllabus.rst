@@ -17,7 +17,7 @@ harms@uoregon.edu
 Willamette 340A
 Office Hour: 15:00, Wednesdays
 
-Vandanna Reddy
+Vandana Reddy
 vandanar@uoregon.edu
 Office Hour: TBA
 
