@@ -57,8 +57,7 @@ the term.
 - Homework sets (25% of points)
 - Summative Assessment (50% of points)
 
-On the first day of class, we will discuss how you would like to do summative
-assessment: midterm and final, projects, presentations, or something else.
+Summative assessment will consist of an in-class midterm and take-home final. 
 
 Letter grades: Letter grades will be determined based on total points, not on
 individual exams and assignments. Getting >90% of the points guarantees an A;
