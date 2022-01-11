@@ -99,7 +99,7 @@ Schedule
 
 .. material links
 .. _`01_notes`: https://harmsm.github.io/physical-biochemistry/notes/01_introduction.pdf
-.. _`02_notes`: https://harmsm.github.io/physical-biochemistry/presentation/02_stats-of-biomolecules_as-given.pptx
+.. _`02_notes`: https://github.com/harmsm/physical-biochemistry/raw/master/presentation/02_stats-of-biomolecules_as-given.pptx
 .. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
 .. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdfx
 .. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdfx
