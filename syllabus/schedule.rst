@@ -23,21 +23,21 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    2  | 1/12   | Heat capacity and enthalpy                                    | ---                  | `Nelson pp. 82-89`_                       | `04_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    2  | 1/14   | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | MoL pp. 446-453, `Anfinsen`_              | `05_notes`_                      |
+|    2  | 1/14   | `Lab: protein folding by differential scanning calorimetry`_  | HW1_                 | `MoL pp. 446-453`_, `Anfinsen`_           | `05_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    3  | 1/17   | Martin Luther King Jr. Day                                    | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    3  | 1/19   | Protein folding cooperativity                                 | ---                  | `Dill`_, `Kauzmann`_                      | `06_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    3  | 1/21   | `Lab: PyMOL`_                                                 | HW2_, Install pymol  | ---                                       | ---                              |
+|    3  | 1/21   | `Lab: PyMOL`_                                                 | `Install pymol`_     | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    4  | 1/24   | Methods for structure determination                           | ---                  | ---                                       | ---                              |
+|    4  | 1/24   | Methods for structure determination                           | HW2_                 | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    4  | 1/26   | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                          | `10_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    4  | 1/28   | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                      | `energetics`_                    |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 1/31   | SBC: potential functions                                      | ---                  | MoL pp. 265-285, `gromacs manual`_        | `12_notes`_                      |
+|    5  | 1/31   | SBC: potential functions                                      | ---                  | `MoL pp. 265-285`_, `gromacs manual`_     | `12_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    5  | 2/2    | SBC: sampling strategies                                      | ---                  | ---                                       | `13_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -51,7 +51,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 2/14   | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 2/16   | Kinetics #1: first-order kinetics and rate laws               | ---                  | MoL pp. 673-687                           | `18_notes`_                      |
+|    7  | 2/16   | Kinetics #1: first-order kinetics and rate laws               | ---                  | `MoL pp. 673-687`_                        | `18_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 2/18   | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -79,6 +79,9 @@ Schedule
 .. reading links
 .. _`MoL pp. 294-305`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_294-305.pdf
 .. _`MoL pp. 383-409`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_383-409.pdf
+.. _`MoL pp. 446-453`:  https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_446-453.pdf
+.. _`MoL pp. 265-285`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_265-285.pdf
+.. _`MoL pp. 673-687`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_673-687.pdf
 .. _`SSTB 1-3`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`SSTB 4`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Nelson pp. 82-89`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/nelson.pdf
@@ -103,7 +106,7 @@ Schedule
 .. _`03_notes`: https://harmsm.github.io/physical-biochemistry/notes/03_entropy-and-heat.pdf
 .. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
 .. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdf
-.. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding.pdfx
+.. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding_2.pdf
 .. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdfx
 .. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdfx
 .. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdfx
@@ -118,6 +121,7 @@ Schedule
 .. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdfx
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdfx
 .. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.htmlx
+.. _`Install pymol`: https://pymol.org/edu/
 
 .. lab links
 .. _`Lab: protein folding by differential scanning calorimetry`: https://github.com/harmsm/physical-biochemistry/blob/master/labs/01_dsc
