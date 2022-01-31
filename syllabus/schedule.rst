@@ -35,13 +35,13 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    4  | 1/26   | Structure-based calculations (SBC) intro                      | ---                  | `Rothlisberger`_                          | `10_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    4  | 1/28   | `Lab: solvent transfer and empirical SBC`_                    | HW3_                 | `Baldwin`_, `Auton`_                      | `energetics`_                    |
+|    4  | 1/28   | `Lab: solvent transfer and empirical SBC`_                    | ---                  | `Baldwin`_, `Auton`_                      | `energetics`_                    |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 1/31   | SBC: potential functions                                      | ---                  | `MoL pp. 265-285`_, `gromacs manual`_     | `12_notes`_                      |
+|    5  | 1/31   | SBC: potential functions                                      | HW3_                 | `MoL pp. 265-285`_, `gromacs manual`_     | `12_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    5  | 2/2    | SBC: sampling strategies                                      | ---                  | ---                                       | `13_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    5  | 2/4    | `Lab: drug design`_                                           | HW4_                 | ---                                       | ---                              |
+|    5  | 2/4    | `Lab: drug design`_                                           | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    6  | 2/7    | Midterm                                                       | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -49,13 +49,13 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    6  | 2/11   | `Lab: measuring binding`_                                     | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 2/14   | pKa values: molecular sensors                                 | ---                  | ---                                       | `17_notes`_                      |
+|    7  | 2/14   | pKa values: molecular sensors                                 | HW4_                 | ---                                       | `17_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 2/16   | Kinetics #1: first-order kinetics and rate laws               | ---                  | `MoL pp. 673-687`_                        | `18_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    7  | 2/18   | `Lab: kinetics`_                                              | HW5_                 | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
+|    7  | 2/18   | `Lab: kinetics`_                                              | ---                  | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 2/21   | Kinetics #2: Arrhenius interpretation                         | ---                  | MoL pp. 709-718                           | `20_notes`_                      |
+|    8  | 2/21   | Kinetics #2: Arrhenius interpretation                         | HW5_                 | MoL pp. 709-718                           | `20_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 2/23   | Kinetics #3: Second-order kinetics                            | ---                  | MoL pp. 688-709, `721-729`_               | `21_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -107,9 +107,9 @@ Schedule
 .. _`04_notes`: https://harmsm.github.io/physical-biochemistry/notes/04_heat-capacity-and-enthalpy.pdf
 .. _`05_notes`: https://harmsm.github.io/physical-biochemistry/notes/05_dsc-introduction.pdf
 .. _`06_notes`: https://harmsm.github.io/physical-biochemistry/notes/06_protein-folding_2.pdf
-.. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdfx
-.. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdfx
-.. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdfx
+.. _`10_notes`: https://harmsm.github.io/physical-biochemistry/notes/10_structure-based-calcs_sasa.pdf
+.. _`energetics`: https://harmsm.github.io/physical-biochemistry/notes/energy-functions.pdf
+.. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdf
 .. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdfx
 .. _`16_notes`: https://harmsm.github.io/physical-biochemistry/notes/16_binding-and-itc.pdfx
 .. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_pka.pdfx
