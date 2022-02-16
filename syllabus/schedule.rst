@@ -112,7 +112,7 @@ Schedule
 .. _`12_notes`: https://harmsm.github.io/physical-biochemistry/notes/12_electrostatics.pdf
 .. _`13_notes`: https://harmsm.github.io/physical-biochemistry/notes/13_forcefield-and-sampling.pdf
 .. _`16_notes`: https://harmsm.github.io/physical-biochemistry/notes/16_binding-and-itc.pdf
-.. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_pka.pdfx
+.. _`17_notes`: https://harmsm.github.io/physical-biochemistry/notes/17_sampling-and-pka.pdf
 .. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdfx
 .. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdfx
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdfx
