@@ -1,0 +1,533 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{adjustbox}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\series bold
+Lab 6: Complicated Kinetics
+\end_layout
+
+\begin_layout Section*
+Setup
+\end_layout
+
+\begin_layout Standard
+Follow the link from the course schedule to a 
+\begin_inset Quotes eld
+\end_inset
+
+jupyter
+\begin_inset Quotes erd
+\end_inset
+
+ notebook describing chemical kinetics.
+ 
+\end_layout
+
+\begin_layout Itemize
+Look at the second cell (starts with 
+\begin_inset Quotes eld
+\end_inset
+
+# define a reaction
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Draw the reaction scheme, with rate constants, on a piece of paper.
+ 
+\end_layout
+
+\begin_layout Itemize
+You can run the code in each cell by selecting the cell and clicking the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Run
+\begin_inset Quotes erd
+\end_inset
+
+ button above.
+ Run all cells up to the one labeled 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Compare stochastic and deterministic simulations
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Can you rationalize the shapes of the curves given the reaction scheme?
+\end_layout
+
+\begin_layout Itemize
+Can you rationalize any difference(s) between the Markov and Gillespie simulatio
+ns?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Run the cell labeled 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Compare stochastic and deterministic simulations
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and the one immediately thereafter.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Can you figure out what the graph shows given the code?
+\end_layout
+
+\begin_layout Itemize
+What do you conclude about the differences and similarities between the
+ Markov and Gillespie simulations?
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Michaelis-Menten Enzymes
+\end_layout
+
+\begin_layout Standard
+We are now going to use the Gillespie simluator to test the validity of
+ the assumptions we made when we derived the Michaelis-Menten equation.
+ We made two assumptions:
+\end_layout
+
+\begin_layout Itemize
+There is a steady state population of 
+\begin_inset Formula $E\cdot S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Product formation is irreversible.
+ 
+\end_layout
+
+\begin_layout Standard
+To test the effects of these simulations:
+\end_layout
+
+\begin_layout Itemize
+Find the cell labeled 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Create your own gillespie reaction below
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Enter the following reaction describing a Michaelis-Menten enzyme in for
+ the 
+\emph on
+rxn
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S+E\rightleftarrows_{k_{r}}^{k_{f}}ES\rightarrow^{k_{3}}E+P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{f}=1\ s^{-1}\cdot molecules^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{r}=1\ s^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{cat}=0.1\ s^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $10\ enzyme\ molecules$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1,000\ substrate\ molecules$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $0\ product\ molecules$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $0\ enzyme\cdot substrate\ complexes$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $10,000\ steps$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Run the cell and note the output.
+ 
+\end_layout
+
+\begin_layout Itemize
+From the output, is the steady-state assumption justified? 
+\end_layout
+
+\begin_layout Itemize
+Now modify the reaction, adding reversibility (
+\begin_inset Formula $ES\leftarrow E+P$
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What happens to the entire reaction?
+\end_layout
+
+\begin_layout Itemize
+Are there any points on the curve where the reversible and irreversible
+ curves overlap?
+\end_layout
+
+\begin_layout Itemize
+Can these differences be justified in molecular terms?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Do you still believe Michaelis-Menten analyses after this work?
+\end_layout
+
+\begin_layout Section*
+Actin polymerization
+\end_layout
+
+\begin_layout Standard
+Another useful feature of a Gillespie simulator is the ability so simulate
+ arbitrarily complicated kinetics.
+ We are going to use the simulator to explore the actin polymerization reaction.
+ This is a high-order reaction that is difficult to model analytically.
+ 
+\end_layout
+
+\begin_layout Itemize
+Find the cell labeled 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+The actin polymerization reaction
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Run the cell beginning with 
+\family typewriter
+rxn_lines = ["A1 + A1 -> A2; 0.001"]
+\family default
+.
+ Draw the mechanism described by the scheme printed out below the cell.
+ (
+\family typewriter
+A1
+\family default
+ is an actin monomer, 
+\family sans
+A2
+\family default
+ is an actin dimer, etc.)
+\end_layout
+
+\begin_layout Itemize
+Now run the set of cells up to the cell labeled 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Effector mechanisms
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ This should spit out a graph that shows the number of actin monomers in
+ filaments with more than four subunits vs.
+ time.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What is the shape of the curve?
+\end_layout
+
+\begin_layout Itemize
+Can you justify it in terms of the underlying reaction?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Effectors:
+\end_layout
+
+\begin_layout Standard
+Biologically, actin polymerization can be tuned by effector molecules.
+ Two such molecules are ARP2/3 and DIP.
+ We are going to explore two possible mechanisms by which these molecules
+ may regulate actin polymerization.
+ 
+\end_layout
+
+\begin_layout Itemize
+In the literature, there are two possible interaction mechanisms proposed
+ for ARP2/3 and DIP's interaction with actin.
+ Draw the two mechanisms described by 
+\begin_inset Quotes eld
+\end_inset
+
+mech1
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+mech2
+\begin_inset Quotes erd
+\end_inset
+
+ as reaction schemes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Connor Balzer, a student in Brad Nolen's lab, collected actin polymerization
+ data using concentrations of actin, ARP2/3, and DIP that are similar to
+ those we are simulating.
+ In his assay, fluorescence intensity is proportional to the number of polymeriz
+ed actin subunits.
+ Does his data make you favor one of the proposed mechanisms over the other?
+ What features of the graphs distinguish the models?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustbox}{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/harmsm/work/teaching/ch465_physical-biochemistry/physical-biochemistry/dev/actin/experimental-data.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Connor did not collect data without ARP2/3 but with DIP.
+ Fortunately, we have a computational model where we can vary the concentration
+ of ARP2/3.
+ What happens to the curves for your favored model when you set 
+\begin_inset Formula $[ARP2/3]$
+\end_inset
+
+ to 
+\begin_inset Formula $0$
+\end_inset
+
+? What does this tell you about the 
+\begin_inset Quotes eld
+\end_inset
+
+logic
+\begin_inset Quotes erd
+\end_inset
+
+ of actin polymerization as encoded by DIP and ARP2/3? 
+\end_layout
+
+\begin_layout Itemize
+In fission yeast, actin monomers are found all over the cell.
+ Arp2/3 and DIP are found at discrete locations in the cell.
+ One of the few places ARP2/3 and DIP are found together is near sites of
+ vesicle formation.
+ Given this and your favored kinetic model, propose a biological function
+ for these patches of overlapping APR2/3 and DIP localization.
+ 
+\end_layout
+
+\end_body
+\end_document

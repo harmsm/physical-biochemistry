@@ -116,9 +116,9 @@ Schedule
 .. _`18_notes`: https://harmsm.github.io/physical-biochemistry/notes/18_kinetics-i.pdf
 .. _`19_notes`: https://harmsm.github.io/physical-biochemistry/notes/19_kinetics-ii.pdf
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
-.. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdfx
-.. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/21_kinetics-iv.pdfx
-.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdfx
+.. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
+.. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/2022-complicated-kinetics.pdf
+/*.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdfx*/
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdfx
 .. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.htmlx
 .. _`Install pymol`: https://pymol.org/edu/
