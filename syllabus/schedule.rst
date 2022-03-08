@@ -119,7 +119,7 @@ Schedule
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/2022-complicated-kinetics.pdf
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
-.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/27_liquid-liquid-phase-transition/index.html
+.. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/phase-transitions.pptx
 .. _`Install pymol`: https://pymol.org/edu/
 
 .. lab links
