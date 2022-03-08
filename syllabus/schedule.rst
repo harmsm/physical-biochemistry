@@ -55,9 +55,9 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    7  | 2/18   | `Lab: kinetics`_                                              | ---                  | `Pande`_                                  | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 2/21   | Kinetics #2: Arrhenius interpretation                         | HW5_                 | MoL pp. 709-718                           | `19_notes`_, `markov_matrices`_  |
+|    8  | 2/21   | Kinetics #2: Arrhenius interpretation                         | HW5_                 | `MoL pp. 709-718`_                        | `19_notes`_, `markov_matrices`_  |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|    8  | 2/23   | Kinetics #3: Second-order kinetics                            | ---                  | MoL pp. 688-709, `721-729`_               | `21_notes`_                      |
+|    8  | 2/23   | Kinetics #3: Second-order kinetics                            | ---                  | `MoL pp. 688-709`_, `721-729`_            | `21_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |    8  | 2/25   | `Lab: actin polymerization kinetics`_                         | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -82,6 +82,11 @@ Schedule
 .. _`MoL pp. 446-453`:  https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_446-453.pdf
 .. _`MoL pp. 265-285`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_265-285.pdf
 .. _`MoL pp. 673-687`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_673-687.pdf
+.. _`MoL pp. 709-718`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_709-718.pdf
+.. _`MoL pp. 688-709`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_688-709.pdf
+.. _`MoL pp. 787-802`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_787-802.pdf
+.. _`MoL pp. 810-817`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_810-817.pdf
+.. _`721-729`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/MoL_721-729.pdf
 .. _`SSTB 1-3`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`SSTB 4`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/sstb.pdf
 .. _`Nelson pp. 82-89`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/nelson.pdf
@@ -95,7 +100,6 @@ Schedule
 .. _`binding methods`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/binding-methods-and-regression.pdf
 .. _`binding equations`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/binding-equations-reference.pdf
 .. _`Pande`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/pande.pdf
-.. _`721-729`: https://github.com/harmsm/physical-biochemistry/blob/master/MISSING_LINK
 .. _`Thattai`: https://github.com/harmsm/physical-biochemistry/blob/master/readings/thattai_2002_noise-cascade.pdf
 .. _`hyman_rosen`: https://www.nature.com/articles/nrm.2017.7
 .. _`rosen`: https://www.ncbi.nlm.nih.gov/pubmed/22398450
@@ -118,6 +122,7 @@ Schedule
 .. _`markov_matrices`: https://harmsm.github.io/physical-biochemistry/notes/markov-matrices.pdf
 .. _`20_notes`: https://harmsm.github.io/physical-biochemistry/notes/20_kinetics-iii.pdf
 .. _`21_notes`: https://harmsm.github.io/physical-biochemistry/notes/2022-complicated-kinetics.pdf
+.. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
 .. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/phase-transitions.pptx
 .. _`Install pymol`: https://pymol.org/edu/
