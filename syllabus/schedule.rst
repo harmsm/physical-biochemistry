@@ -69,7 +69,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 3/7    | Signaling cascades                                            | ---                  | `Thattai`_                                | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 3/9    | Methods to measure binding                                    | ---                  | ---                                       | ---                              |
+|   10  | 3/9    | Methods to measure binding                                    | ---                  | ---                                       | `28_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 3/11   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -125,6 +125,7 @@ Schedule
 .. _`23_notes`: https://harmsm.github.io/physical-biochemistry/notes/23_diffusion-i.pdf
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
 .. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/phase-transitions.pptx
+.. _`28_notes`: https://harmsm.github.io/physical-biochemistry/notes/28_methods-to-measure-binding.pdf
 .. _`Install pymol`: https://pymol.org/edu/
 
 .. lab links
