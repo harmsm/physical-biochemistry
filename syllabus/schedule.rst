@@ -71,7 +71,7 @@ Schedule
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   10  | 3/9    | Methods to measure binding                                    | ---                  | ---                                       | `28_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
-|   10  | 3/11   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | ---                              |
+|   10  | 3/11   | `Lab: single molecules vs. solution averages`_                | HW7_                 | ---                                       | `29_notes`_                      |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
 |   11  | 3/15   | Release 9 am Monday, 3/14; Due 5 pm Tuesday, 3/15.            | ---                  | ---                                       | ---                              |
 +-------+--------+---------------------------------------------------------------+----------------------+-------------------------------------------+----------------------------------+
@@ -126,6 +126,7 @@ Schedule
 .. _`24_notes`: https://harmsm.github.io/physical-biochemistry/notes/24_diffusion-ii.pdf
 .. _`27_slides`: https://harmsm.github.io/physical-biochemistry/lectures/phase-transitions.pptx
 .. _`28_notes`: https://harmsm.github.io/physical-biochemistry/notes/28_methods-to-measure-binding.pdf
+.. _`29_notes`: https://harmsm.github.io/physical-biochemistry/notes/29_fret-setup.pdf
 .. _`Install pymol`: https://pymol.org/edu/
 
 .. lab links
